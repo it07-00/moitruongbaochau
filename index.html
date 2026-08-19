@@ -143,20 +143,19 @@
       ></iframe
     ></noscript>
     <div
-      class="off-canvas invisible will-change-transform backface-hidden fixed bg-white is-transition-overlap position-right"
+      class="off-canvas will-change-transform backface-hidden bg-white is-transition-overlap position-right"
       id="offCanvasMenu"
       data-fx-off-canvas=""
       data-content-scroll="true"
     >
       <div class="menu-heading-outer">
         <button
-          class="menu-lines absolute top-4 right-4 block opacity-0 p-0 w-6 h-6"
-          aria-label="Close"
+          class="absolute top-4 right-4 flex items-center justify-center w-8 h-8 rounded-full bg-black/5 hover:bg-black/10 text-gray-700 transition-colors"
+          aria-label="Đóng menu"
           type="button"
           data-close=""
         >
-          <span class="line line-1 block w-6 h-0.5 rounded-none"></span>
-          <span class="line line-2 block w-6 h-0.5 rounded-none -mt-0.5"></span>
+          <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
         </button>
         <div class="title-bar-title relative my-5 mx-4 w-42.5 max-w-[70%]">
           <a href="#" class="mobile-logo-link" rel="home"
@@ -908,21 +907,13 @@
               data-fx-off-canvas-content=""
             >
               <button
-                class="menu-lines flex justify-center items-center gap-3 hover:text-black dark:hover:text-white bg-black/8 size-10.5 rounded-full"
+                class="menu-lines flex justify-center items-center bg-black/8 hover:bg-black/15 size-10.5 rounded-full transition-colors"
                 type="button"
                 data-open="offCanvasMenu"
-                aria-label="button"
+                aria-label="Mở menu"
+                id="btn-open-mobile-menu"
               >
-                <span
-                  class="line w-4 h-3 flex flex-col flex-nowrap justify-between"
-                >
-                  <span class="line-1 relative w-full"></span>
-                  <span class="line-2 relative w-full"></span>
-                  <span class="line-3 relative w-full"></span>
-                </span>
-                <span class="menu-txt text-[15px] font-light order-1 hidden"
-                  >Menu</span
-                >
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
               </button>
             </div>
           </div>
@@ -6828,5 +6819,126 @@
         </symbol>
       </defs>
     </svg>
+    <div id="mobileMenuOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:99998;backdrop-filter:blur(2px)"></div>
+    <script>
+    (function(){
+      function init(){
+        var oc=document.getElementById('offCanvasMenu');
+        var btnOpen=document.getElementById('btn-open-mobile-menu');
+        if(!btnOpen)btnOpen=document.querySelector('[data-open="offCanvasMenu"]');
+        var overlay=document.getElementById('mobileMenuOverlay');
+        var btnClose=oc?oc.querySelector('[data-close]'):null;
+
+        /* Ensure off-canvas is hidden on page load */
+        if(oc){
+          oc.style.setProperty('display','none','important');
+          oc.style.setProperty('visibility','hidden','important');
+          oc.style.setProperty('position','fixed','important');
+          oc.style.setProperty('top','0','important');
+          oc.style.setProperty('right','0','important');
+          oc.style.setProperty('bottom','0','important');
+          oc.style.setProperty('left','auto','important');
+          oc.style.setProperty('width','320px','important');
+          oc.style.setProperty('max-width','85vw','important');
+          oc.style.setProperty('z-index','100000','important');
+          oc.style.setProperty('overflow-y','auto','important');
+          oc.style.setProperty('background','#fff','important');
+          oc.style.setProperty('box-shadow','-5px 0 30px rgba(0,0,0,.25)','important');
+          oc.style.setProperty('transform','none','important');
+        }
+
+        function openMenu(){
+          if(!oc)return;
+          oc.classList.add('is-open');
+          oc.style.setProperty('display','block','important');
+          oc.style.setProperty('visibility','visible','important');
+          if(overlay)overlay.style.display='block';
+          document.body.style.overflow='hidden';
+        }
+
+        function closeMenu(){
+          if(!oc)return;
+          oc.classList.remove('is-open');
+          oc.style.setProperty('display','none','important');
+          oc.style.setProperty('visibility','hidden','important');
+          if(overlay)overlay.style.display='none';
+          document.body.style.overflow='';
+        }
+
+        if(btnOpen){
+          btnOpen.addEventListener('click',function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            openMenu();
+          });
+        }
+
+        if(btnClose){
+          btnClose.addEventListener('click',function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            closeMenu();
+          });
+        }
+
+        if(overlay){
+          overlay.addEventListener('click',function(){closeMenu()});
+        }
+
+        /* === MOBILE ACCORDION SUBMENUS === */
+        var mobileMenu=document.getElementById('menu-29035c419b');
+        if(mobileMenu){
+          mobileMenu.querySelectorAll('li').forEach(function(li){
+            var sub=li.querySelector(':scope > ul.submenu');
+            if(!sub)return;
+            var link=li.querySelector(':scope > a');
+            if(!link)return;
+            sub.style.display='none';
+            link.addEventListener('click',function(e){
+              e.preventDefault();
+              e.stopPropagation();
+              var isOpen=sub.style.display==='block';
+              /* close siblings */
+              var parent=li.parentElement;
+              if(parent){
+                parent.querySelectorAll(':scope > li').forEach(function(sib){
+                  if(sib!==li){
+                    var ss=sib.querySelector(':scope > ul.submenu');
+                    if(ss)ss.style.display='none';
+                  }
+                });
+              }
+              sub.style.display=isOpen?'none':'block';
+            });
+          });
+          /* leaf links close drawer */
+          mobileMenu.querySelectorAll('a[href^="#"]').forEach(function(a){
+            a.addEventListener('click',function(){
+              var hasSub=a.parentElement.querySelector(':scope > ul.submenu');
+              if(!hasSub)closeMenu();
+            });
+          });
+        }
+
+        /* === DESKTOP DROPDOWN HOVER === */
+        document.querySelectorAll('[data-fx-dropdown-menu] > li').forEach(function(li){
+          var sub=li.querySelector(':scope > .submenu');
+          if(!sub)return;
+          li.addEventListener('mouseenter',function(){
+            sub.style.display=li.classList.contains('menu-mega')?'grid':'block';
+          });
+          li.addEventListener('mouseleave',function(){
+            sub.style.display='none';
+          });
+        });
+      }
+
+      if(document.readyState==='loading'){
+        document.addEventListener('DOMContentLoaded',init);
+      }else{
+        init();
+      }
+    })();
+    </script>
   </body>
 </html>
