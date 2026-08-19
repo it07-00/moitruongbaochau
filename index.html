@@ -111,6 +111,63 @@
       }
     </script>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .swiper-marquee .swiper-slide {
+        margin-right: 18px !important;
+        margin-left: 0 !important;
+      }
+      @media (min-width: 768px) {
+        .swiper-marquee .swiper-slide {
+          margin-right: 24px !important;
+          margin-left: 0 !important;
+        }
+      }
+      /* === SECTION FEEDBACK TESTIMONIAL CARDS === */
+      .section-feedback .swiper-slide {
+        width: 320px !important;
+        max-width: 88vw !important;
+        flex: 0 0 320px !important;
+        min-width: 320px !important;
+        margin-right: 20px !important;
+        margin-left: 0 !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+      @media (min-width: 640px) {
+        .section-feedback .swiper-slide {
+          width: 380px !important;
+          flex: 0 0 380px !important;
+          min-width: 380px !important;
+          margin-right: 24px !important;
+        }
+      }
+      @media (min-width: 1024px) {
+        .section-feedback .swiper-slide {
+          width: 440px !important;
+          flex: 0 0 440px !important;
+          min-width: 440px !important;
+          margin-right: 28px !important;
+        }
+      }
+      .section-feedback .swiper-slide > div {
+        width: 100%;
+        height: 100%;
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .webhd-shap {
+        opacity: 0.06 !important;
+        filter: blur(1.5px);
+        pointer-events: none;
+      }
+      .webhd-shap img {
+        opacity: 1 !important;
+        max-width: 520px;
+      }
+    </style>
     <link
       rel="modulepreload"
       href="js/vendor.BNKCMwYO.js"
@@ -698,10 +755,11 @@
         </div>
         <div class="webhd-shap">
           <img
-            src="images/bg-hd.png"
+            src="images/logo-leave-png-min.png"
             alt="MÔI TRƯỜNG BẢO CHÂU"
             width="536"
             height="522"
+            class="opacity-15"
           />
         </div>
         <section
@@ -782,22 +840,15 @@
               class="mb-6 -mx-3 sm:mx-0 lg:mt-0 lg:col-span-6 flex relative lg:right-0 lg:-left-[4vw] lg:w-[52vw]"
             >
               <img
-                src="images/moi-truong-bao-chau-1024x603.jpg"
+                src="images/moi-truong-bao-chau.jpg"
                 srcset="
-                  images/moi-truong-bao-chau-1024x603.jpg      1200w,
-                  images/HD-Agency-for-web-da-nen-768x514.png   768w,
-                  images/HD-Agency-for-web-da-nen-1024x686.png 1024w,
-                  images/HD-Agency-for-web-da-nen-480x322.png   480w,
-                  images/HD-Agency-for-web-da-nen-50x33.png      50w,
-                  images/HD-Agency-for-web-da-nen-100x67.png    100w,
-                  images/HD-Agency-for-web-da-nen-150x100.png   150w,
-                  images/HD-Agency-for-web-da-nen-300x201.png   300w,
-                  images/moi-truong-bao-chau.jpg               1920w
+                  images/moi-truong-bao-chau-1024x603.jpg 1024w,
+                  images/moi-truong-bao-chau.jpg          1920w
                 "
                 sizes="(max-width: 1200px) 100vw, 1200px"
                 class="w-full h-auto mx-auto object-contain"
-                width="1200"
-                height="804"
+                width="1009"
+                height="676"
                 alt="Đội ngũ MÔI TRƯỜNG BẢO CHÂU"
                 loading="eager"
                 fetchpriority="high"
@@ -817,7 +868,7 @@
                   class="swiper-marquee swiper-wrapper"
                   data-swiper-options='{"marquee":true,"pauseonmouseenter":true,"allowtouchmove":true,"rtl":true,"slidesperview":"auto","spacebetween":12,"speed":6000,"mousewheel":true,"freemode":true,"sm":{"spacebetween":24}}'
                 >
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -843,7 +894,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -869,7 +920,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -894,7 +945,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -921,7 +972,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -948,7 +999,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -973,7 +1024,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1000,7 +1051,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1027,7 +1078,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1052,7 +1103,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1077,7 +1128,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1104,7 +1155,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1129,7 +1180,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1156,7 +1207,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1183,7 +1234,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1208,7 +1259,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1235,7 +1286,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1260,7 +1311,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1287,7 +1338,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1323,7 +1374,7 @@
                   class="swiper-marquee swiper-wrapper"
                   data-swiper-options='{"marquee":true,"pauseonmouseenter":true,"allowtouchmove":true,"slidesperview":"auto","spacebetween":12,"speed":6000,"mousewheel":true,"freemode":true,"sm":{"spacebetween":24}}'
                 >
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1348,7 +1399,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1373,7 +1424,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1398,7 +1449,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1423,7 +1474,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1448,7 +1499,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1473,7 +1524,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1500,7 +1551,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1527,7 +1578,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1554,7 +1605,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1581,7 +1632,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1608,7 +1659,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1635,7 +1686,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1662,7 +1713,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1687,7 +1738,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1712,7 +1763,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1739,7 +1790,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1766,7 +1817,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1793,7 +1844,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1820,7 +1871,7 @@
                       />
                     </span>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <span
                       class="u-flex-center h-full py-4 px-6 c-light-button glass-effect rounded-xl border border-white"
                     >
@@ -1857,24 +1908,22 @@
             <div
               class="grid lg:grid-cols-2 grid-cols-1 gap-12 items-center mb-6 md:mb-0"
             >
-              <div class="px-[12%]">
+              <div class="px-[8%] sm:px-[12%] flex justify-center items-center relative">
+                <!-- Hiệu ứng ánh sáng nền mờ nhẹ (ambient glow) -->
+                <div class="absolute w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
                 <img
-                  src="images/LOGO-HD_11zon-1200x1211.png"
+                  src="images/logo-leave-png-min.png"
                   srcset="
-                    images/LOGO-HD_11zon-1200x1211.png 1200w,
-                    images/LOGO-HD_11zon-768x775.png    768w,
-                    images/LOGO-HD_11zon-1024x1034.png 1024w,
-                    images/LOGO-HD_11zon-480x485.png    480w,
-                    images/LOGO-HD_11zon-50x50.png       50w,
-                    images/LOGO-HD_11zon-100x101.png    100w,
-                    images/LOGO-HD_11zon-150x151.png    150w,
-                    images/LOGO-HD_11zon-300x303.png    300w,
-                    images/LOGO-HD_11zon-1920x1938.png 1920w
+                    images/logo-leave-png-min-1024x1024.png 1024w,
+                    images/logo-leave-png-min-768x768.png    768w,
+                    images/logo-leave-png-min-510x510.png    510w,
+                    images/logo-leave-png-min-300x300.png    300w,
+                    images/logo-leave-png-min.png          1536w
                   "
                   sizes="(max-width: 1200px) 100vw, 1200px"
-                  class="relative bottom-0 lg:-bottom-12 left-[50%] translate-x-[-50%]"
-                  width="1200"
-                  height="1211"
+                  class="relative bottom-0 lg:-bottom-6 max-w-[400px] w-full h-auto opacity-80 hover:opacity-100 drop-shadow-xl hover:scale-105 transition-all duration-500"
+                  width="1024"
+                  height="1024"
                   alt="Logo MÔI TRƯỜNG BẢO CHÂU"
                   decoding="async"
                   loading="lazy"
@@ -1982,8 +2031,8 @@
                     class="leading-relaxed group-hover:text-black group-focus:text-black"
                   >
                     Chúng tôi luôn tự tin để tư vấn và đưa ra giải pháp phù hợp
-                    nhằm giải quyết tất cả các vấn đề khó khăn của khách hàng về
-                    Website, SEO và Marketing tổng thể.
+                    nhằm giải quyết tất cả các vấn đề khó khăn của doanh nghiệp
+                    về Giấy phép Môi trường, Báo cáo ĐTM, Khí nhà kính ESG và Xử lý Nước thải.
                   </p>
                 </div>
                 <div
@@ -2048,9 +2097,9 @@
         </section>
         <section
           id="section-4bdc829f17"
-          class="section section-services-extra relative pt-10 pb-20 lg:pt-20"
+          class="section section-core-services section-services-bg py-10 lg:py-20"
         >
-          <div class="container px-3 mx-auto">
+          <div class="container px-3 mx-auto z-2 relative">
             <div class="inline-flex items-center gap-2 lg:gap-3 mb-3 lg:mb-4">
               <span class="icon-list-icon">
                 <img
@@ -2094,10 +2143,10 @@
                 >
                   <li class="tabs-title snap-start is-active">
                     <a
-                      href="#website"
+                      href="#hoso"
                       class="p-6.25 rounded-[15px] h-full flex items-center gap-4 c-light-button hover:text-black dark:hover:text-white"
                       aria-selected="true"
-                      title=""
+                      title="Hồ sơ & Giấy phép Môi trường"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -2110,22 +2159,22 @@
                         <path
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+                          d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
                         ></path>
                       </svg>
                       <h3
                         class="font-medium p-fs-clamp-[16,18] whitespace-nowrap lg:whitespace-normal"
                       >
-                        Thiết kế Website chuyên nghiệp
+                        Hồ sơ &amp; Giấy phép Môi trường
                       </h3>
                     </a>
                   </li>
                   <li class="tabs-title snap-start">
                     <a
-                      href="#app"
+                      href="#khi-nha-kinh"
                       class="p-6.25 rounded-[15px] h-full flex items-center gap-4 lg:gap-6 c-light-button hover:text-black dark:hover:text-white"
-                      aria-selected="true"
-                      title=""
+                      aria-selected="false"
+                      title="Kiểm kê Khí nhà kính & ESG"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -2138,78 +2187,69 @@
                         <path
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                          d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-.778.099-1.533.284-2.253"
                         ></path>
                       </svg>
                       <h3
                         class="font-medium p-fs-clamp-[16,18] whitespace-nowrap lg:whitespace-normal"
                       >
-                        Thiết kế App mobile
+                        Kiểm kê Khí nhà kính &amp; ESG
                       </h3>
                     </a>
                   </li>
                   <li class="tabs-title snap-start">
                     <a
-                      href="#thuonghieu"
+                      href="#quan-trac"
                       class="p-6.25 rounded-[15px] h-full flex items-center gap-4 c-light-button hover:text-black dark:hover:text-white"
-                      aria-selected="true"
-                      title=""
+                      aria-selected="false"
+                      title="Quan trắc Môi trường Lao động"
                     >
                       <svg
                         class="w-8 h-8 relative"
                         xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
                         stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
                       >
-                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                        <path d="M6 8h.01"></path>
-                        <path d="M10 8h.01"></path>
-                        <path d="M14 8h.01"></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+                        ></path>
                       </svg>
                       <h3
                         class="font-medium p-fs-clamp-[16,18] whitespace-nowrap lg:whitespace-normal"
                       >
-                        Marketing tổng thể
+                        Quan trắc Môi trường Lao động
                       </h3>
                     </a>
                   </li>
                   <li class="tabs-title snap-start">
                     <a
-                      href="#seo"
+                      href="#xu-ly-nuoc"
                       class="p-6.25 rounded-[15px] h-full flex items-center gap-4 c-light-button hover:text-black dark:hover:text-white"
-                      aria-selected="true"
-                      title=""
+                      aria-selected="false"
+                      title="Xử lý Nước thải & Khí thải"
                     >
                       <svg
                         class="w-8 h-8 relative"
                         xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
                         fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
                         stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
                       >
-                        <path d="m13.11 7.664 1.78 2.672"></path>
-                        <path d="m14.162 12.788-3.324 1.424"></path>
-                        <path d="m20 4-6.06 1.515"></path>
-                        <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
-                        <circle cx="12" cy="6" r="2"></circle>
-                        <circle cx="16" cy="12" r="2"></circle>
-                        <circle cx="9" cy="15" r="2"></circle>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                        ></path>
                       </svg>
                       <h3
                         class="font-medium p-fs-clamp-[16,18] whitespace-nowrap lg:whitespace-normal"
                       >
-                        Dịch vụ SEO tổng thể
+                        Xử lý Nước thải &amp; Khí thải
                       </h3>
                     </a>
                   </li>
@@ -2220,7 +2260,7 @@
                   class="tabs-content mt-0 lg:mt-15"
                   data-fx-tabs-content="services-extra-tabs-4bdc829f17"
                 >
-                  <div class="tabs-panel is-active" id="website">
+                  <div class="tabs-panel is-active" id="hoso">
                     <div
                       class="flex flex-row items-center flex-wrap lg:flex-nowrap gap-8 lg:gap-12"
                     >
@@ -2228,26 +2268,20 @@
                         class="w-full lg:w-7/12 flex items-center justify-center"
                       >
                         <div
-                          class="thumb w-fit overflow-hidden max-w-full lg:mx-auto px-[12%] lg:px-0"
+                          class="thumb w-fit overflow-hidden max-w-full lg:mx-auto rounded-2xl shadow-xl shadow-black/10"
                         >
                           <img
-                            src="images/hinh-trang-gioi-thieu-1024x1151.png"
+                            src="images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-1024x576.png"
                             srcset="
-                              images/hinh-trang-gioi-thieu-1024x1151.png 1024w,
-                              images/hinh-trang-gioi-thieu-768x863.png    768w,
-                              images/hinh-trang-gioi-thieu-480x539.png    480w,
-                              images/hinh-trang-gioi-thieu-50x56.png       50w,
-                              images/hinh-trang-gioi-thieu-100x112.png    100w,
-                              images/hinh-trang-gioi-thieu-150x169.png    150w,
-                              images/hinh-trang-gioi-thieu-300x337.png    300w,
-                              images/hinh-trang-gioi-thieu-1200x1348.png 1200w,
-                              images/hinh-trang-gioi-thieu.png           1350w
+                              images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-1024x576.png 1024w,
+                              images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png   768w,
+                              images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-scaled.png   1800w
                             "
                             sizes="(max-width: 1024px) 100vw, 1024px"
-                            class="block object-cover w-full h-full"
+                            class="block object-cover w-full h-full rounded-2xl"
                             width="1024"
-                            height="1151"
-                            alt="Thiet ke website"
+                            height="576"
+                            alt="Tư vấn Hồ sơ & Giấy phép Môi trường"
                             decoding="async"
                             loading="lazy"
                           />
@@ -2257,22 +2291,16 @@
                         <div
                           class="mb-6 p-fs-clamp-[18,28] font-bold uppercase leading-[1.3]"
                         >
-                          Thiết kế
-                          <span class="text-primary">Website</span> chuyên
-                          nghiệp
+                          Tư vấn
+                          <span class="text-primary">Hồ sơ &amp; Giấy phép</span>
+                          Môi trường
                         </div>
-                        <div class="leading-[1.6] p-fs-clamp-[15,17]">
-                          <p>
-                            Một website kém chuyên nghiệp có thể khiến khách
-                            hàng rời đi chỉ sau vài giây. Dịch vụ thiết kế
-                            website của chúng tôi mang đến giao diện hiện đại,
-                            chuẩn UX/UI, tối ưu tốc độ và thân thiện với Google.
+                        <div class="leading-[1.7] p-fs-clamp-[15,17]">
+                          <p class="mb-3">
+                            Các thủ tục pháp lý môi trường theo Luật BVMT 2020 đòi hỏi quy trình lập hồ sơ khắt khe, chặt chẽ và chuẩn xác cao.
                           </p>
                           <p>
-                            Không chỉ đẹp về hình thức, website còn được xây
-                            dựng để tăng tỷ lệ chuyển đổi, giúp doanh nghiệp gây
-                            ấn tượng mạnh, xây dựng uy tín và thúc đẩy doanh thu
-                            ngay từ những lượt truy cập đầu tiên.
+                            Môi Trường Bảo Châu cung cấp giải pháp trọn gói: Lập Báo cáo đánh giá tác động môi trường (ĐTM), Giấy phép môi trường (GPMT), Đăng ký môi trường, Giấy phép khai thác nước dưới đất... Đội ngũ chuyên gia giàu kinh nghiệm hỗ trợ từ khảo sát, phân tích mẫu, lập hồ sơ đến bảo vệ hội đồng thẩm định và bàn giao giấy phép nhanh nhất.
                           </p>
                         </div>
                         <a
@@ -2299,7 +2327,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tabs-panel" id="app">
+                  <div class="tabs-panel" id="khi-nha-kinh">
                     <div
                       class="flex flex-row items-center flex-wrap lg:flex-nowrap gap-8 lg:gap-12"
                     >
@@ -2307,26 +2335,20 @@
                         class="w-full lg:w-7/12 flex items-center justify-center"
                       >
                         <div
-                          class="thumb w-fit overflow-hidden max-w-full lg:mx-auto px-[12%] lg:px-0"
+                          class="thumb w-fit overflow-hidden max-w-full lg:mx-auto rounded-2xl shadow-xl shadow-black/10"
                         >
                           <img
-                            src="images/hinh-trang-chu-2-1024x1151.png"
+                            src="images/Bai-Dang-Bao-Chau-1024x572.png"
                             srcset="
-                              images/hinh-trang-chu-2-1024x1151.png 1024w,
-                              images/hinh-trang-chu-2-768x863.png    768w,
-                              images/hinh-trang-chu-2-480x539.png    480w,
-                              images/hinh-trang-chu-2-50x56.png       50w,
-                              images/hinh-trang-chu-2-100x112.png    100w,
-                              images/hinh-trang-chu-2-150x169.png    150w,
-                              images/hinh-trang-chu-2-300x337.png    300w,
-                              images/hinh-trang-chu-2-1200x1348.png 1200w,
-                              images/hinh-trang-chu-2.png           1350w
+                              images/Bai-Dang-Bao-Chau-1024x572.png 1024w,
+                              images/Bai-Dang-Bao-Chau-768x429.png   768w,
+                              images/Bai-Dang-Bao-Chau-scaled.png   1800w
                             "
                             sizes="(max-width: 1024px) 100vw, 1024px"
-                            class="block object-cover w-full h-full"
+                            class="block object-cover w-full h-full rounded-2xl"
                             width="1024"
-                            height="1151"
-                            alt="App Mobile"
+                            height="572"
+                            alt="Kiểm kê Khí nhà kính & ESG"
                             decoding="async"
                             loading="lazy"
                           />
@@ -2336,21 +2358,14 @@
                         <div
                           class="mb-6 p-fs-clamp-[18,28] font-bold uppercase leading-[1.3]"
                         >
-                          Thiết kế <span class="text-primary">App Mobile</span>
+                          Kiểm kê <span class="text-primary">Khí nhà kính</span> &amp; ESG
                         </div>
-                        <div class="leading-[1.6] p-fs-clamp-[15,17]">
-                          <p>
-                            Trong thời đại di động, việc không có ứng dụng riêng
-                            đồng nghĩa bạn đang bỏ lỡ cơ hội tiếp cận và giữ
-                            chân khách hàng lâu dài.
+                        <div class="leading-[1.7] p-fs-clamp-[15,17]">
+                          <p class="mb-3">
+                            Xu hướng chuyển đổi xanh và các rào cản quốc tế (CBAM châu Âu, tiêu chuẩn ISO 14064, ISO 14067) đặt ra yêu cầu cấp thiết về báo cáo phát thải cho các doanh nghiệp sản xuất và xuất khẩu.
                           </p>
                           <p>
-                            Dịch vụ thiết kế App của chúng tôi giúp doanh nghiệp
-                            xây dựng ứng dụng iOS &amp; Android chuyên nghiệp,
-                            tối ưu trải nghiệm người dùng và phù hợp với mục
-                            tiêu kinh doanh. Từ ý tưởng, giao diện đến tính năng
-                            vận hành, chúng tôi biến app thành công cụ kết nối
-                            khách hàng và gia tăng giá trị thương hiệu bền vững.
+                            Bảo Châu đồng hành kiểm kê khí nhà kính toàn diện (Phạm vi 1, 2, 3), tính toán dấu chân carbon (LCA), lập hồ sơ CBAM và báo cáo phát triển bền vững ESG, giúp doanh nghiệp tối ưu chi phí năng lượng và nâng cao năng lực cạnh tranh toàn cầu.
                           </p>
                         </div>
                         <a
@@ -2377,7 +2392,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tabs-panel" id="thuonghieu">
+                  <div class="tabs-panel" id="quan-trac">
                     <div
                       class="flex flex-row items-center flex-wrap lg:flex-nowrap gap-8 lg:gap-12"
                     >
@@ -2385,26 +2400,20 @@
                         class="w-full lg:w-7/12 flex items-center justify-center"
                       >
                         <div
-                          class="thumb w-fit overflow-hidden max-w-full lg:mx-auto px-[12%] lg:px-0"
+                          class="thumb w-fit overflow-hidden max-w-full lg:mx-auto rounded-2xl shadow-xl shadow-black/10"
                         >
                           <img
-                            src="images/hinh-trang-chu-3-1024x1151.png"
+                            src="images/Hinh-1-1024x683.jpg"
                             srcset="
-                              images/hinh-trang-chu-3-1024x1151.png 1024w,
-                              images/hinh-trang-chu-3-768x863.png    768w,
-                              images/hinh-trang-chu-3-480x539.png    480w,
-                              images/hinh-trang-chu-3-50x56.png       50w,
-                              images/hinh-trang-chu-3-100x112.png    100w,
-                              images/hinh-trang-chu-3-150x169.png    150w,
-                              images/hinh-trang-chu-3-300x337.png    300w,
-                              images/hinh-trang-chu-3-1200x1348.png 1200w,
-                              images/hinh-trang-chu-3.png           1350w
+                              images/Hinh-1-1024x683.jpg 1024w,
+                              images/Hinh-1-768x512.jpg   768w,
+                              images/Hinh-1-scaled.jpg   1800w
                             "
                             sizes="(max-width: 1024px) 100vw, 1024px"
-                            class="block object-cover w-full h-full"
+                            class="block object-cover w-full h-full rounded-2xl"
                             width="1024"
-                            height="1151"
-                            alt="Marketing Tong The"
+                            height="683"
+                            alt="Quan trắc Môi trường Lao động"
                             decoding="async"
                             loading="lazy"
                           />
@@ -2414,21 +2423,14 @@
                         <div
                           class="mb-6 p-fs-clamp-[18,28] font-bold uppercase leading-[1.3]"
                         >
-                          Marketing <span class="text-primary">tổng thể</span>
+                          Quan trắc <span class="text-primary">Môi trường</span> Lao động
                         </div>
-                        <div class="p-fs-clamp-[15,17] leading-[1.8]">
-                          <p>
-                            Marketing rời rạc khiến doanh nghiệp tốn nhiều chi
-                            phí nhưng hiệu quả không tương xứng.
+                        <div class="leading-[1.7] p-fs-clamp-[15,17]">
+                          <p class="mb-3">
+                            Môi trường lao động an toàn, trong lành là nền tảng bảo vệ sức khỏe công nhân viên và đáp ứng đầy đủ quy chuẩn kỹ thuật an toàn vệ sinh lao động theo quy định pháp luật.
                           </p>
                           <p>
-                            Dịch vụ Marketing tổng thể của chúng tôi giúp xây
-                            dựng chiến lược bài bản từ SEO, quảng cáo, nội dung,
-                            website đến chăm sóc khách hàng. Với định hướng đúng
-                            tệp khách hàng, thông điệp nhất quán và đo lường rõ
-                            ràng, chúng tôi giúp doanh nghiệp tối ưu ngân sách,
-                            tăng trưởng doanh thu và phát triển thương hiệu bền
-                            vững trên nền tảng số.
+                            Chúng tôi trang bị thiết bị đo kiểm hiện đại: đo vi khí hậu, bụi, tiếng ồn, ánh sáng, rung động, hơi khí độc hại tại vị trí làm việc, quan trắc định kỳ khí thải và nước thải nhà máy, lập hồ sơ vệ sinh lao động chuẩn chỉnh, hợp pháp.
                           </p>
                         </div>
                         <a
@@ -2455,7 +2457,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tabs-panel" id="seo">
+                  <div class="tabs-panel" id="xu-ly-nuoc">
                     <div
                       class="flex flex-row items-center flex-wrap lg:flex-nowrap gap-8 lg:gap-12"
                     >
@@ -2463,26 +2465,20 @@
                         class="w-full lg:w-7/12 flex items-center justify-center"
                       >
                         <div
-                          class="thumb w-fit overflow-hidden max-w-full lg:mx-auto"
+                          class="thumb w-fit overflow-hidden max-w-full lg:mx-auto rounded-2xl shadow-xl shadow-black/10"
                         >
                           <img
-                            src="images/hinh-trang-chu-4-1024x1151.png"
+                            src="images/CTY-TAN-TIEN-1024x640.png"
                             srcset="
-                              images/hinh-trang-chu-4-1024x1151.png 1024w,
-                              images/hinh-trang-chu-4-768x863.png    768w,
-                              images/hinh-trang-chu-4-480x539.png    480w,
-                              images/hinh-trang-chu-4-50x56.png       50w,
-                              images/hinh-trang-chu-4-100x112.png    100w,
-                              images/hinh-trang-chu-4-150x169.png    150w,
-                              images/hinh-trang-chu-4-300x337.png    300w,
-                              images/hinh-trang-chu-4-1200x1348.png 1200w,
-                              images/hinh-trang-chu-4.png           1350w
+                              images/CTY-TAN-TIEN-1024x640.png 1024w,
+                              images/CTY-TAN-TIEN-768x480.png   768w,
+                              images/CTY-TAN-TIEN.png          1800w
                             "
                             sizes="(max-width: 1024px) 100vw, 1024px"
-                            class="block object-cover w-full h-full"
+                            class="block object-cover w-full h-full rounded-2xl"
                             width="1024"
-                            height="1151"
-                            alt="Dich Vu SEO Tong The"
+                            height="640"
+                            alt="Xử lý Nước thải & Khí thải"
                             decoding="async"
                             loading="lazy"
                           />
@@ -2492,22 +2488,14 @@
                         <div
                           class="mb-6 p-fs-clamp-[18,28] font-bold uppercase leading-[1.4]"
                         >
-                          Dịch vụ <span class="text-primary">SEO tổng thể</span>
+                          Xử lý <span class="text-primary">Nước thải &amp; Khí thải</span>
                         </div>
-                        <div class="p-fs-clamp-[15,17] leading-[1.6]">
-                          <p>
-                            Nếu website của bạn không xuất hiện trên top Google,
-                            đồng nghĩa bạn đang nhường khách hàng cho đối thủ
-                            mỗi ngày.
+                        <div class="leading-[1.7] p-fs-clamp-[15,17]">
+                          <p class="mb-3">
+                            Hệ thống xử lý lỗi thời, không đạt chuẩn đầu ra gây nguy cơ bị xử phạt nặng và ảnh hưởng uy tín sản xuất kinh doanh của nhà máy.
                           </p>
                           <p>
-                            Dịch vụ SEO Website của chúng tôi giúp đưa từ khóa
-                            lên top bền vững, tiếp cận đúng khách hàng có nhu
-                            cầu thật và gia tăng doanh thu dài hạn. Với chiến
-                            lược SEO tổng thể, nội dung chuẩn Google và hệ thống
-                            liên kết an toàn, website của bạn không chỉ lên top
-                            mà còn trở thành kênh bán hàng hiệu quả, ổn định và
-                            lâu dài.
+                            Môi Trường Bảo Châu chuyên thiết kế, thi công, cải tạo và chuyển giao công nghệ xử lý nước thải sinh hoạt, công nghiệp (dệt nhuộm, thực phẩm, xi mạ, bao bì...) và xử lý bụi, khí thải. Ứng dụng công nghệ màng MBR, vi sinh tiên tiến, đảm bảo nước đầu ra đạt chuẩn QCVN với chi phí đầu tư và vận hành tối ưu nhất.
                           </p>
                         </div>
                         <a
@@ -2567,9 +2555,9 @@
               <p
                 class="project-desc max-w-4xl pt-4 lg:pt-6 mb-8 lg:mb-12 p-fs-clamp-[15,17]"
               >
-                Luôn học hỏi và sáng tạo ý tưởng mới nhằm tạo ra những website
-                mang nét riêng biệt, giúp cho thương hiệu của khách hàng nổi
-                bật, tạo ấn tượng và độ uy tín cao cho người dùng.
+                Tổng hợp các dự án tư vấn hồ sơ môi trường, kiểm kê khí nhà kính ESG,
+                thiết kế thi công hệ thống xử lý nước thải và quan trắc môi trường tiêu biểu
+                do Môi Trường Bảo Châu trực tiếp triển khai cho các tập đoàn, nhà máy và khu công nghiệp trên toàn quốc.
               </p>
             </div>
           </div>
@@ -2610,31 +2598,19 @@
                       <a href="#" class="active" data-filter="-1">Tất cả</a>
                     </li>
                     <li>
-                      <a href="#" data-filter="giao-duc">Giáo dục</a>
+                      <a href="#" data-filter="giay-phep">Giấy phép Môi trường</a>
                     </li>
                     <li>
-                      <a href="#" data-filter="nha-khoa">Nha khoa</a>
+                      <a href="#" data-filter="dtm">Báo cáo ĐTM</a>
                     </li>
                     <li>
-                      <a href="#" data-filter="xay-dung">Xây dựng</a>
+                      <a href="#" data-filter="khi-nha-kinh">Khí nhà kính & ESG</a>
                     </li>
                     <li>
-                      <a href="#" data-filter="gioi-thieu">Giới thiệu</a>
+                      <a href="#" data-filter="xu-ly-nuoc">Xử lý Nước thải</a>
                     </li>
                     <li>
-                      <a href="#" data-filter="cong-nghe">Công nghệ</a>
-                    </li>
-                    <li>
-                      <a href="#" data-filter="ban-hang">Bán hàng</a>
-                    </li>
-                    <li>
-                      <a href="#" data-filter="dich-vu">Dịch vụ</a>
-                    </li>
-                    <li>
-                      <a href="#" data-filter="du-lich">Du lịch</a>
-                    </li>
-                    <li>
-                      <a href="#" data-filter="in-an-bao-bi">In ấn - Bao bì</a>
+                      <a href="#" data-filter="quan-trac">Quan trắc Môi trường</a>
                     </li>
                   </ul>
                 </div>
@@ -2643,7 +2619,7 @@
                 <div
                   class="filter-grid grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-12 xl:gap-x-12"
                 >
-                  <div class="item relative flex flex-col gap-4 lg:gap-6">
+                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="giay-phep">
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2653,17 +2629,11 @@
                         aria-label="DỰ ÁN GIẤY PHÉP MÔI TRƯỜNG NHÀ MÁY BERICAP"
                       >
                         <img
-                          src="images/7.-innhanhminhkhang-1024x683.jpg"
+                          src="images/BERICAP.jpg"
                           srcset="
-                            images/7.-innhanhminhkhang-1024x683.jpg 1024w,
-                            images/7.-innhanhminhkhang-768x512.jpg   768w,
-                            images/7.-innhanhminhkhang-480x320.jpg   480w,
-                            images/7.-innhanhminhkhang-50x33.jpg      50w,
-                            images/7.-innhanhminhkhang-100x67.jpg    100w,
-                            images/7.-innhanhminhkhang-150x100.jpg   150w,
-                            images/7.-innhanhminhkhang-300x200.jpg   300w,
-                            images/7.-innhanhminhkhang-1200x800.jpg 1200w,
-                            images/7.-innhanhminhkhang.jpg          1800w
+                            images/BERICAP-768x431.jpg 768w,
+                            images/BERICAP-510x286.jpg 510w,
+                            images/BERICAP.jpg        1200w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -2682,13 +2652,13 @@
                         <a
                           class="term btn btn-secondary-2 flex-0! py-1.5! px-4! text-[13px]! shadow-md shadow-secondary/20 hover:shadow-secondary/60"
                           href="#"
-                          title="In ấn - Bao bì"
-                          >In ấn - Bao bì</a
+                          title="Giấy phép Môi trường"
+                          >Giấy phép Môi trường</a
                         ><a
                           class="link-view btn btn-primary-2 flex-0! border-primary/60! py-1.5! px-4! text-[13px]! icon-right shadow-md shadow-primary/20 hover:shadow-primary/60"
                           href="#"
-                          title="Xem thêm"
-                          >Xem thêm<svg
+                          title="Xem chi tiết"
+                          >Xem chi tiết<svg
                             class="size-3"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -2713,7 +2683,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6">
+                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="khi-nha-kinh">
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2723,17 +2693,11 @@
                         aria-label="DỰ ÁN KIỂM KÊ KHÍ NHÀ KÍNH CÔNG TY PEPSICO"
                       >
                         <img
-                          src="images/8.-bookkeepingpeople-1024x683.jpg"
+                          src="images/PEPSICO.jpg"
                           srcset="
-                            images/8.-bookkeepingpeople-1024x683.jpg 1024w,
-                            images/8.-bookkeepingpeople-768x512.jpg   768w,
-                            images/8.-bookkeepingpeople-480x320.jpg   480w,
-                            images/8.-bookkeepingpeople-50x33.jpg      50w,
-                            images/8.-bookkeepingpeople-100x67.jpg    100w,
-                            images/8.-bookkeepingpeople-150x100.jpg   150w,
-                            images/8.-bookkeepingpeople-300x200.jpg   300w,
-                            images/8.-bookkeepingpeople-1200x800.jpg 1200w,
-                            images/8.-bookkeepingpeople.jpg          1800w
+                            images/PEPSICO-768x439.jpg 768w,
+                            images/PEPSICO-510x292.jpg 510w,
+                            images/PEPSICO.jpg        1200w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -2752,13 +2716,13 @@
                         <a
                           class="term btn btn-secondary-2 flex-0! py-1.5! px-4! text-[13px]! shadow-md shadow-secondary/20 hover:shadow-secondary/60"
                           href="#"
-                          title="Giới thiệu"
-                          >Giới thiệu</a
+                          title="Khí nhà kính & ESG"
+                          >Khí nhà kính & ESG</a
                         ><a
                           class="link-view btn btn-primary-2 flex-0! border-primary/60! py-1.5! px-4! text-[13px]! icon-right shadow-md shadow-primary/20 hover:shadow-primary/60"
                           href="#"
-                          title="Trải nghiệm"
-                          >Trải nghiệm<svg
+                          title="Xem chi tiết"
+                          >Xem chi tiết<svg
                             class="size-3"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -2783,7 +2747,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6">
+                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="quan-trac">
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2793,17 +2757,11 @@
                         aria-label="QUAN TRẮC MÔI TRƯỜNG LAO ĐỘNG TẬP ĐOÀN MITSUBISHI"
                       >
                         <img
-                          src="images/1.cbafterschool-1024x683.jpg"
+                          src="images/19-768x432.png"
                           srcset="
-                            images/1.cbafterschool-1024x683.jpg 1024w,
-                            images/1.cbafterschool-768x512.jpg   768w,
-                            images/1.cbafterschool-480x320.jpg   480w,
-                            images/1.cbafterschool-50x33.jpg      50w,
-                            images/1.cbafterschool-100x67.jpg    100w,
-                            images/1.cbafterschool-150x100.jpg   150w,
-                            images/1.cbafterschool-300x200.jpg   300w,
-                            images/1.cbafterschool-1200x800.jpg 1200w,
-                            images/1.cbafterschool.jpg          1800w
+                            images/19-768x432.png  768w,
+                            images/19-1024x576.png 1024w,
+                            images/19-scaled.png  1800w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -2822,13 +2780,13 @@
                         <a
                           class="term btn btn-secondary-2 flex-0! py-1.5! px-4! text-[13px]! shadow-md shadow-secondary/20 hover:shadow-secondary/60"
                           href="#"
-                          title="Giáo dục"
-                          >Giáo dục</a
+                          title="Quan trắc Môi trường"
+                          >Quan trắc Môi trường</a
                         ><a
                           class="link-view btn btn-primary-2 flex-0! border-primary/60! py-1.5! px-4! text-[13px]! icon-right shadow-md shadow-primary/20 hover:shadow-primary/60"
                           href="#"
-                          title="Xem thêm"
-                          >Xem thêm<svg
+                          title="Xem chi tiết"
+                          >Xem chi tiết<svg
                             class="size-3"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -2853,7 +2811,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6">
+                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="xu-ly-nuoc">
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2863,17 +2821,11 @@
                         aria-label="HỆ THỐNG XỬ LÝ NƯỚC THẢI 500M³/NGÀY CÔNG TY TÂN TIẾN"
                       >
                         <img
-                          src="images/2.-nhakhoaanna-1-1024x683.jpg"
+                          src="images/CTY-TAN-TIEN.png"
                           srcset="
-                            images/2.-nhakhoaanna-1-1024x683.jpg 1024w,
-                            images/2.-nhakhoaanna-1-768x512.jpg   768w,
-                            images/2.-nhakhoaanna-1-480x320.jpg   480w,
-                            images/2.-nhakhoaanna-1-50x33.jpg      50w,
-                            images/2.-nhakhoaanna-1-100x67.jpg    100w,
-                            images/2.-nhakhoaanna-1-150x100.jpg   150w,
-                            images/2.-nhakhoaanna-1-300x200.jpg   300w,
-                            images/2.-nhakhoaanna-1-1200x800.jpg 1200w,
-                            images/2.-nhakhoaanna-1.jpg          1800w
+                            images/CTY-TAN-TIEN-768x480.png  768w,
+                            images/CTY-TAN-TIEN-1024x640.png 1024w,
+                            images/CTY-TAN-TIEN.png          1800w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -2892,13 +2844,13 @@
                         <a
                           class="term btn btn-secondary-2 flex-0! py-1.5! px-4! text-[13px]! shadow-md shadow-secondary/20 hover:shadow-secondary/60"
                           href="#"
-                          title="Nha khoa"
-                          >Nha khoa</a
+                          title="Xử lý Nước thải"
+                          >Xử lý Nước thải</a
                         ><a
                           class="link-view btn btn-primary-2 flex-0! border-primary/60! py-1.5! px-4! text-[13px]! icon-right shadow-md shadow-primary/20 hover:shadow-primary/60"
                           href="#"
-                          title="Xem thêm"
-                          >Xem thêm<svg
+                          title="Xem chi tiết"
+                          >Xem chi tiết<svg
                             class="size-3"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -2923,7 +2875,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6">
+                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="dtm">
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2933,17 +2885,11 @@
                         aria-label="LẬP BÁO CÁO ĐTM KHU CÔNG NGHIỆP TÂN BÌNH MỞ RỘNG"
                       >
                         <img
-                          src="images/3.-httpsdtf-1024x683.jpg"
+                          src="images/CTY-TNHH-DV-KT-MOI-TRUONG-1-768x284.png"
                           srcset="
-                            images/3.-httpsdtf-1024x683.jpg 1024w,
-                            images/3.-httpsdtf-768x512.jpg   768w,
-                            images/3.-httpsdtf-480x320.jpg   480w,
-                            images/3.-httpsdtf-50x33.jpg      50w,
-                            images/3.-httpsdtf-100x67.jpg    100w,
-                            images/3.-httpsdtf-150x100.jpg   150w,
-                            images/3.-httpsdtf-300x200.jpg   300w,
-                            images/3.-httpsdtf-1200x800.jpg 1200w,
-                            images/3.-httpsdtf.jpg          1800w
+                            images/CTY-TNHH-DV-KT-MOI-TRUONG-1-768x284.png  768w,
+                            images/CTY-TNHH-DV-KT-MOI-TRUONG-1-1024x379.png 1024w,
+                            images/CTY-TNHH-DV-KT-MOI-TRUONG-1024x379.jpg  1800w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -2962,13 +2908,13 @@
                         <a
                           class="term btn btn-secondary-2 flex-0! py-1.5! px-4! text-[13px]! shadow-md shadow-secondary/20 hover:shadow-secondary/60"
                           href="#"
-                          title="Xây dựng"
-                          >Xây dựng</a
+                          title="Báo cáo ĐTM"
+                          >Báo cáo ĐTM</a
                         ><a
                           class="link-view btn btn-primary-2 flex-0! border-primary/60! py-1.5! px-4! text-[13px]! icon-right shadow-md shadow-primary/20 hover:shadow-primary/60"
                           href="#"
-                          title="Xem thêm"
-                          >Xem thêm<svg
+                          title="Xem chi tiết"
+                          >Xem chi tiết<svg
                             class="size-3"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -2993,7 +2939,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6">
+                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="khi-nha-kinh">
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -3003,17 +2949,11 @@
                         aria-label="TƯ VẤN BÁO CÁO CBAM CHO CÔNG TY ĐẠI ĐỒNG TIẾN"
                       >
                         <img
-                          src="images/4.-talentgate-1024x683.jpg"
+                          src="images/Bai-Dang-Bao-Chau-768x429.png"
                           srcset="
-                            images/4.-talentgate-1024x683.jpg 1024w,
-                            images/4.-talentgate-768x512.jpg   768w,
-                            images/4.-talentgate-480x320.jpg   480w,
-                            images/4.-talentgate-50x33.jpg      50w,
-                            images/4.-talentgate-100x67.jpg    100w,
-                            images/4.-talentgate-150x100.jpg   150w,
-                            images/4.-talentgate-300x200.jpg   300w,
-                            images/4.-talentgate-1200x800.jpg 1200w,
-                            images/4.-talentgate.jpg          1800w
+                            images/Bai-Dang-Bao-Chau-768x429.png  768w,
+                            images/Bai-Dang-Bao-Chau-1024x572.png 1024w,
+                            images/Bai-Dang-Bao-Chau-scaled.png  1800w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -3032,13 +2972,13 @@
                         <a
                           class="term btn btn-secondary-2 flex-0! py-1.5! px-4! text-[13px]! shadow-md shadow-secondary/20 hover:shadow-secondary/60"
                           href="#"
-                          title="Công nghệ"
-                          >Công nghệ</a
+                          title="Khí nhà kính & ESG"
+                          >Khí nhà kính & ESG</a
                         ><a
                           class="link-view btn btn-primary-2 flex-0! border-primary/60! py-1.5! px-4! text-[13px]! icon-right shadow-md shadow-primary/20 hover:shadow-primary/60"
                           href="#"
-                          title="Xem thêm"
-                          >Xem thêm<svg
+                          title="Xem chi tiết"
+                          >Xem chi tiết<svg
                             class="size-3"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -3063,7 +3003,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6">
+                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="quan-trac">
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -3073,17 +3013,11 @@
                         aria-label="QUAN TRẮC MÔI TRƯỜNG & BẢN ĐỒ TIẾNG ỒN NHÀ MÁY TRIBECO"
                       >
                         <img
-                          src="images/6.-elura-1024x683.jpg"
+                          src="images/118-1-768x429.png"
                           srcset="
-                            images/6.-elura-1024x683.jpg 1024w,
-                            images/6.-elura-768x512.jpg   768w,
-                            images/6.-elura-480x320.jpg   480w,
-                            images/6.-elura-50x33.jpg      50w,
-                            images/6.-elura-100x67.jpg    100w,
-                            images/6.-elura-150x100.jpg   150w,
-                            images/6.-elura-300x200.jpg   300w,
-                            images/6.-elura-1200x800.jpg 1200w,
-                            images/6.-elura.jpg          1800w
+                            images/118-1-768x429.png  768w,
+                            images/118-1-1024x572.png 1024w,
+                            images/118-1-scaled.png  1800w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -3102,13 +3036,13 @@
                         <a
                           class="term btn btn-secondary-2 flex-0! py-1.5! px-4! text-[13px]! shadow-md shadow-secondary/20 hover:shadow-secondary/60"
                           href="#"
-                          title="Thời trang"
-                          >Thời trang</a
+                          title="Quan trắc Môi trường"
+                          >Quan trắc Môi trường</a
                         ><a
                           class="link-view btn btn-primary-2 flex-0! border-primary/60! py-1.5! px-4! text-[13px]! icon-right shadow-md shadow-primary/20 hover:shadow-primary/60"
                           href="#"
-                          title="Xem thêm"
-                          >Xem thêm<svg
+                          title="Xem chi tiết"
+                          >Xem chi tiết<svg
                             class="size-3"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -3321,17 +3255,17 @@
                             aria-label="Hướng Dẫn Lập Báo Cáo ĐTM & Cấp Giấy Phép Môi Trường Theo Luật BVMT 2020"
                           >
                             <img
-                              src="images/External-Link-La-Gi-1-768x512.jpg"
+                              src="images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png"
                               srcset="
-                                images/External-Link-La-Gi-1-768x512.jpg   768w,
-                                images/External-Link-La-Gi-1-1024x683.jpg 1024w,
-                                images/External-Link-La-Gi-1-480x320.jpg   480w,
-                                images/External-Link-La-Gi-1-50x33.jpg      50w,
-                                images/External-Link-La-Gi-1-100x67.jpg    100w,
-                                images/External-Link-La-Gi-1-150x100.jpg   150w,
-                                images/External-Link-La-Gi-1-300x200.jpg   300w,
-                                images/External-Link-La-Gi-1-1200x800.jpg 1200w,
-                                images/External-Link-La-Gi-1.jpg          1536w
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png   768w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png 1024w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png   480w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png      50w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png    100w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png   150w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png   300w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png 1200w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png          1536w
                               "
                               sizes="(max-width: 768px) 100vw, 768px"
                               class="w-full object-cover as-16-9"
@@ -3389,17 +3323,17 @@
                             aria-label="Quy Định Bắt Buộc Kiểm Kê Khí Nhà Kính Cho Doanh Nghiệp Phát Thải Lớn"
                           >
                             <img
-                              src="images/Thiet-Ke-Website-Ban-Khoa-Hoc-1-768x512.jpg"
+                              src="images/Lich-thang-8-768x432.png"
                               srcset="
-                                images/Thiet-Ke-Website-Ban-Khoa-Hoc-1-768x512.jpg   768w,
-                                images/Thiet-Ke-Website-Ban-Khoa-Hoc-1-1024x683.jpg 1024w,
-                                images/Thiet-Ke-Website-Ban-Khoa-Hoc-1-480x320.jpg   480w,
-                                images/Thiet-Ke-Website-Ban-Khoa-Hoc-1-50x33.jpg      50w,
-                                images/Thiet-Ke-Website-Ban-Khoa-Hoc-1-100x67.jpg    100w,
-                                images/Thiet-Ke-Website-Ban-Khoa-Hoc-1-150x100.jpg   150w,
-                                images/Thiet-Ke-Website-Ban-Khoa-Hoc-1-300x200.jpg   300w,
-                                images/Thiet-Ke-Website-Ban-Khoa-Hoc-1-1200x800.jpg 1200w,
-                                images/Thiet-Ke-Website-Ban-Khoa-Hoc-1.jpg          1536w
+                                images/Lich-thang-8-768x432.png   768w,
+                                images/Lich-thang-8-768x432.png 1024w,
+                                images/Lich-thang-8-768x432.png   480w,
+                                images/Lich-thang-8-768x432.png      50w,
+                                images/Lich-thang-8-768x432.png    100w,
+                                images/Lich-thang-8-768x432.png   150w,
+                                images/Lich-thang-8-768x432.png   300w,
+                                images/Lich-thang-8-768x432.png 1200w,
+                                images/Lich-thang-8-768x432.png          1536w
                               "
                               sizes="(max-width: 768px) 100vw, 768px"
                               class="w-full object-cover as-16-9"
@@ -3458,17 +3392,17 @@
                           aria-label="Cơ Chế Điều Chỉnh Biên Giới Carbon (CBAM) Của EU & Lời Khuyên Cho Doanh Nghiệp"
                         >
                           <img
-                            src="images/Entity-La-Gi-1-1024x683.jpg"
+                            src="images/6-768x429.png"
                             srcset="
-                              images/Entity-La-Gi-1-1024x683.jpg 1024w,
-                              images/Entity-La-Gi-1-768x512.jpg   768w,
-                              images/Entity-La-Gi-1-480x320.jpg   480w,
-                              images/Entity-La-Gi-1-50x33.jpg      50w,
-                              images/Entity-La-Gi-1-100x67.jpg    100w,
-                              images/Entity-La-Gi-1-150x100.jpg   150w,
-                              images/Entity-La-Gi-1-300x200.jpg   300w,
-                              images/Entity-La-Gi-1-1200x800.jpg 1200w,
-                              images/Entity-La-Gi-1.jpg          1536w
+                              images/6-768x429.png 1024w,
+                              images/6-768x429.png   768w,
+                              images/6-768x429.png   480w,
+                              images/6-768x429.png      50w,
+                              images/6-768x429.png    100w,
+                              images/6-768x429.png   150w,
+                              images/6-768x429.png   300w,
+                              images/6-768x429.png 1200w,
+                              images/6-768x429.png          1536w
                             "
                             sizes="(max-width: 1024px) 100vw, 1024px"
                             class="w-full object-cover as-16-9"
@@ -3526,17 +3460,17 @@
                           aria-label="Quy Trình Quan Trắc & Đo Kiểm Môi Trường Lao Động Định Kỳ Tại Nhà Máy"
                         >
                           <img
-                            src="images/Cach-Lien-Ket-2-Tai-Khoan-Gmail-1-1024x683.jpg"
+                            src="images/Hinh-1-768x512.jpg"
                             srcset="
-                              images/Cach-Lien-Ket-2-Tai-Khoan-Gmail-1-1024x683.jpg 1024w,
-                              images/Cach-Lien-Ket-2-Tai-Khoan-Gmail-1-768x512.jpg   768w,
-                              images/Cach-Lien-Ket-2-Tai-Khoan-Gmail-1-480x320.jpg   480w,
-                              images/Cach-Lien-Ket-2-Tai-Khoan-Gmail-1-50x33.jpg      50w,
-                              images/Cach-Lien-Ket-2-Tai-Khoan-Gmail-1-100x67.jpg    100w,
-                              images/Cach-Lien-Ket-2-Tai-Khoan-Gmail-1-150x100.jpg   150w,
-                              images/Cach-Lien-Ket-2-Tai-Khoan-Gmail-1-300x200.jpg   300w,
-                              images/Cach-Lien-Ket-2-Tai-Khoan-Gmail-1-1200x800.jpg 1200w,
-                              images/Cach-Lien-Ket-2-Tai-Khoan-Gmail-1.jpg          1536w
+                              images/Hinh-1-768x512.jpg 1024w,
+                              images/Hinh-1-768x512.jpg   768w,
+                              images/Hinh-1-768x512.jpg   480w,
+                              images/Hinh-1-768x512.jpg      50w,
+                              images/Hinh-1-768x512.jpg    100w,
+                              images/Hinh-1-768x512.jpg   150w,
+                              images/Hinh-1-768x512.jpg   300w,
+                              images/Hinh-1-768x512.jpg 1200w,
+                              images/Hinh-1-768x512.jpg          1536w
                             "
                             sizes="(max-width: 1024px) 100vw, 1024px"
                             class="w-full object-cover as-16-9"
@@ -3593,17 +3527,17 @@
                             aria-label="Các Công Nghệ Xử Lý Nước Thải Tiên Tiến Giúp Tiết Kiệm Chi Phí Vận Hành"
                           >
                             <img
-                              src="images/Elementor-La-Gi-1-768x512.jpg"
+                              src="images/Thiet-ke-chua-co-ten-2-768x429.png"
                               srcset="
-                                images/Elementor-La-Gi-1-768x512.jpg   768w,
-                                images/Elementor-La-Gi-1-1024x683.jpg 1024w,
-                                images/Elementor-La-Gi-1-480x320.jpg   480w,
-                                images/Elementor-La-Gi-1-50x33.jpg      50w,
-                                images/Elementor-La-Gi-1-100x67.jpg    100w,
-                                images/Elementor-La-Gi-1-150x100.jpg   150w,
-                                images/Elementor-La-Gi-1-300x200.jpg   300w,
-                                images/Elementor-La-Gi-1-1200x800.jpg 1200w,
-                                images/Elementor-La-Gi-1.jpg          1536w
+                                images/Thiet-ke-chua-co-ten-2-768x429.png   768w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png 1024w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png   480w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png      50w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png    100w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png   150w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png   300w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png 1200w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png          1536w
                               "
                               sizes="(max-width: 768px) 100vw, 768px"
                               class="w-full object-cover as-16-9"
@@ -3661,17 +3595,17 @@
                             aria-label="Tổng Hợp Các Mức Phạt Vi Phạm Hành Chính Về Bảo Vệ Môi Trường Mới Nhất"
                           >
                             <img
-                              src="images/Domain-La-Gi-12-768x512.jpg"
+                              src="images/118-1-768x429.png"
                               srcset="
-                                images/Domain-La-Gi-12-768x512.jpg   768w,
-                                images/Domain-La-Gi-12-1024x683.jpg 1024w,
-                                images/Domain-La-Gi-12-480x320.jpg   480w,
-                                images/Domain-La-Gi-12-50x33.jpg      50w,
-                                images/Domain-La-Gi-12-100x67.jpg    100w,
-                                images/Domain-La-Gi-12-150x100.jpg   150w,
-                                images/Domain-La-Gi-12-300x200.jpg   300w,
-                                images/Domain-La-Gi-12-1200x800.jpg 1200w,
-                                images/Domain-La-Gi-12.jpg          1536w
+                                images/118-1-768x429.png   768w,
+                                images/118-1-768x429.png 1024w,
+                                images/118-1-768x429.png   480w,
+                                images/118-1-768x429.png      50w,
+                                images/118-1-768x429.png    100w,
+                                images/118-1-768x429.png   150w,
+                                images/118-1-768x429.png   300w,
+                                images/118-1-768x429.png 1200w,
+                                images/118-1-768x429.png          1536w
                               "
                               sizes="(max-width: 768px) 100vw, 768px"
                               class="w-full object-cover as-16-9"
@@ -5596,7 +5530,7 @@
                   class="swiper-marquee swiper-wrapper"
                   data-swiper-options='{"marquee":true,"pauseonmouseenter":true,"allowtouchmove":true,"rtl":true,"slidesperview":"auto","spacebetween":12,"speed":6000,"mousewheel":true,"freemode":true,"sm":{"spacebetween":24}}'
                 >
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://baoangiang.com.vn/thiet-ke-website-chuan-seo-chuyen-nghiep-tron-goi-tai-hd-agency-a416816.html"
@@ -5624,7 +5558,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://cafedautu.vn/hd-agency-chuyen-thiet-ke-website-ban-hang-va-ho-tro-tu-van-marketing-d15419.html"
@@ -5652,7 +5586,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://cafef.vn/but-pha-doanh-nghiep-voi-dich-vu-marketing-tong-the-tai-hd-agency-188251003091631471.chn"
@@ -5680,7 +5614,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://genk.vn/hd-agency-chuyen-thiet-ke-app-mobile-va-thiet-ke-website-cho-doanh-nghiep-165251209142248847.chn"
@@ -5708,7 +5642,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://baohatinh.vn/thiet-ke-website-chuyen-nghiep-tron-goi-voi-hd-agency-post281641.html"
@@ -5736,7 +5670,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://plo.vn/hd-agency-dich-vu-thiet-ke-website-chuan-seo-toi-uu-cong-cu-tim-kiem-post842533.html"
@@ -5764,7 +5698,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://baoquangnam.vn/thiet-ke-website-chuyen-nghiep-theo-yeu-cau-tai-hd-agency-3146525.html"
@@ -5792,7 +5726,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://soha.vn/hd-agency-chuyen-thiet-ke-app-mobile-va-thiet-ke-website-cho-doanh-nghiep-198251209113015113.htm?gidzl=2yEb8ulvamy3tACZXEUH30tLeo6JxfTO6j2d9i--mmf8X_DqcR-H2X_MyNUPx9OE7zAa8pQm2m4RYV6S3G"
@@ -5820,7 +5754,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://giadinh.suckhoedoisong.vn/hd-agency-chuyen-thiet-ke-app-mobile-va-thiet-ke-website-cho-doanh-nghiep-172251209120316708.htm?gidzl=oHIP7LLZF6h12vyTMdq-QSy2dXXDT3aws0UQ7n4aRMYAKCvDHoK_QDq1p4v7TZXitGMP6ZQiHf90LsipQ0"
@@ -5848,7 +5782,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://www.techz.vn/143-625-1-hd-agency-cung-cap-dich-vu-thiet-ke-website-chuan-seo-cho-doanh-nghiep-ylt652302.html"
@@ -5876,7 +5810,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://baothanhhoa.vn/thiet-ke-website-ban-hang-kinh-doanh-vuot-troi-cung-nbsp-hd-agency-242253.htm"
@@ -5904,7 +5838,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://huengaynay.vn/kinh-te/thiet-ke-website-wordpress-chuyen-nghiep-chuan-seo-tai-hd-agency-151517.html"
@@ -5932,7 +5866,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://tuoitrexahoi.vn/cong-ty-thiet-ke-website-chuyen-nghiep-gia-re-hd-agency-a215647.html"
@@ -5960,7 +5894,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://baotuyenquang.com.vn/thiet-ke-website-gia-re-wordress-theo-yeu-cau-tai-hd-angency-208153.html"
@@ -5988,7 +5922,7 @@
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mx-0">
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
                       class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
                       href="https://vietstock.vn/2025/04/hd-agency-don-vi-thiet-ke-website-chuyen-nghiep-gia-re-4511-1291247.htm"
@@ -6716,6 +6650,138 @@
           });
         }
 
+
+        /* === SMOOTH INFINITE MARQUEE SLIDERS === */
+        function initMarquees() {
+          document.querySelectorAll('[data-fx-slider]').forEach(function(sliderContainer) {
+            var wrapper = sliderContainer.querySelector('.swiper-wrapper');
+            if (!wrapper || wrapper.getAttribute('data-fx-init') === 'true') return;
+            wrapper.setAttribute('data-fx-init', 'true');
+
+            var options = {};
+            try {
+              if (wrapper.getAttribute('data-swiper-options')) {
+                options = JSON.parse(wrapper.getAttribute('data-swiper-options'));
+              }
+            } catch(e) {}
+
+            var isRTL = !!options.rtl;
+            var pixelsPerSecond = 45;
+
+            sliderContainer.style.overflow = 'hidden';
+            sliderContainer.style.position = 'relative';
+            sliderContainer.style.width = '100%';
+            sliderContainer.style.userSelect = 'none';
+
+            wrapper.style.display = 'flex';
+            wrapper.style.flexWrap = 'nowrap';
+            wrapper.style.width = 'max-content';
+            wrapper.style.willChange = 'transform';
+            wrapper.style.cursor = 'grab';
+
+            var originalSlides = Array.prototype.slice.call(wrapper.children);
+            if (originalSlides.length === 0) return;
+
+            originalSlides.forEach(function(slide) {
+              slide.style.flexShrink = '0';
+              var clone = slide.cloneNode(true);
+              clone.setAttribute('aria-hidden', 'true');
+              wrapper.appendChild(clone);
+            });
+
+            var halfWidth = wrapper.scrollWidth / 2;
+            var currentX = isRTL ? -halfWidth : 0;
+            var isPaused = false;
+            var isDragging = false;
+            var startX = 0;
+            var dragStartX = 0;
+            var lastTime = performance.now();
+
+            function updateHalfWidth() {
+              var newHalf = wrapper.scrollWidth / 2;
+              if (newHalf > 0) halfWidth = newHalf;
+            }
+
+            window.addEventListener('resize', updateHalfWidth);
+            wrapper.querySelectorAll('img').forEach(function(img) {
+              if (!img.complete) {
+                img.addEventListener('load', updateHalfWidth, { once: true });
+              }
+            });
+            setTimeout(updateHalfWidth, 500);
+            setTimeout(updateHalfWidth, 1500);
+
+            function step(now) {
+              var dt = (now - lastTime) / 1000;
+              lastTime = now;
+
+              if (!isPaused && !isDragging && halfWidth > 0) {
+                var distance = pixelsPerSecond * dt;
+                if (isRTL) {
+                  currentX += distance;
+                  if (currentX >= 0) currentX -= halfWidth;
+                } else {
+                  currentX -= distance;
+                  if (Math.abs(currentX) >= halfWidth) currentX += halfWidth;
+                }
+                wrapper.style.transform = 'translate3d(' + currentX + 'px, 0, 0)';
+              }
+              requestAnimationFrame(step);
+            }
+            requestAnimationFrame(step);
+
+            sliderContainer.addEventListener('mouseenter', function() { isPaused = true; });
+            sliderContainer.addEventListener('mouseleave', function() { if (!isDragging) isPaused = false; });
+
+            sliderContainer.addEventListener('mousedown', function(e) {
+              isDragging = true;
+              isPaused = true;
+              startX = e.pageX;
+              dragStartX = currentX;
+              wrapper.style.cursor = 'grabbing';
+            });
+
+            window.addEventListener('mousemove', function(e) {
+              if (!isDragging) return;
+              var walk = e.pageX - startX;
+              currentX = dragStartX + walk;
+              if (currentX > 0) currentX -= halfWidth;
+              if (Math.abs(currentX) >= halfWidth * 2) currentX += halfWidth;
+              wrapper.style.transform = 'translate3d(' + currentX + 'px, 0, 0)';
+            });
+
+            window.addEventListener('mouseup', function() {
+              if (!isDragging) return;
+              isDragging = false;
+              wrapper.style.cursor = 'grab';
+              setTimeout(function() { isPaused = false; }, 300);
+            });
+
+            sliderContainer.addEventListener('touchstart', function(e) {
+              isDragging = true;
+              isPaused = true;
+              startX = e.touches[0].pageX;
+              dragStartX = currentX;
+            }, { passive: true });
+
+            window.addEventListener('touchmove', function(e) {
+              if (!isDragging) return;
+              var walk = e.touches[0].pageX - startX;
+              currentX = dragStartX + walk;
+              if (currentX > 0) currentX -= halfWidth;
+              if (Math.abs(currentX) >= halfWidth * 2) currentX += halfWidth;
+              wrapper.style.transform = 'translate3d(' + currentX + 'px, 0, 0)';
+            }, { passive: true });
+
+            window.addEventListener('touchend', function() {
+              if (!isDragging) return;
+              isDragging = false;
+              setTimeout(function() { isPaused = false; }, 300);
+            });
+          });
+        }
+        initMarquees();
+
         /* === DESKTOP DROPDOWN HOVER WITH SMOOTH DELAY === */
         document.querySelectorAll('[data-fx-dropdown-menu] > li').forEach(function(li){
           var sub = li.querySelector(':scope > .submenu');
@@ -6744,6 +6810,29 @@
           sub.addEventListener('mouseenter', showMenu);
           sub.addEventListener('mouseleave', hideMenu);
         });
+
+        /* === PROJECT CATEGORY FILTERING === */
+        var projectFilters = document.querySelectorAll('.home-projects-filters .filter-ul a');
+        var projectItems = document.querySelectorAll('.home-projects-filters .filter-grid .item');
+        if (projectFilters.length > 0 && projectItems.length > 0) {
+          projectFilters.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+              e.preventDefault();
+              projectFilters.forEach(function(b) { b.classList.remove('active'); });
+              btn.classList.add('active');
+              var filterVal = btn.getAttribute('data-filter');
+              projectItems.forEach(function(item) {
+                var cat = item.getAttribute('data-category');
+                if (filterVal === '-1' || filterVal === cat) {
+                  item.style.display = 'flex';
+                  item.style.opacity = '1';
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+            });
+          });
+        }
       }
 
       if(document.readyState === 'loading'){
