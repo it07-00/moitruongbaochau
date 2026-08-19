@@ -1,7 +1,9 @@
 
 export const initAll = (root = document) => {
   root.querySelectorAll('[data-fx-scroll], a[href^="#"]').forEach(el => {
+    if (el.closest('[data-fx-tabs], .tabs, .tabs-title, [role="tab"]')) return;
     el.addEventListener('click', e => {
+      if (el.closest('[data-fx-tabs], .tabs, .tabs-title, [role="tab"]')) return;
       const href = el.getAttribute('href');
       if (!href || href === '#' || href.length <= 1) return;
       const target = document.querySelector(href);
