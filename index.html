@@ -150,11 +150,19 @@
       data-content-scroll="true"
     >
       <!-- Header Drawer: Logo & Close Button -->
-      <div class="flex items-center justify-between px-4 py-3 border-b border-gray-100 bg-white">
+      <div
+        class="flex items-center justify-between px-4 py-3 border-b border-gray-100 bg-white"
+      >
         <a href="#" class="inline-flex items-center" rel="home">
           <img
             src="images/logo-leave-png-min.png"
-            style="height: 38px; max-height: 38px; width: auto; max-width: 130px; object-fit: contain;"
+            style="
+              height: 38px;
+              max-height: 38px;
+              width: auto;
+              max-width: 130px;
+              object-fit: contain;
+            "
             alt="Môi Trường Bảo Châu"
             loading="eager"
           />
@@ -165,15 +173,32 @@
           type="button"
           data-close=""
         >
-          <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          <svg
+            width="18"
+            height="18"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
       </div>
 
       <!-- Quick Search -->
       <div class="px-5 pt-4 pb-2">
-        <form action="#" class="relative flex items-center" method="get" accept-charset="UTF-8">
+        <form
+          action="#"
+          class="relative flex items-center"
+          method="get"
+          accept-charset="UTF-8"
+        >
           <input
             id="mobile-search-input"
             required=""
@@ -184,16 +209,35 @@
             placeholder="Tìm dịch vụ: ĐTM, Giấy phép MT..."
             class="w-full bg-gray-50 border border-gray-200 text-[13.5px] rounded-full pl-4 pr-10 py-2.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-primary focus:bg-white transition-all shadow-xs"
           />
-          <button type="submit" class="absolute right-3 text-gray-400 hover:text-primary transition-colors" aria-label="Tìm kiếm">
-            <svg class="size-4.5 w-4.5 h-4.5" width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          <button
+            type="submit"
+            class="absolute right-3 text-gray-400 hover:text-primary transition-colors"
+            aria-label="Tìm kiếm"
+          >
+            <svg
+              class="size-4.5 w-4.5 h-4.5"
+              width="18"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
             </svg>
           </button>
         </form>
       </div>
 
       <!-- Main Mobile Navigation Accordion -->
-      <div class="menu-outer px-4 py-2 overflow-y-auto max-h-[calc(100vh-190px)]">
+      <div
+        class="menu-outer px-4 py-2 overflow-y-auto max-h-[calc(100vh-190px)]"
+      >
         <ul
           id="menu-29035c419b"
           class="menu vertical vertical-menu mobile-menu flex flex-col gap-1 text-[15px]"
@@ -213,18 +257,74 @@
               class="mobile-submenu-toggle w-full flex items-center justify-between py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors cursor-pointer text-left"
             >
               <span>Hồ sơ & Giấy phép MT</span>
-              <svg class="submenu-chevron size-4 w-4 h-4 text-gray-400 transition-transform duration-200" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              <svg
+                class="submenu-chevron size-4 w-4 h-4 text-gray-400 transition-transform duration-200"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
               </svg>
             </button>
-            <ul class="submenu hidden pl-3.5 my-1 flex flex-col gap-0.5 border-l-2 border-primary/40 ml-3">
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Báo Cáo ĐTM (Luật 2020)</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Giấy Phép Môi Trường Cơ Sở</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Đăng Ký Môi Trường Cấp Xã/Huyện</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Báo Cáo BVMT Định Kỳ Hàng Năm</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Ứng Phó Sự Cố MT & Hóa Chất</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Quan Trắc Môi Trường Lao Động</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Lập Bản Đồ Tiếng Ồn (Noise Map)</a></li>
+            <ul
+              class="submenu hidden pl-3.5 my-1 flex flex-col gap-0.5 border-l-2 border-primary/40 ml-3"
+            >
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Báo Cáo ĐTM (Luật 2020)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Giấy Phép Môi Trường Cơ Sở</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Đăng Ký Môi Trường Cấp Xã/Huyện</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Báo Cáo BVMT Định Kỳ Hàng Năm</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Ứng Phó Sự Cố MT & Hóa Chất</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Quan Trắc Môi Trường Lao Động</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Lập Bản Đồ Tiếng Ồn (Noise Map)</a
+                >
+              </li>
             </ul>
           </li>
 
@@ -235,19 +335,81 @@
               class="mobile-submenu-toggle w-full flex items-center justify-between py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors cursor-pointer text-left"
             >
               <span>Dịch vụ môi trường</span>
-              <svg class="submenu-chevron size-4 w-4 h-4 text-gray-400 transition-transform duration-200" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              <svg
+                class="submenu-chevron size-4 w-4 h-4 text-gray-400 transition-transform duration-200"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
               </svg>
             </button>
-            <ul class="submenu hidden pl-3.5 my-1 flex flex-col gap-0.5 border-l-2 border-primary/40 ml-3">
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Kiểm Kê Khí Nhà Kính (ISO 14064)</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Tư Vấn Cơ Chế CBAM Châu Âu</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Đánh Giá Vòng Đời Sản Phẩm (LCA)</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Tư Vấn Báo Cáo Bền Vững ESG</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Thiết Kế Trạm Xử Lý Nước Thải</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Hệ Thống Xử Lý Khí Thải & Bụi</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Thu Gom & Quản Lý Chất Thải</a></li>
-              <li><a href="#section-4bdc829f17" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Cung Cấp Hóa Chất & Vi Sinh MT</a></li>
+            <ul
+              class="submenu hidden pl-3.5 my-1 flex flex-col gap-0.5 border-l-2 border-primary/40 ml-3"
+            >
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Kiểm Kê Khí Nhà Kính (ISO 14064)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Tư Vấn Cơ Chế CBAM Châu Âu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Đánh Giá Vòng Đời Sản Phẩm (LCA)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Tư Vấn Báo Cáo Bền Vững ESG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Thiết Kế Trạm Xử Lý Nước Thải</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Hệ Thống Xử Lý Khí Thải & Bụi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Thu Gom & Quản Lý Chất Thải</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Cung Cấp Hóa Chất & Vi Sinh MT</a
+                >
+              </li>
             </ul>
           </li>
 
@@ -266,16 +428,60 @@
               class="mobile-submenu-toggle w-full flex items-center justify-between py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors cursor-pointer text-left"
             >
               <span>Tin tức & Pháp luật</span>
-              <svg class="submenu-chevron size-4 w-4 h-4 text-gray-400 transition-transform duration-200" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              <svg
+                class="submenu-chevron size-4 w-4 h-4 text-gray-400 transition-transform duration-200"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
               </svg>
             </button>
-            <ul class="submenu hidden pl-3.5 my-1 flex flex-col gap-0.5 border-l-2 border-primary/40 ml-3">
-              <li><a href="#section-b2b918f0c9" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Luật Bảo Vệ Môi Trường 2020</a></li>
-              <li><a href="#section-b2b918f0c9" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Nghị định 08/2022/NĐ-CP Hướng Dẫn</a></li>
-              <li><a href="#section-b2b918f0c9" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Cẩm Nang Kiểm Kê Khí Nhà Kính</a></li>
-              <li><a href="#section-b2b918f0c9" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Khai Báo CBAM Xuất Khẩu EU</a></li>
-              <li><a href="#section-b2b918f0c9" class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium">Công Nghệ Xử Lý Nước Thải</a></li>
+            <ul
+              class="submenu hidden pl-3.5 my-1 flex flex-col gap-0.5 border-l-2 border-primary/40 ml-3"
+            >
+              <li>
+                <a
+                  href="#section-b2b918f0c9"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Luật Bảo Vệ Môi Trường 2020</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-b2b918f0c9"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Nghị định 08/2022/NĐ-CP Hướng Dẫn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-b2b918f0c9"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Cẩm Nang Kiểm Kê Khí Nhà Kính</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-b2b918f0c9"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Khai Báo CBAM Xuất Khẩu EU</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section-b2b918f0c9"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Công Nghệ Xử Lý Nước Thải</a
+                >
+              </li>
             </ul>
           </li>
 
@@ -305,8 +511,20 @@
           rel="noopener noreferrer nofollow"
           class="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-primary hover:bg-primary/90 text-white font-semibold text-[14.5px] shadow-md shadow-primary/25 transition-all text-center"
         >
-          <svg class="size-4.5 w-4.5 h-4.5" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+          <svg
+            class="size-4.5 w-4.5 h-4.5"
+            width="18"
+            height="18"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+            />
           </svg>
           Tư vấn Zalo: 0915 549 148
         </a>
@@ -350,7 +568,9 @@
                 <p class="sr-only">MÔI TRƯỜNG BẢO CHÂU</p>
               </div>
             </div>
-            <div class="nav-container pl-4 pr-2 xl:pl-8 xl:pr-4 hidden lg:block">
+            <div
+              class="nav-container pl-4 pr-2 xl:pl-8 xl:pr-4 hidden lg:block"
+            >
               <nav class="nav" id="main-nav">
                 <ul
                   id="menu-8c6d27c2ee"
@@ -371,27 +591,107 @@
                       href="#section-4bdc829f17"
                       class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5 gap-1"
                       >Hồ sơ & GP MT
-                      <svg class="size-3.5 w-3.5 h-3.5 opacity-60" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                      <svg
+                        class="size-3.5 w-3.5 h-3.5 opacity-60"
+                        width="14"
+                        height="14"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
                     </a>
                     <ul class="submenu vertical menu">
                       <li>
-                        <a href="#section-4bdc829f17" class="text-[14.5px] font-bold! text-primary uppercase pb-1 border-b border-white/10">Hồ sơ pháp lý môi trường</a>
+                        <a
+                          href="#section-4bdc829f17"
+                          class="text-[14.5px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
+                          >Hồ sơ pháp lý môi trường</a
+                        >
                         <ul class="submenu vertical menu">
-                          <li><a href="#section-4bdc829f17" title="Báo Cáo ĐTM">Báo Cáo ĐTM (Luật BVMT 2020)</a></li>
-                          <li><a href="#section-4bdc829f17" title="Giấy Phép Môi Trường">Giấy Phép Môi Trường Cơ Sở</a></li>
-                          <li><a href="#section-4bdc829f17" title="Đăng Ký Môi Trường">Đăng Ký Môi Trường Cấp Huyện/Xã</a></li>
-                          <li><a href="#section-4bdc829f17" title="Báo Cáo Công Tác BVMT Định Kỳ">Báo Cáo Công Tác BVMT Định Kỳ</a></li>
-                          <li><a href="#section-4bdc829f17" title="Ứng Phó Sự Cố Môi Trường">Kế Hoạch Phòng Ngừa Sự Cố MT</a></li>
+                          <li>
+                            <a href="#section-4bdc829f17" title="Báo Cáo ĐTM"
+                              >Báo Cáo ĐTM (Luật BVMT 2020)</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Giấy Phép Môi Trường"
+                              >Giấy Phép Môi Trường Cơ Sở</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Đăng Ký Môi Trường"
+                              >Đăng Ký Môi Trường Cấp Huyện/Xã</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Báo Cáo Công Tác BVMT Định Kỳ"
+                              >Báo Cáo Công Tác BVMT Định Kỳ</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Ứng Phó Sự Cố Môi Trường"
+                              >Kế Hoạch Phòng Ngừa Sự Cố MT</a
+                            >
+                          </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="#section-4bdc829f17" class="text-[14.5px] font-bold! text-primary uppercase pb-1 border-b border-white/10">Tư vấn & Giám sát</a>
+                        <a
+                          href="#section-4bdc829f17"
+                          class="text-[14.5px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
+                          >Tư vấn & Giám sát</a
+                        >
                         <ul class="submenu vertical menu">
-                          <li><a href="#section-4bdc829f17" title="Quan Trắc Môi Trường Lao Động">Quan Trắc Môi Trường Lao Động</a></li>
-                          <li><a href="#section-4bdc829f17" title="Lập Bản Đồ Tiếng Ồn">Lập Bản Đồ Tiếng Ồn (Noise Map)</a></li>
-                          <li><a href="#section-4bdc829f17" title="Phương Án Phục Hồi MT">Phương Án Cải Tạo Phục Hồi MT</a></li>
-                          <li><a href="#section-4bdc829f17" title="Khai Thác Nước Ngầm">Giấy Phép Khai Thác Nước Ngầm</a></li>
-                          <li><a href="#section-4bdc829f17" title="Nghiệm Thu Công Trình MT">Nghiệm Thu Công Trình BVMT</a></li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Quan Trắc Môi Trường Lao Động"
+                              >Quan Trắc Môi Trường Lao Động</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Lập Bản Đồ Tiếng Ồn"
+                              >Lập Bản Đồ Tiếng Ồn (Noise Map)</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Phương Án Phục Hồi MT"
+                              >Phương Án Cải Tạo Phục Hồi MT</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Khai Thác Nước Ngầm"
+                              >Giấy Phép Khai Thác Nước Ngầm</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Nghiệm Thu Công Trình MT"
+                              >Nghiệm Thu Công Trình BVMT</a
+                            >
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -401,27 +701,105 @@
                       href="#section-4bdc829f17"
                       class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5 gap-1"
                       >Dịch vụ môi trường
-                      <svg class="size-3.5 w-3.5 h-3.5 opacity-60" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                      <svg
+                        class="size-3.5 w-3.5 h-3.5 opacity-60"
+                        width="14"
+                        height="14"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
                     </a>
                     <ul class="submenu vertical menu">
                       <li>
-                        <a href="#section-4bdc829f17" class="text-[14.5px] font-bold! text-primary uppercase pb-1 border-b border-white/10">Khí hậu & Chuyển đổi xanh</a>
+                        <a
+                          href="#section-4bdc829f17"
+                          class="text-[14.5px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
+                          >Khí hậu & Chuyển đổi xanh</a
+                        >
                         <ul class="submenu vertical menu">
-                          <li><a href="#section-4bdc829f17" title="Kiểm Kê Khí Nhà Kính">Kiểm Kê Khí Nhà Kính (ISO 14064)</a></li>
-                          <li><a href="#section-4bdc829f17" title="Tư Vấn Cơ Chế CBAM EU">Tư Vấn Cơ Chế CBAM Xuất Khẩu EU</a></li>
-                          <li><a href="#section-4bdc829f17" title="Đánh Giá Vòng Đời LCA">Đánh Giá Vòng Đời Sản Phẩm (LCA)</a></li>
-                          <li><a href="#section-4bdc829f17" title="Chiến Lược ESG">Tư Vấn & Báo Cáo Phát Triển ESG</a></li>
-                          <li><a href="#section-4bdc829f17" title="Tín Chỉ Carbon">Tư Vấn Dự Án Tín Chỉ Carbon</a></li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Kiểm Kê Khí Nhà Kính"
+                              >Kiểm Kê Khí Nhà Kính (ISO 14064)</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Tư Vấn Cơ Chế CBAM EU"
+                              >Tư Vấn Cơ Chế CBAM Xuất Khẩu EU</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Đánh Giá Vòng Đời LCA"
+                              >Đánh Giá Vòng Đời Sản Phẩm (LCA)</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-4bdc829f17" title="Chiến Lược ESG"
+                              >Tư Vấn & Báo Cáo Phát Triển ESG</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-4bdc829f17" title="Tín Chỉ Carbon"
+                              >Tư Vấn Dự Án Tín Chỉ Carbon</a
+                            >
+                          </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="#section-4bdc829f17" class="text-[14.5px] font-bold! text-primary uppercase pb-1 border-b border-white/10">Công nghệ & Xử lý MT</a>
+                        <a
+                          href="#section-4bdc829f17"
+                          class="text-[14.5px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
+                          >Công nghệ & Xử lý MT</a
+                        >
                         <ul class="submenu vertical menu">
-                          <li><a href="#section-4bdc829f17" title="Xử Lý Nước Thải">Hệ Thống Xử Lý Nước Thải</a></li>
-                          <li><a href="#section-4bdc829f17" title="Xử Lý Khí Thải & Bụi">Hệ Thống Xử Lý Khí Thải & Bụi</a></li>
-                          <li><a href="#section-4bdc829f17" title="Quản Lý Chất Thải">Thu Gom & Xử Lý Chất Thải Nguy Hại</a></li>
-                          <li><a href="#section-4bdc829f17" title="Men Vi Sinh & Hóa Chất MT">Cung Cấp Men Vi Sinh & Hóa Chất</a></li>
-                          <li><a href="#section-4bdc829f17" title="Bảo Trì Vận Hành">Bảo Trì & Vận Hành Trạm XLNT</a></li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Xử Lý Nước Thải"
+                              >Hệ Thống Xử Lý Nước Thải</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Xử Lý Khí Thải & Bụi"
+                              >Hệ Thống Xử Lý Khí Thải & Bụi</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Quản Lý Chất Thải"
+                              >Thu Gom & Xử Lý Chất Thải Nguy Hại</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Men Vi Sinh & Hóa Chất MT"
+                              >Cung Cấp Men Vi Sinh & Hóa Chất</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#section-4bdc829f17"
+                              title="Bảo Trì Vận Hành"
+                              >Bảo Trì & Vận Hành Trạm XLNT</a
+                            >
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -438,34 +816,108 @@
                       href="#section-b2b918f0c9"
                       class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5 gap-1"
                       >Tin tức & Pháp luật
-                      <svg class="size-3.5 w-3.5 h-3.5 opacity-60" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                      <svg
+                        class="size-3.5 w-3.5 h-3.5 opacity-60"
+                        width="14"
+                        height="14"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
                     </a>
                     <ul class="submenu vertical menu">
                       <li>
-                        <a href="#section-b2b918f0c9" class="text-[14px] font-bold! text-primary uppercase pb-1 border-b border-white/10">Pháp luật Môi trường</a>
+                        <a
+                          href="#section-b2b918f0c9"
+                          class="text-[14px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
+                          >Pháp luật Môi trường</a
+                        >
                         <ul class="submenu vertical menu">
-                          <li><a href="#section-b2b918f0c9">Luật Bảo Vệ Môi Trường 2020</a></li>
-                          <li><a href="#section-b2b918f0c9">Nghị định 08/2022/NĐ-CP Chi Tiết</a></li>
-                          <li><a href="#section-b2b918f0c9">Thông tư 02/2022/TT-BTNMT</a></li>
-                          <li><a href="#section-b2b918f0c9">Xử Phạt Vi Phạm Hành Chính MT</a></li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Luật Bảo Vệ Môi Trường 2020</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Nghị định 08/2022/NĐ-CP Chi Tiết</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Thông tư 02/2022/TT-BTNMT</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Xử Phạt Vi Phạm Hành Chính MT</a
+                            >
+                          </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="#section-b2b918f0c9" class="text-[14px] font-bold! text-primary uppercase pb-1 border-b border-white/10">ESG & Net Zero</a>
+                        <a
+                          href="#section-b2b918f0c9"
+                          class="text-[14px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
+                          >ESG & Net Zero</a
+                        >
                         <ul class="submenu vertical menu">
-                          <li><a href="#section-b2b918f0c9">Cẩm Nang Kiểm Kê Khí Nhà Kính</a></li>
-                          <li><a href="#section-b2b918f0c9">Hướng Dẫn Khai Báo CBAM EU</a></li>
-                          <li><a href="#section-b2b918f0c9">Lộ Trình Net Zero 2050 Việt Nam</a></li>
-                          <li><a href="#section-b2b918f0c9">Thị Trường Tín Chỉ Carbon</a></li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Cẩm Nang Kiểm Kê Khí Nhà Kính</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Hướng Dẫn Khai Báo CBAM EU</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Lộ Trình Net Zero 2050 Việt Nam</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Thị Trường Tín Chỉ Carbon</a
+                            >
+                          </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="#section-b2b918f0c9" class="text-[14px] font-bold! text-primary uppercase pb-1 border-b border-white/10">Kỹ thuật & Công nghệ</a>
+                        <a
+                          href="#section-b2b918f0c9"
+                          class="text-[14px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
+                          >Kỹ thuật & Công nghệ</a
+                        >
                         <ul class="submenu vertical menu">
-                          <li><a href="#section-b2b918f0c9">Công Nghệ MBR / MBBR Nước Thải</a></li>
-                          <li><a href="#section-b2b918f0c9">Xử Lý Khí Thải Tháp Hấp Thụ</a></li>
-                          <li><a href="#section-b2b918f0c9">Khắc Phục Sự Cố Vi Sinh Bùn Nổi</a></li>
-                          <li><a href="#section-b2b918f0c9">Quy Trình Đo Kiểm Môi Trường LĐ</a></li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Công Nghệ MBR / MBBR Nước Thải</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Xử Lý Khí Thải Tháp Hấp Thụ</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Khắc Phục Sự Cố Vi Sinh Bùn Nổi</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#section-b2b918f0c9"
+                              >Quy Trình Đo Kiểm Môi Trường LĐ</a
+                            >
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -487,9 +939,7 @@
                 </ul>
               </nav>
             </div>
-            <div
-              class="all_search_dark_mode flex flex-[0_0_auto] items-center"
-            >
+            <div class="all_search_dark_mode flex flex-[0_0_auto] items-center">
               <div class="dropdown-search">
                 <a
                   class="dropdown-trigger flex items-center justify-center size-10 rounded-full bg-black/8 hover:bg-black/15 text-gray-700 dark:text-gray-200 transition-colors"
@@ -682,7 +1132,21 @@
                 aria-label="Mở menu"
                 id="btn-open-mobile-menu"
               >
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+                <svg
+                  width="20"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -1852,9 +2316,13 @@
             <div
               class="grid lg:grid-cols-2 grid-cols-1 gap-12 items-center mb-6 md:mb-0"
             >
-              <div class="px-[8%] sm:px-[12%] flex justify-center items-center relative">
+              <div
+                class="px-[8%] sm:px-[12%] flex justify-center items-center relative"
+              >
                 <!-- Hiệu ứng ánh sáng nền mờ nhẹ (ambient glow) -->
-                <div class="absolute w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div
+                  class="absolute w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"
+                ></div>
                 <img
                   src="images/logo-leave-png-min.png"
                   srcset="
@@ -1862,7 +2330,7 @@
                     images/logo-leave-png-min-768x768.png    768w,
                     images/logo-leave-png-min-510x510.png    510w,
                     images/logo-leave-png-min-300x300.png    300w,
-                    images/logo-leave-png-min.png          1536w
+                    images/logo-leave-png-min.png           1536w
                   "
                   sizes="(max-width: 1200px) 100vw, 1200px"
                   class="relative bottom-0 lg:-bottom-6 max-w-[400px] w-full h-auto opacity-80 hover:opacity-100 drop-shadow-xl hover:scale-105 transition-all duration-500"
@@ -1976,7 +2444,8 @@
                   >
                     Chúng tôi luôn tự tin để tư vấn và đưa ra giải pháp phù hợp
                     nhằm giải quyết tất cả các vấn đề khó khăn của doanh nghiệp
-                    về Giấy phép Môi trường, Báo cáo ĐTM, Khí nhà kính ESG và Xử lý Nước thải.
+                    về Giấy phép Môi trường, Báo cáo ĐTM, Khí nhà kính ESG và Xử
+                    lý Nước thải.
                   </p>
                 </div>
                 <div
@@ -2001,7 +2470,9 @@
                   <p
                     class="leading-relaxed group-hover:text-black group-focus:text-black"
                   >
-                    Hơn 500+ hồ sơ pháp lý, đề án và công trình xử lý môi trường được nghiệm thu đúng hạn, đảm bảo 100% tuân thủ quy định pháp luật BVMT hiện hành.
+                    Hơn 500+ hồ sơ pháp lý, đề án và công trình xử lý môi trường
+                    được nghiệm thu đúng hạn, đảm bảo 100% tuân thủ quy định
+                    pháp luật BVMT hiện hành.
                   </p>
                 </div>
                 <div
@@ -2026,7 +2497,9 @@
                   <p
                     class="leading-relaxed group-hover:text-black group-focus:text-black"
                   >
-                    Đội ngũ chuyên gia, kỹ sư công nghệ môi trường giàu kinh nghiệm, <i>tận tâm</i>, <i>nhiệt huyết</i> và luôn đặt uy tín, trách nhiệm lên hàng đầu.
+                    Đội ngũ chuyên gia, kỹ sư công nghệ môi trường giàu kinh
+                    nghiệm, <i>tận tâm</i>, <i>nhiệt huyết</i> và luôn đặt uy
+                    tín, trách nhiệm lên hàng đầu.
                   </p>
                 </div>
               </div>
@@ -2035,7 +2508,7 @@
         </section>
         <section
           id="section-4bdc829f17"
-          class="section section-core-services section-services-bg py-10 lg:py-20"
+          class="section section-core-services section-services-bg pt-10 pb-20 md:pb-28 lg:pt-20 lg:pb-40"
         >
           <div class="container px-3 mx-auto z-2 relative">
             <div class="inline-flex items-center gap-2 lg:gap-3 mb-3 lg:mb-4">
@@ -2230,15 +2703,25 @@
                           class="mb-6 p-fs-clamp-[18,28] font-bold uppercase leading-[1.3]"
                         >
                           Tư vấn
-                          <span class="text-primary">Hồ sơ &amp; Giấy phép</span>
+                          <span class="text-primary"
+                            >Hồ sơ &amp; Giấy phép</span
+                          >
                           Môi trường
                         </div>
                         <div class="leading-[1.7] p-fs-clamp-[15,17]">
                           <p class="mb-3">
-                            Các thủ tục pháp lý môi trường theo Luật BVMT 2020 đòi hỏi quy trình lập hồ sơ khắt khe, chặt chẽ và chuẩn xác cao.
+                            Các thủ tục pháp lý môi trường theo Luật BVMT 2020
+                            đòi hỏi quy trình lập hồ sơ khắt khe, chặt chẽ và
+                            chuẩn xác cao.
                           </p>
                           <p>
-                            Môi Trường Bảo Châu cung cấp giải pháp trọn gói: Lập Báo cáo đánh giá tác động môi trường (ĐTM), Giấy phép môi trường (GPMT), Đăng ký môi trường, Giấy phép khai thác nước dưới đất... Đội ngũ chuyên gia giàu kinh nghiệm hỗ trợ từ khảo sát, phân tích mẫu, lập hồ sơ đến bảo vệ hội đồng thẩm định và bàn giao giấy phép nhanh nhất.
+                            Môi Trường Bảo Châu cung cấp giải pháp trọn gói: Lập
+                            Báo cáo đánh giá tác động môi trường (ĐTM), Giấy
+                            phép môi trường (GPMT), Đăng ký môi trường, Giấy
+                            phép khai thác nước dưới đất... Đội ngũ chuyên gia
+                            giàu kinh nghiệm hỗ trợ từ khảo sát, phân tích mẫu,
+                            lập hồ sơ đến bảo vệ hội đồng thẩm định và bàn giao
+                            giấy phép nhanh nhất.
                           </p>
                         </div>
                         <a
@@ -2296,14 +2779,23 @@
                         <div
                           class="mb-6 p-fs-clamp-[18,28] font-bold uppercase leading-[1.3]"
                         >
-                          Kiểm kê <span class="text-primary">Khí nhà kính</span> &amp; ESG
+                          Kiểm kê
+                          <span class="text-primary">Khí nhà kính</span> &amp;
+                          ESG
                         </div>
                         <div class="leading-[1.7] p-fs-clamp-[15,17]">
                           <p class="mb-3">
-                            Xu hướng chuyển đổi xanh và các rào cản quốc tế (CBAM châu Âu, tiêu chuẩn ISO 14064, ISO 14067) đặt ra yêu cầu cấp thiết về báo cáo phát thải cho các doanh nghiệp sản xuất và xuất khẩu.
+                            Xu hướng chuyển đổi xanh và các rào cản quốc tế
+                            (CBAM châu Âu, tiêu chuẩn ISO 14064, ISO 14067) đặt
+                            ra yêu cầu cấp thiết về báo cáo phát thải cho các
+                            doanh nghiệp sản xuất và xuất khẩu.
                           </p>
                           <p>
-                            Bảo Châu đồng hành kiểm kê khí nhà kính toàn diện (Phạm vi 1, 2, 3), tính toán dấu chân carbon (LCA), lập hồ sơ CBAM và báo cáo phát triển bền vững ESG, giúp doanh nghiệp tối ưu chi phí năng lượng và nâng cao năng lực cạnh tranh toàn cầu.
+                            Bảo Châu đồng hành kiểm kê khí nhà kính toàn diện
+                            (Phạm vi 1, 2, 3), tính toán dấu chân carbon (LCA),
+                            lập hồ sơ CBAM và báo cáo phát triển bền vững ESG,
+                            giúp doanh nghiệp tối ưu chi phí năng lượng và nâng
+                            cao năng lực cạnh tranh toàn cầu.
                           </p>
                         </div>
                         <a
@@ -2361,14 +2853,22 @@
                         <div
                           class="mb-6 p-fs-clamp-[18,28] font-bold uppercase leading-[1.3]"
                         >
-                          Quan trắc <span class="text-primary">Môi trường</span> Lao động
+                          Quan trắc
+                          <span class="text-primary">Môi trường</span> Lao động
                         </div>
                         <div class="leading-[1.7] p-fs-clamp-[15,17]">
                           <p class="mb-3">
-                            Môi trường lao động an toàn, trong lành là nền tảng bảo vệ sức khỏe công nhân viên và đáp ứng đầy đủ quy chuẩn kỹ thuật an toàn vệ sinh lao động theo quy định pháp luật.
+                            Môi trường lao động an toàn, trong lành là nền tảng
+                            bảo vệ sức khỏe công nhân viên và đáp ứng đầy đủ quy
+                            chuẩn kỹ thuật an toàn vệ sinh lao động theo quy
+                            định pháp luật.
                           </p>
                           <p>
-                            Chúng tôi trang bị thiết bị đo kiểm hiện đại: đo vi khí hậu, bụi, tiếng ồn, ánh sáng, rung động, hơi khí độc hại tại vị trí làm việc, quan trắc định kỳ khí thải và nước thải nhà máy, lập hồ sơ vệ sinh lao động chuẩn chỉnh, hợp pháp.
+                            Chúng tôi trang bị thiết bị đo kiểm hiện đại: đo vi
+                            khí hậu, bụi, tiếng ồn, ánh sáng, rung động, hơi khí
+                            độc hại tại vị trí làm việc, quan trắc định kỳ khí
+                            thải và nước thải nhà máy, lập hồ sơ vệ sinh lao
+                            động chuẩn chỉnh, hợp pháp.
                           </p>
                         </div>
                         <a
@@ -2426,14 +2926,25 @@
                         <div
                           class="mb-6 p-fs-clamp-[18,28] font-bold uppercase leading-[1.4]"
                         >
-                          Xử lý <span class="text-primary">Nước thải &amp; Khí thải</span>
+                          Xử lý
+                          <span class="text-primary"
+                            >Nước thải &amp; Khí thải</span
+                          >
                         </div>
                         <div class="leading-[1.7] p-fs-clamp-[15,17]">
                           <p class="mb-3">
-                            Hệ thống xử lý lỗi thời, không đạt chuẩn đầu ra gây nguy cơ bị xử phạt nặng và ảnh hưởng uy tín sản xuất kinh doanh của nhà máy.
+                            Hệ thống xử lý lỗi thời, không đạt chuẩn đầu ra gây
+                            nguy cơ bị xử phạt nặng và ảnh hưởng uy tín sản xuất
+                            kinh doanh của nhà máy.
                           </p>
                           <p>
-                            Môi Trường Bảo Châu chuyên thiết kế, thi công, cải tạo và chuyển giao công nghệ xử lý nước thải sinh hoạt, công nghiệp (dệt nhuộm, thực phẩm, xi mạ, bao bì...) và xử lý bụi, khí thải. Ứng dụng công nghệ màng MBR, vi sinh tiên tiến, đảm bảo nước đầu ra đạt chuẩn QCVN với chi phí đầu tư và vận hành tối ưu nhất.
+                            Môi Trường Bảo Châu chuyên thiết kế, thi công, cải
+                            tạo và chuyển giao công nghệ xử lý nước thải sinh
+                            hoạt, công nghiệp (dệt nhuộm, thực phẩm, xi mạ, bao
+                            bì...) và xử lý bụi, khí thải. Ứng dụng công nghệ
+                            màng MBR, vi sinh tiên tiến, đảm bảo nước đầu ra đạt
+                            chuẩn QCVN với chi phí đầu tư và vận hành tối ưu
+                            nhất.
                           </p>
                         </div>
                         <a
@@ -2493,9 +3004,10 @@
               <p
                 class="project-desc max-w-4xl pt-4 lg:pt-6 mb-8 lg:mb-12 p-fs-clamp-[15,17]"
               >
-                Tổng hợp các dự án tư vấn hồ sơ môi trường, kiểm kê khí nhà kính ESG,
-                thiết kế thi công hệ thống xử lý nước thải và quan trắc môi trường tiêu biểu
-                do Môi Trường Bảo Châu trực tiếp triển khai cho các tập đoàn, nhà máy và khu công nghiệp trên toàn quốc.
+                Tổng hợp các dự án tư vấn hồ sơ môi trường, kiểm kê khí nhà kính
+                ESG, thiết kế thi công hệ thống xử lý nước thải và quan trắc môi
+                trường tiêu biểu do Môi Trường Bảo Châu trực tiếp triển khai cho
+                các tập đoàn, nhà máy và khu công nghiệp trên toàn quốc.
               </p>
             </div>
           </div>
@@ -2536,19 +3048,25 @@
                       <a href="#" class="active" data-filter="-1">Tất cả</a>
                     </li>
                     <li>
-                      <a href="#" data-filter="giay-phep">Giấy phép Môi trường</a>
+                      <a href="#" data-filter="giay-phep"
+                        >Giấy phép Môi trường</a
+                      >
                     </li>
                     <li>
                       <a href="#" data-filter="dtm">Báo cáo ĐTM</a>
                     </li>
                     <li>
-                      <a href="#" data-filter="khi-nha-kinh">Khí nhà kính & ESG</a>
+                      <a href="#" data-filter="khi-nha-kinh"
+                        >Khí nhà kính & ESG</a
+                      >
                     </li>
                     <li>
                       <a href="#" data-filter="xu-ly-nuoc">Xử lý Nước thải</a>
                     </li>
                     <li>
-                      <a href="#" data-filter="quan-trac">Quan trắc Môi trường</a>
+                      <a href="#" data-filter="quan-trac"
+                        >Quan trắc Môi trường</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -2557,7 +3075,10 @@
                 <div
                   class="filter-grid grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-12 xl:gap-x-12"
                 >
-                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="giay-phep">
+                  <div
+                    class="item relative flex flex-col gap-4 lg:gap-6"
+                    data-category="giay-phep"
+                  >
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2569,9 +3090,9 @@
                         <img
                           src="images/BERICAP.jpg"
                           srcset="
-                            images/BERICAP-768x431.jpg 768w,
-                            images/BERICAP-510x286.jpg 510w,
-                            images/BERICAP.jpg        1200w
+                            images/BERICAP-768x431.jpg  768w,
+                            images/BERICAP-510x286.jpg  510w,
+                            images/BERICAP.jpg         1200w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -2621,7 +3142,10 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="khi-nha-kinh">
+                  <div
+                    class="item relative flex flex-col gap-4 lg:gap-6"
+                    data-category="khi-nha-kinh"
+                  >
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2633,9 +3157,9 @@
                         <img
                           src="images/PEPSICO.jpg"
                           srcset="
-                            images/PEPSICO-768x439.jpg 768w,
-                            images/PEPSICO-510x292.jpg 510w,
-                            images/PEPSICO.jpg        1200w
+                            images/PEPSICO-768x439.jpg  768w,
+                            images/PEPSICO-510x292.jpg  510w,
+                            images/PEPSICO.jpg         1200w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -2685,7 +3209,10 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="quan-trac">
+                  <div
+                    class="item relative flex flex-col gap-4 lg:gap-6"
+                    data-category="quan-trac"
+                  >
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2697,9 +3224,9 @@
                         <img
                           src="images/19-768x432.png"
                           srcset="
-                            images/19-768x432.png  768w,
+                            images/19-768x432.png   768w,
                             images/19-1024x576.png 1024w,
-                            images/19-scaled.png  1800w
+                            images/19-scaled.png   1800w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -2749,7 +3276,10 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="xu-ly-nuoc">
+                  <div
+                    class="item relative flex flex-col gap-4 lg:gap-6"
+                    data-category="xu-ly-nuoc"
+                  >
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2761,7 +3291,7 @@
                         <img
                           src="images/CTY-TAN-TIEN.png"
                           srcset="
-                            images/CTY-TAN-TIEN-768x480.png  768w,
+                            images/CTY-TAN-TIEN-768x480.png   768w,
                             images/CTY-TAN-TIEN-1024x640.png 1024w,
                             images/CTY-TAN-TIEN.png          1800w
                           "
@@ -2813,7 +3343,10 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="dtm">
+                  <div
+                    class="item relative flex flex-col gap-4 lg:gap-6"
+                    data-category="dtm"
+                  >
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2825,9 +3358,9 @@
                         <img
                           src="images/CTY-TNHH-DV-KT-MOI-TRUONG-1-768x284.png"
                           srcset="
-                            images/CTY-TNHH-DV-KT-MOI-TRUONG-1-768x284.png  768w,
+                            images/CTY-TNHH-DV-KT-MOI-TRUONG-1-768x284.png   768w,
                             images/CTY-TNHH-DV-KT-MOI-TRUONG-1-1024x379.png 1024w,
-                            images/CTY-TNHH-DV-KT-MOI-TRUONG-1024x379.jpg  1800w
+                            images/CTY-TNHH-DV-KT-MOI-TRUONG-1024x379.jpg   1800w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -2877,7 +3410,10 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="khi-nha-kinh">
+                  <div
+                    class="item relative flex flex-col gap-4 lg:gap-6"
+                    data-category="khi-nha-kinh"
+                  >
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2889,9 +3425,9 @@
                         <img
                           src="images/Bai-Dang-Bao-Chau-768x429.png"
                           srcset="
-                            images/Bai-Dang-Bao-Chau-768x429.png  768w,
+                            images/Bai-Dang-Bao-Chau-768x429.png   768w,
                             images/Bai-Dang-Bao-Chau-1024x572.png 1024w,
-                            images/Bai-Dang-Bao-Chau-scaled.png  1800w
+                            images/Bai-Dang-Bao-Chau-scaled.png   1800w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -2941,7 +3477,10 @@
                       </a>
                     </div>
                   </div>
-                  <div class="item relative flex flex-col gap-4 lg:gap-6" data-category="quan-trac">
+                  <div
+                    class="item relative flex flex-col gap-4 lg:gap-6"
+                    data-category="quan-trac"
+                  >
                     <div
                       class="p-thumb c-cover overflow-hidden rounded-xl md:rounded-2xl"
                     >
@@ -2953,9 +3492,9 @@
                         <img
                           src="images/118-1-768x429.png"
                           srcset="
-                            images/118-1-768x429.png  768w,
+                            images/118-1-768x429.png   768w,
                             images/118-1-1024x572.png 1024w,
-                            images/118-1-scaled.png  1800w
+                            images/118-1-scaled.png   1800w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                           class="block w-full object-cover as-3-2"
@@ -3195,15 +3734,15 @@
                             <img
                               src="images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png"
                               srcset="
-                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png   768w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png  768w,
                                 images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png 1024w,
-                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png   480w,
-                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png      50w,
-                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png    100w,
-                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png   150w,
-                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png   300w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png  480w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png   50w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png  100w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png  150w,
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png  300w,
                                 images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png 1200w,
-                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png          1536w
+                                images/Huong-Dan-Thuc-Hien-Dang-Ky-Moi-Truong-768x432.png 1536w
                               "
                               sizes="(max-width: 768px) 100vw, 768px"
                               class="w-full object-cover as-16-9"
@@ -3263,15 +3802,15 @@
                             <img
                               src="images/Lich-thang-8-768x432.png"
                               srcset="
-                                images/Lich-thang-8-768x432.png   768w,
+                                images/Lich-thang-8-768x432.png  768w,
                                 images/Lich-thang-8-768x432.png 1024w,
-                                images/Lich-thang-8-768x432.png   480w,
-                                images/Lich-thang-8-768x432.png      50w,
-                                images/Lich-thang-8-768x432.png    100w,
-                                images/Lich-thang-8-768x432.png   150w,
-                                images/Lich-thang-8-768x432.png   300w,
+                                images/Lich-thang-8-768x432.png  480w,
+                                images/Lich-thang-8-768x432.png   50w,
+                                images/Lich-thang-8-768x432.png  100w,
+                                images/Lich-thang-8-768x432.png  150w,
+                                images/Lich-thang-8-768x432.png  300w,
                                 images/Lich-thang-8-768x432.png 1200w,
-                                images/Lich-thang-8-768x432.png          1536w
+                                images/Lich-thang-8-768x432.png 1536w
                               "
                               sizes="(max-width: 768px) 100vw, 768px"
                               class="w-full object-cover as-16-9"
@@ -3333,14 +3872,14 @@
                             src="images/6-768x429.png"
                             srcset="
                               images/6-768x429.png 1024w,
-                              images/6-768x429.png   768w,
-                              images/6-768x429.png   480w,
-                              images/6-768x429.png      50w,
-                              images/6-768x429.png    100w,
-                              images/6-768x429.png   150w,
-                              images/6-768x429.png   300w,
+                              images/6-768x429.png  768w,
+                              images/6-768x429.png  480w,
+                              images/6-768x429.png   50w,
+                              images/6-768x429.png  100w,
+                              images/6-768x429.png  150w,
+                              images/6-768x429.png  300w,
                               images/6-768x429.png 1200w,
-                              images/6-768x429.png          1536w
+                              images/6-768x429.png 1536w
                             "
                             sizes="(max-width: 1024px) 100vw, 1024px"
                             class="w-full object-cover as-16-9"
@@ -3401,14 +3940,14 @@
                             src="images/Hinh-1-768x512.jpg"
                             srcset="
                               images/Hinh-1-768x512.jpg 1024w,
-                              images/Hinh-1-768x512.jpg   768w,
-                              images/Hinh-1-768x512.jpg   480w,
-                              images/Hinh-1-768x512.jpg      50w,
-                              images/Hinh-1-768x512.jpg    100w,
-                              images/Hinh-1-768x512.jpg   150w,
-                              images/Hinh-1-768x512.jpg   300w,
+                              images/Hinh-1-768x512.jpg  768w,
+                              images/Hinh-1-768x512.jpg  480w,
+                              images/Hinh-1-768x512.jpg   50w,
+                              images/Hinh-1-768x512.jpg  100w,
+                              images/Hinh-1-768x512.jpg  150w,
+                              images/Hinh-1-768x512.jpg  300w,
                               images/Hinh-1-768x512.jpg 1200w,
-                              images/Hinh-1-768x512.jpg          1536w
+                              images/Hinh-1-768x512.jpg 1536w
                             "
                             sizes="(max-width: 1024px) 100vw, 1024px"
                             class="w-full object-cover as-16-9"
@@ -3467,15 +4006,15 @@
                             <img
                               src="images/Thiet-ke-chua-co-ten-2-768x429.png"
                               srcset="
-                                images/Thiet-ke-chua-co-ten-2-768x429.png   768w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png  768w,
                                 images/Thiet-ke-chua-co-ten-2-768x429.png 1024w,
-                                images/Thiet-ke-chua-co-ten-2-768x429.png   480w,
-                                images/Thiet-ke-chua-co-ten-2-768x429.png      50w,
-                                images/Thiet-ke-chua-co-ten-2-768x429.png    100w,
-                                images/Thiet-ke-chua-co-ten-2-768x429.png   150w,
-                                images/Thiet-ke-chua-co-ten-2-768x429.png   300w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png  480w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png   50w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png  100w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png  150w,
+                                images/Thiet-ke-chua-co-ten-2-768x429.png  300w,
                                 images/Thiet-ke-chua-co-ten-2-768x429.png 1200w,
-                                images/Thiet-ke-chua-co-ten-2-768x429.png          1536w
+                                images/Thiet-ke-chua-co-ten-2-768x429.png 1536w
                               "
                               sizes="(max-width: 768px) 100vw, 768px"
                               class="w-full object-cover as-16-9"
@@ -3535,15 +4074,15 @@
                             <img
                               src="images/118-1-768x429.png"
                               srcset="
-                                images/118-1-768x429.png   768w,
+                                images/118-1-768x429.png  768w,
                                 images/118-1-768x429.png 1024w,
-                                images/118-1-768x429.png   480w,
-                                images/118-1-768x429.png      50w,
-                                images/118-1-768x429.png    100w,
-                                images/118-1-768x429.png   150w,
-                                images/118-1-768x429.png   300w,
+                                images/118-1-768x429.png  480w,
+                                images/118-1-768x429.png   50w,
+                                images/118-1-768x429.png  100w,
+                                images/118-1-768x429.png  150w,
+                                images/118-1-768x429.png  300w,
                                 images/118-1-768x429.png 1200w,
-                                images/118-1-768x429.png          1536w
+                                images/118-1-768x429.png 1536w
                               "
                               sizes="(max-width: 768px) 100vw, 768px"
                               class="w-full object-cover as-16-9"
@@ -5468,27 +6007,73 @@
                   class="swiper-marquee swiper-wrapper"
                   data-swiper-options='{"marquee":true,"pauseonmouseenter":true,"allowtouchmove":true,"rtl":true,"slidesperview":"auto","spacebetween":12,"speed":6000,"mousewheel":true,"freemode":true,"sm":{"spacebetween":24}}'
                 >
+                  <!-- 1. Báo Gia Lai -->
                   <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Báo An Giang"
+                      class="u-flex-center h-full py-5 px-6 c-light-button glass-effect rounded-xl border border-white hover:scale-105 transition-transform duration-300"
+                      href="https://baogialai.com.vn/huong-dan-su-dung-nang-luong-tiet-kiem-giam-phat-thai-khi-nha-kinh-post564776.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Báo Gia Lai – Hướng dẫn sử dụng năng lượng tiết kiệm, giảm phát thải khí nhà kính"
                     >
                       <img
-                        src="images/bao-an-giang.jpg"
-                        srcset="
-                          images/bao-an-giang.jpg         525w,
-                          images/bao-an-giang-480x160.jpg 480w,
-                          images/bao-an-giang-50x17.jpg    50w,
-                          images/bao-an-giang-100x33.jpg  100w,
-                          images/bao-an-giang-150x50.jpg  150w,
-                          images/bao-an-giang-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo An Giang"
+                        src="images/bao-gia-lai.png"
+                        class="object-contain block h-[50px] md:h-[68px] w-auto max-w-[170px]"
+                        alt="Báo Gia Lai"
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <!-- 2. Kinh Tế Xanh -->
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
+                    <a
+                      class="u-flex-center h-full py-5 px-6 c-light-button glass-effect rounded-xl border border-white hover:scale-105 transition-transform duration-300"
+                      href="https://kinhtexanh.vn/chuyen-dich-sang-kinh-te-tuan-hoan-tu-ly-thuyet-den-thuc-thi-16811.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Kinh Tế Xanh – Chuyển dịch sang Kinh tế tuần hoàn từ lý thuyết đến thực thi"
+                    >
+                      <img
+                        src="images/bao-kinh-te-xanh.png"
+                        class="object-contain block h-[50px] md:h-[68px] w-auto max-w-[170px]"
+                        alt="Báo Kinh Tế Xanh"
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <!-- 3. Báo Mới -->
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
+                    <a
+                      class="u-flex-center h-full py-5 px-6 c-light-button glass-effect rounded-xl border border-white hover:scale-105 transition-transform duration-300"
+                      href="https://baomoi.com/huong-dan-su-dung-nang-luong-tiet-kiem-giam-phat-thai-khi-nha-kinh-c53088786.epi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Báo Mới – Hướng dẫn sử dụng năng lượng tiết kiệm, giảm phát thải khí nhà kính"
+                    >
+                      <img
+                        src="images/bao-moi.png"
+                        class="object-contain block h-[50px] md:h-[68px] w-auto max-w-[170px]"
+                        alt="Báo Mới"
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <!-- Set 2 for smooth marquee flow -->
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
+                    <a
+                      class="u-flex-center h-full py-5 px-6 c-light-button glass-effect rounded-xl border border-white hover:scale-105 transition-transform duration-300"
+                      href="https://baogialai.com.vn/huong-dan-su-dung-nang-luong-tiet-kiem-giam-phat-thai-khi-nha-kinh-post564776.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Báo Gia Lai – Hướng dẫn sử dụng năng lượng tiết kiệm, giảm phát thải khí nhà kính"
+                    >
+                      <img
+                        src="images/bao-gia-lai.png"
+                        class="object-contain block h-[50px] md:h-[68px] w-auto max-w-[170px]"
+                        alt="Báo Gia Lai"
                         decoding="async"
                         loading="lazy"
                       />
@@ -5496,25 +6081,16 @@
                   </div>
                   <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Cafe Đầu Tư"
+                      class="u-flex-center h-full py-5 px-6 c-light-button glass-effect rounded-xl border border-white hover:scale-105 transition-transform duration-300"
+                      href="https://kinhtexanh.vn/chuyen-dich-sang-kinh-te-tuan-hoan-tu-ly-thuyet-den-thuc-thi-16811.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Kinh Tế Xanh – Chuyển dịch sang Kinh tế tuần hoàn từ lý thuyết đến thực thi"
                     >
                       <img
-                        src="images/bao-cafe-dau-tu.jpg"
-                        srcset="
-                          images/bao-cafe-dau-tu.jpg         600w,
-                          images/bao-cafe-dau-tu-480x320.jpg 480w,
-                          images/bao-cafe-dau-tu-50x33.jpg    50w,
-                          images/bao-cafe-dau-tu-100x67.jpg  100w,
-                          images/bao-cafe-dau-tu-150x100.jpg 150w,
-                          images/bao-cafe-dau-tu-300x200.jpg 300w
-                        "
-                        sizes="(max-width: 600px) 100vw, 600px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="600"
-                        height="400"
-                        alt="Báo Cafe Đầu Tư"
+                        src="images/bao-kinh-te-xanh.png"
+                        class="object-contain block h-[50px] md:h-[68px] w-auto max-w-[170px]"
+                        alt="Báo Kinh Tế Xanh"
                         decoding="async"
                         loading="lazy"
                       />
@@ -5522,25 +6098,34 @@
                   </div>
                   <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="CafeF"
+                      class="u-flex-center h-full py-5 px-6 c-light-button glass-effect rounded-xl border border-white hover:scale-105 transition-transform duration-300"
+                      href="https://baomoi.com/huong-dan-su-dung-nang-luong-tiet-kiem-giam-phat-thai-khi-nha-kinh-c53088786.epi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Báo Mới – Hướng dẫn sử dụng năng lượng tiết kiệm, giảm phát thải khí nhà kính"
                     >
                       <img
-                        src="images/bao-cafef.jpg"
-                        srcset="
-                          images/bao-cafef.jpg         525w,
-                          images/bao-cafef-480x160.jpg 480w,
-                          images/bao-cafef-50x17.jpg    50w,
-                          images/bao-cafef-100x33.jpg  100w,
-                          images/bao-cafef-150x50.jpg  150w,
-                          images/bao-cafef-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo CAFEF"
+                        src="images/bao-moi.png"
+                        class="object-contain block h-[50px] md:h-[68px] w-auto max-w-[170px]"
+                        alt="Báo Mới"
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <!-- Set 3 for smooth marquee flow -->
+                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
+                    <a
+                      class="u-flex-center h-full py-5 px-6 c-light-button glass-effect rounded-xl border border-white hover:scale-105 transition-transform duration-300"
+                      href="https://baogialai.com.vn/huong-dan-su-dung-nang-luong-tiet-kiem-giam-phat-thai-khi-nha-kinh-post564776.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Báo Gia Lai – Hướng dẫn sử dụng năng lượng tiết kiệm, giảm phát thải khí nhà kính"
+                    >
+                      <img
+                        src="images/bao-gia-lai.png"
+                        class="object-contain block h-[50px] md:h-[68px] w-auto max-w-[170px]"
+                        alt="Báo Gia Lai"
                         decoding="async"
                         loading="lazy"
                       />
@@ -5548,25 +6133,16 @@
                   </div>
                   <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="GenK"
+                      class="u-flex-center h-full py-5 px-6 c-light-button glass-effect rounded-xl border border-white hover:scale-105 transition-transform duration-300"
+                      href="https://kinhtexanh.vn/chuyen-dich-sang-kinh-te-tuan-hoan-tu-ly-thuyet-den-thuc-thi-16811.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Kinh Tế Xanh – Chuyển dịch sang Kinh tế tuần hoàn từ lý thuyết đến thực thi"
                     >
                       <img
-                        src="images/bao-genk.jpg"
-                        srcset="
-                          images/bao-genk.jpg         525w,
-                          images/bao-genk-480x160.jpg 480w,
-                          images/bao-genk-50x17.jpg    50w,
-                          images/bao-genk-100x33.jpg  100w,
-                          images/bao-genk-150x50.jpg  150w,
-                          images/bao-genk-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo GENK"
+                        src="images/bao-kinh-te-xanh.png"
+                        class="object-contain block h-[50px] md:h-[68px] w-auto max-w-[170px]"
+                        alt="Báo Kinh Tế Xanh"
                         decoding="async"
                         loading="lazy"
                       />
@@ -5574,285 +6150,16 @@
                   </div>
                   <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
                     <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Báo Hà Tĩnh"
+                      class="u-flex-center h-full py-5 px-6 c-light-button glass-effect rounded-xl border border-white hover:scale-105 transition-transform duration-300"
+                      href="https://baomoi.com/huong-dan-su-dung-nang-luong-tiet-kiem-giam-phat-thai-khi-nha-kinh-c53088786.epi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Báo Mới – Hướng dẫn sử dụng năng lượng tiết kiệm, giảm phát thải khí nhà kính"
                     >
                       <img
-                        src="images/bao-ha-tinh.jpg"
-                        srcset="
-                          images/bao-ha-tinh.jpg         525w,
-                          images/bao-ha-tinh-480x160.jpg 480w,
-                          images/bao-ha-tinh-50x17.jpg    50w,
-                          images/bao-ha-tinh-100x33.jpg  100w,
-                          images/bao-ha-tinh-150x50.jpg  150w,
-                          images/bao-ha-tinh-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo Hà Tĩnh"
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
-                    <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Báo Pháp Luật"
-                    >
-                      <img
-                        src="images/bao-phap-luat.jpg"
-                        srcset="
-                          images/bao-phap-luat.jpg         525w,
-                          images/bao-phap-luat-480x160.jpg 480w,
-                          images/bao-phap-luat-50x17.jpg    50w,
-                          images/bao-phap-luat-100x33.jpg  100w,
-                          images/bao-phap-luat-150x50.jpg  150w,
-                          images/bao-phap-luat-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo Pháp Luật"
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
-                    <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Báo Quảng Nam"
-                    >
-                      <img
-                        src="images/bao-quang-nam.jpg"
-                        srcset="
-                          images/bao-quang-nam.jpg         600w,
-                          images/bao-quang-nam-480x320.jpg 480w,
-                          images/bao-quang-nam-50x33.jpg    50w,
-                          images/bao-quang-nam-100x67.jpg  100w,
-                          images/bao-quang-nam-150x100.jpg 150w,
-                          images/bao-quang-nam-300x200.jpg 300w
-                        "
-                        sizes="(max-width: 600px) 100vw, 600px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="600"
-                        height="400"
-                        alt="Báo Quảng Nam"
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
-                    <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Soha News"
-                    >
-                      <img
-                        src="images/bao-soha.jpg"
-                        srcset="
-                          images/bao-soha.jpg         525w,
-                          images/bao-soha-480x160.jpg 480w,
-                          images/bao-soha-50x17.jpg    50w,
-                          images/bao-soha-100x33.jpg  100w,
-                          images/bao-soha-150x50.jpg  150w,
-                          images/bao-soha-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo Soha"
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
-                    <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Gia Đình &amp; Xã Hội"
-                    >
-                      <img
-                        src="images/bao-suc-khoe-doi-song.jpg"
-                        srcset="
-                          images/bao-suc-khoe-doi-song.jpg         525w,
-                          images/bao-suc-khoe-doi-song-480x480.jpg 480w,
-                          images/bao-suc-khoe-doi-song-50x50.jpg    50w,
-                          images/bao-suc-khoe-doi-song-100x100.jpg 100w,
-                          images/bao-suc-khoe-doi-song-150x150.jpg 150w,
-                          images/bao-suc-khoe-doi-song-300x300.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="525"
-                        alt="Báo Sức Khoẻ Đời Sống"
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
-                    <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="TechZ"
-                    >
-                      <img
-                        src="images/bao-techz.jpg"
-                        srcset="
-                          images/bao-techz.jpg         525w,
-                          images/bao-techz-480x160.jpg 480w,
-                          images/bao-techz-50x17.jpg    50w,
-                          images/bao-techz-100x33.jpg  100w,
-                          images/bao-techz-150x50.jpg  150w,
-                          images/bao-techz-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo Techz"
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
-                    <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Báo Thanh Hóa"
-                    >
-                      <img
-                        src="images/bao-thanh-hoa.jpg"
-                        srcset="
-                          images/bao-thanh-hoa.jpg         525w,
-                          images/bao-thanh-hoa-480x160.jpg 480w,
-                          images/bao-thanh-hoa-50x17.jpg    50w,
-                          images/bao-thanh-hoa-100x33.jpg  100w,
-                          images/bao-thanh-hoa-150x50.jpg  150w,
-                          images/bao-thanh-hoa-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo Thanh Hoá"
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
-                    <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Huế Ngày Nay Online"
-                    >
-                      <img
-                        src="images/bao-thua-thien-hue.jpg"
-                        srcset="
-                          images/bao-thua-thien-hue.jpg         525w,
-                          images/bao-thua-thien-hue-480x160.jpg 480w,
-                          images/bao-thua-thien-hue-50x17.jpg    50w,
-                          images/bao-thua-thien-hue-100x33.jpg  100w,
-                          images/bao-thua-thien-hue-150x50.jpg  150w,
-                          images/bao-thua-thien-hue-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo Thừa Thiên Huế"
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
-                    <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Tuổi Trẻ &amp; Xã Hội"
-                    >
-                      <img
-                        src="images/bao-tuoi-tre.jpg"
-                        srcset="
-                          images/bao-tuoi-tre.jpg         525w,
-                          images/bao-tuoi-tre-480x160.jpg 480w,
-                          images/bao-tuoi-tre-50x17.jpg    50w,
-                          images/bao-tuoi-tre-100x33.jpg  100w,
-                          images/bao-tuoi-tre-150x50.jpg  150w,
-                          images/bao-tuoi-tre-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo Tuổi Trẻ"
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
-                    <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Báo Tuyên Quang"
-                    >
-                      <img
-                        src="images/bao-tuyen-quang.jpg"
-                        srcset="
-                          images/bao-tuyen-quang.jpg         525w,
-                          images/bao-tuyen-quang-480x160.jpg 480w,
-                          images/bao-tuyen-quang-50x17.jpg    50w,
-                          images/bao-tuyen-quang-100x33.jpg  100w,
-                          images/bao-tuyen-quang-150x50.jpg  150w,
-                          images/bao-tuyen-quang-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo Tuyên Quang"
-                        decoding="async"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                  <div class="swiper-slide w-auto! h-auto! my-2 mr-4 md:mr-6">
-                    <a
-                      class="u-flex-center h-full py-5 px-5 c-light-button glass-effect rounded-xl border border-white"
-                      href="#"
-                      title="Vietstock"
-                    >
-                      <img
-                        src="images/bao-viet-stock.jpg"
-                        srcset="
-                          images/bao-viet-stock.jpg         525w,
-                          images/bao-viet-stock-480x160.jpg 480w,
-                          images/bao-viet-stock-50x17.jpg    50w,
-                          images/bao-viet-stock-100x33.jpg  100w,
-                          images/bao-viet-stock-150x50.jpg  150w,
-                          images/bao-viet-stock-300x100.jpg 300w
-                        "
-                        sizes="(max-width: 525px) 100vw, 525px"
-                        class="object-contain block h-[50px] md:h-[68px] w-auto"
-                        width="525"
-                        height="175"
-                        alt="Báo VIETSTOCK"
+                        src="images/bao-moi.png"
+                        class="object-contain block h-[50px] md:h-[68px] w-auto max-w-[170px]"
+                        alt="Báo Mới"
                         decoding="async"
                         loading="lazy"
                       />
@@ -5937,7 +6244,9 @@
                   Thông Tin Doanh Nghiệp
                 </p>
                 <div class="space-y-4">
-                  <p class="text-primary font-bold text-[15px] uppercase tracking-wide leading-snug">
+                  <p
+                    class="text-primary font-bold text-[15px] uppercase tracking-wide leading-snug"
+                  >
                     CÔNG TY TNHH DỊCH VỤ VÀ KỸ THUẬT MÔI TRƯỜNG BẢO CHÂU
                   </p>
                   <ul class="space-y-3 text-white text-[15px]">
@@ -5955,8 +6264,11 @@
                         ></path>
                       </svg>
                       <span>
-                        <strong class="font-medium text-white">Trụ sở chính:</strong>
-                        180/40 Nguyễn Hữu Cảnh, Phường Thạnh Mỹ Tây, TP. Hồ Chí Minh
+                        <strong class="font-medium text-white"
+                          >Trụ sở chính:</strong
+                        >
+                        180/40 Nguyễn Hữu Cảnh, Phường Thạnh Mỹ Tây, TP. Hồ Chí
+                        Minh
                       </span>
                     </li>
                     <li class="flex items-start gap-3">
@@ -5973,7 +6285,9 @@
                         ></path>
                       </svg>
                       <span>
-                        <strong class="font-medium text-white">GPĐKKD / MST:</strong>
+                        <strong class="font-medium text-white"
+                          >GPĐKKD / MST:</strong
+                        >
                         0317615845 do Sở KH &amp; ĐT TP.HCM cấp
                       </span>
                     </li>
@@ -5991,14 +6305,28 @@
                         ></path>
                       </svg>
                       <div>
-                        <strong class="font-medium text-white">Email tiếp nhận:</strong>
-                        <a class="text-white hover:text-primary transition-colors block" href="mailto:info@baochauenvir.com">info@baochauenvir.com</a>
-                        <a class="text-white hover:text-primary transition-colors block" href="mailto:baochauenvir@gmail.com">baochauenvir@gmail.com</a>
+                        <strong class="font-medium text-white"
+                          >Email tiếp nhận:</strong
+                        >
+                        <a
+                          class="text-white hover:text-primary transition-colors block"
+                          href="mailto:info@baochauenvir.com"
+                          >info@baochauenvir.com</a
+                        >
+                        <a
+                          class="text-white hover:text-primary transition-colors block"
+                          href="mailto:baochauenvir@gmail.com"
+                          >baochauenvir@gmail.com</a
+                        >
                       </div>
                     </li>
                   </ul>
-                  <div class="social-links mt-6 pt-4 border-t border-[rgba(95,95,95,0.3)]">
-                    <p class="text-[14px] font-medium text-white mb-3">Kết nối với chúng tôi:</p>
+                  <div
+                    class="social-links mt-6 pt-4 border-t border-[rgba(95,95,95,0.3)]"
+                  >
+                    <p class="text-[14px] font-medium text-white mb-3">
+                      Kết nối với chúng tôi:
+                    </p>
                     <ul class="menu social-menu flex flex-row flex-wrap gap-3">
                       <li>
                         <a
@@ -6077,39 +6405,64 @@
                 </p>
                 <div class="space-y-5">
                   <div>
-                    <p class="text-primary font-bold text-xs uppercase tracking-wider mb-3">
+                    <p
+                      class="text-primary font-bold text-xs uppercase tracking-wider mb-3"
+                    >
                       KINH DOANH (08:00 - 17:00 MỖI NGÀY)
                     </p>
                     <ul class="space-y-2.5 text-[15px] text-white">
                       <li class="flex items-center gap-2">
-                        <a href="tel:0915219148" class="text-1 font-bold lining-nums hover:underline">0915 219 148</a>
+                        <a
+                          href="tel:0915219148"
+                          class="text-1 font-bold lining-nums hover:underline"
+                          >0915 219 148</a
+                        >
                         <span class="text-white"> - Ms. Nhật Quỳnh</span>
                       </li>
                       <li class="flex items-center gap-2">
-                        <a href="tel:0915549148" class="text-1 font-bold lining-nums hover:underline">0915 549 148</a>
+                        <a
+                          href="tel:0915549148"
+                          class="text-1 font-bold lining-nums hover:underline"
+                          >0915 549 148</a
+                        >
                         <span class="text-white"> - Ms. San San</span>
                       </li>
                       <li class="flex items-center gap-2">
-                        <a href="tel:0942241148" class="text-1 font-bold lining-nums hover:underline">094 224 1148</a>
+                        <a
+                          href="tel:0942241148"
+                          class="text-1 font-bold lining-nums hover:underline"
+                          >094 224 1148</a
+                        >
                         <span class="text-white"> - Ms. Thanh Thảo</span>
                       </li>
                       <li class="flex items-center gap-2">
-                        <a href="tel:0917283148" class="text-1 font-bold lining-nums hover:underline">0917 283 148</a>
+                        <a
+                          href="tel:0917283148"
+                          class="text-1 font-bold lining-nums hover:underline"
+                          >0917 283 148</a
+                        >
                         <span class="text-white"> - Ms. Tường Vy</span>
                       </li>
                     </ul>
                     <p class="text-xs text-white italic mt-2.5 opacity-75">
-                      Tất cả các ngày trong tuần (Trừ chủ nhật, ngày Lễ, tết Âm Lịch)
+                      Tất cả các ngày trong tuần (Trừ chủ nhật, ngày Lễ, tết Âm
+                      Lịch)
                     </p>
                   </div>
 
                   <div class="pt-4 border-t border-[rgba(95,95,95,0.3)]">
-                    <p class="text-primary font-bold text-xs uppercase tracking-wider mb-3">
+                    <p
+                      class="text-primary font-bold text-xs uppercase tracking-wider mb-3"
+                    >
                       NV. TƯ VẤN (08:00 - 17:00 MỖI NGÀY)
                     </p>
                     <ul class="space-y-2.5 text-[15px] text-white">
                       <li class="flex items-center gap-2">
-                        <a href="tel:0917297338" class="text-1 font-bold lining-nums hover:underline">0917 297 338</a>
+                        <a
+                          href="tel:0917297338"
+                          class="text-1 font-bold lining-nums hover:underline"
+                          >0917 297 338</a
+                        >
                         <span class="text-white"> - Ms. Mỹ Trân</span>
                       </li>
                     </ul>
@@ -6129,37 +6482,58 @@
                 </p>
                 <ul class="menu menu-drop text-[15px] space-y-3">
                   <li>
-                    <a href="#section-4bdc829f17" class="text-white hover:text-primary transition-colors block">
+                    <a
+                      href="#section-4bdc829f17"
+                      class="text-white hover:text-primary transition-colors block"
+                    >
                       Báo Cáo Đánh Giá Tác Động MT (ĐTM)
                     </a>
                   </li>
                   <li>
-                    <a href="#section-4bdc829f17" class="text-white hover:text-primary transition-colors block">
+                    <a
+                      href="#section-4bdc829f17"
+                      class="text-white hover:text-primary transition-colors block"
+                    >
                       Cấp Giấy Phép Môi Trường 2020
                     </a>
                   </li>
                   <li>
-                    <a href="#section-4bdc829f17" class="text-white hover:text-primary transition-colors block">
+                    <a
+                      href="#section-4bdc829f17"
+                      class="text-white hover:text-primary transition-colors block"
+                    >
                       Kiểm Kê Khí Nhà Kính &amp; Báo Cáo ESG
                     </a>
                   </li>
                   <li>
-                    <a href="#section-4bdc829f17" class="text-white hover:text-primary transition-colors block">
+                    <a
+                      href="#section-4bdc829f17"
+                      class="text-white hover:text-primary transition-colors block"
+                    >
                       Tư Vấn Cơ Chế CBAM &amp; Vòng Đời LCA
                     </a>
                   </li>
                   <li>
-                    <a href="#section-4bdc829f17" class="text-white hover:text-primary transition-colors block">
+                    <a
+                      href="#section-4bdc829f17"
+                      class="text-white hover:text-primary transition-colors block"
+                    >
                       Quan Trắc Môi Trường Lao Động
                     </a>
                   </li>
                   <li>
-                    <a href="#section-4bdc829f17" class="text-white hover:text-primary transition-colors block">
+                    <a
+                      href="#section-4bdc829f17"
+                      class="text-white hover:text-primary transition-colors block"
+                    >
                       Xử Lý Nước Thải &amp; Khí Thải Công Nghiệp
                     </a>
                   </li>
                   <li>
-                    <a href="#section-2e070d0c2f" class="text-white hover:text-primary transition-colors block">
+                    <a
+                      href="#section-2e070d0c2f"
+                      class="text-white hover:text-primary transition-colors block"
+                    >
                       Dự Án Tiêu Biểu &amp; Năng Lực Thực Hiện
                     </a>
                   </li>
@@ -6168,7 +6542,9 @@
             </div>
 
             <!-- LOGO TRÒN FOOTER -->
-            <div class="footer-logo flex justify-center items-center my-12 md:my-16">
+            <div
+              class="footer-logo flex justify-center items-center my-12 md:my-16"
+            >
               <a title="MÔI TRƯỜNG BẢO CHÂU" href="#"
                 ><img
                   src="images/logo-leave-png-min.png"
@@ -6201,10 +6577,13 @@
               class="grid grid-cols-1 lg:grid-cols-3 items-center border-t border-[rgba(95,95,95,0.3)] mx-auto gap-2 md:gap-5 py-[21px]"
             >
               <div class="text-center lg:text-left w-full text-white">
-                © <span class="copyright-year text-white">2019 - 2026</span> Công ty TNHH
-                Dịch vụ và Kỹ thuật Môi trường Bảo Châu.
+                ©
+                <span class="copyright-year text-white">2019 - 2026</span> Công
+                ty TNHH Dịch vụ và Kỹ thuật Môi trường Bảo Châu.
               </div>
-              <div class="flex gap-1.25 justify-center items-center w-full text-white">
+              <div
+                class="flex gap-1.25 justify-center items-center w-full text-white"
+              >
                 Đồng hành
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -6220,7 +6599,8 @@
                     d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
                   ></path>
                 </svg>
-                cùng <span class="font-medium text-white">MÔI TRƯỜNG BẢO CHÂU</span>
+                cùng
+                <span class="font-medium text-white">MÔI TRƯỜNG BẢO CHÂU</span>
               </div>
               <div
                 class="link-elm w-full flex items-center justify-center lg:justify-end text-white"
@@ -6430,363 +6810,450 @@
         </symbol>
       </defs>
     </svg>
-    
-  
-    
-  <div id="mobileMenuOverlay" style="display:none; position:fixed !important; top:0 !important; left:0 !important; right:0 !important; bottom:0 !important; width:100vw !important; height:100vh !important; background:rgba(15,23,42,0.65) !important; backdrop-filter:blur(4px) !important; -webkit-backdrop-filter:blur(4px) !important; z-index:99998 !important; pointer-events:auto !important; cursor:pointer !important;"></div>
+
+    <div
+      id="mobileMenuOverlay"
+      style="
+        display: none;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        background: rgba(15, 23, 42, 0.65) !important;
+        backdrop-filter: blur(4px) !important;
+        -webkit-backdrop-filter: blur(4px) !important;
+        z-index: 99998 !important;
+        pointer-events: auto !important;
+        cursor: pointer !important;
+      "
+    ></div>
     <script>
-    (function(){
-      function init(){
-        var oc = document.getElementById('offCanvasMenu');
-        var btnOpen = document.getElementById('btn-open-mobile-menu') || document.querySelector('[data-open="offCanvasMenu"]');
-        var overlay = document.getElementById('mobileMenuOverlay');
-        var btnClose = oc ? oc.querySelector('[data-close]') : null;
+      (function () {
+        function init() {
+          var oc = document.getElementById("offCanvasMenu");
+          var btnOpen =
+            document.getElementById("btn-open-mobile-menu") ||
+            document.querySelector('[data-open="offCanvasMenu"]');
+          var overlay = document.getElementById("mobileMenuOverlay");
+          var btnClose = oc ? oc.querySelector("[data-close]") : null;
 
-        /* Ensure off-canvas is hidden and positioned fixed on load */
-        if(oc){
-          oc.style.setProperty('display','none','important');
-          oc.style.setProperty('visibility','hidden','important');
-          oc.style.setProperty('position','fixed','important');
-          oc.style.setProperty('top','0','important');
-          oc.style.setProperty('right','0','important');
-          oc.style.setProperty('bottom','0','important');
-          oc.style.setProperty('left','auto','important');
-          oc.style.setProperty('width','320px','important');
-          oc.style.setProperty('max-width','85vw','important');
-          oc.style.setProperty('z-index','100000','important');
-          oc.style.setProperty('overflow-y','auto','important');
-          oc.style.setProperty('background','#fff','important');
-          oc.style.setProperty('box-shadow','-5px 0 30px rgba(0,0,0,.25)','important');
-          oc.style.setProperty('transform','none','important');
-        }
-
-        function openMenu(){
-          if(!oc) return;
-          oc.classList.add('is-open');
-          oc.style.setProperty('display','block','important');
-          oc.style.setProperty('visibility','visible','important');
-          if(overlay) {
-            overlay.style.setProperty('display','block','important');
-            overlay.style.setProperty('visibility','visible','important');
-            overlay.style.setProperty('opacity','1','important');
+          /* Ensure off-canvas is hidden and positioned fixed on load */
+          if (oc) {
+            oc.style.setProperty("display", "none", "important");
+            oc.style.setProperty("visibility", "hidden", "important");
+            oc.style.setProperty("position", "fixed", "important");
+            oc.style.setProperty("top", "0", "important");
+            oc.style.setProperty("right", "0", "important");
+            oc.style.setProperty("bottom", "0", "important");
+            oc.style.setProperty("left", "auto", "important");
+            oc.style.setProperty("width", "320px", "important");
+            oc.style.setProperty("max-width", "85vw", "important");
+            oc.style.setProperty("z-index", "100000", "important");
+            oc.style.setProperty("overflow-y", "auto", "important");
+            oc.style.setProperty("background", "#fff", "important");
+            oc.style.setProperty(
+              "box-shadow",
+              "-5px 0 30px rgba(0,0,0,.25)",
+              "important",
+            );
+            oc.style.setProperty("transform", "none", "important");
           }
-          document.body.style.overflow = 'hidden';
-        }
 
-        function closeMenu(){
-          if(!oc) return;
-          oc.classList.remove('is-open');
-          oc.style.setProperty('display','none','important');
-          oc.style.setProperty('visibility','hidden','important');
-          if(overlay) {
-            overlay.style.setProperty('display','none','important');
-            overlay.style.setProperty('visibility','hidden','important');
-            overlay.style.setProperty('opacity','0','important');
+          function openMenu() {
+            if (!oc) return;
+            oc.classList.add("is-open");
+            oc.style.setProperty("display", "block", "important");
+            oc.style.setProperty("visibility", "visible", "important");
+            if (overlay) {
+              overlay.style.setProperty("display", "block", "important");
+              overlay.style.setProperty("visibility", "visible", "important");
+              overlay.style.setProperty("opacity", "1", "important");
+            }
+            document.body.style.overflow = "hidden";
           }
-          document.body.style.overflow = '';
-        }
 
-        if(btnOpen){
-          btnOpen.onclick = function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            openMenu();
-          };
-        }
+          function closeMenu() {
+            if (!oc) return;
+            oc.classList.remove("is-open");
+            oc.style.setProperty("display", "none", "important");
+            oc.style.setProperty("visibility", "hidden", "important");
+            if (overlay) {
+              overlay.style.setProperty("display", "none", "important");
+              overlay.style.setProperty("visibility", "hidden", "important");
+              overlay.style.setProperty("opacity", "0", "important");
+            }
+            document.body.style.overflow = "";
+          }
 
-        if(btnClose){
-          btnClose.onclick = function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            closeMenu();
-          };
-        }
-
-        if(overlay){
-          overlay.onclick = function(){
-            closeMenu();
-          };
-        }
-
-        /* === MOBILE ACCORDION SUBMENUS === */
-        var mobileMenu = document.getElementById('menu-29035c419b');
-        if (mobileMenu) {
-          mobileMenu.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) {
-            btn.onclick = function(e) {
+          if (btnOpen) {
+            btnOpen.onclick = function (e) {
               e.preventDefault();
               e.stopPropagation();
-              var parentLi = btn.closest('li');
-              if (!parentLi) return;
-              var sub = parentLi.querySelector(':scope > ul.submenu');
-              var chevron = btn.querySelector('.submenu-chevron');
-              if (!sub) return;
-
-              var isCurrentlyHidden = sub.classList.contains('hidden') || sub.style.display === 'none';
-
-              // Close all other accordions
-              mobileMenu.querySelectorAll('li.has-submenu').forEach(function(otherLi) {
-                if (otherLi !== parentLi) {
-                  var otherSub = otherLi.querySelector(':scope > ul.submenu');
-                  var otherChev = otherLi.querySelector('.submenu-chevron');
-                  if (otherSub) {
-                    otherSub.classList.add('hidden');
-                    otherSub.style.display = 'none';
-                  }
-                  if (otherChev) {
-                    otherChev.classList.remove('rotate-180');
-                  }
-                }
-              });
-
-              if (isCurrentlyHidden) {
-                sub.classList.remove('hidden');
-                sub.style.display = 'flex';
-                if (chevron) chevron.classList.add('rotate-180');
-              } else {
-                sub.classList.add('hidden');
-                sub.style.display = 'none';
-                if (chevron) chevron.classList.remove('rotate-180');
-              }
+              openMenu();
             };
-          });
+          }
 
-          /* Leaf links close drawer */
-          mobileMenu.querySelectorAll('.mobile-nav-link').forEach(function(a) {
-            a.onclick = function() {
+          if (btnClose) {
+            btnClose.onclick = function (e) {
+              e.preventDefault();
+              e.stopPropagation();
               closeMenu();
             };
-          });
-        }
-
-
-        /* === SMOOTH INFINITE MARQUEE SLIDERS === */
-        function initMarquees() {
-          document.querySelectorAll('[data-fx-slider]').forEach(function(sliderContainer) {
-            var wrapper = sliderContainer.querySelector('.swiper-wrapper');
-            if (!wrapper || wrapper.getAttribute('data-fx-init') === 'true') return;
-            wrapper.setAttribute('data-fx-init', 'true');
-
-            var options = {};
-            try {
-              if (wrapper.getAttribute('data-swiper-options')) {
-                options = JSON.parse(wrapper.getAttribute('data-swiper-options'));
-              }
-            } catch(e) {}
-
-            var isRTL = !!options.rtl;
-            var pixelsPerSecond = 45;
-
-            sliderContainer.style.overflow = 'hidden';
-            sliderContainer.style.position = 'relative';
-            sliderContainer.style.width = '100%';
-            sliderContainer.style.userSelect = 'none';
-
-            wrapper.style.display = 'flex';
-            wrapper.style.flexWrap = 'nowrap';
-            wrapper.style.width = 'max-content';
-            wrapper.style.willChange = 'transform';
-            wrapper.style.cursor = 'grab';
-
-            var originalSlides = Array.prototype.slice.call(wrapper.children);
-            if (originalSlides.length === 0) return;
-
-            originalSlides.forEach(function(slide) {
-              slide.style.flexShrink = '0';
-              var clone = slide.cloneNode(true);
-              clone.setAttribute('aria-hidden', 'true');
-              wrapper.appendChild(clone);
-            });
-
-            var halfWidth = wrapper.scrollWidth / 2;
-            var currentX = isRTL ? -halfWidth : 0;
-            var isPaused = false;
-            var isDragging = false;
-            var startX = 0;
-            var dragStartX = 0;
-            var lastTime = performance.now();
-
-            function updateHalfWidth() {
-              var newHalf = wrapper.scrollWidth / 2;
-              if (newHalf > 0) halfWidth = newHalf;
-            }
-
-            window.addEventListener('resize', updateHalfWidth);
-            wrapper.querySelectorAll('img').forEach(function(img) {
-              if (!img.complete) {
-                img.addEventListener('load', updateHalfWidth, { once: true });
-              }
-            });
-            setTimeout(updateHalfWidth, 500);
-            setTimeout(updateHalfWidth, 1500);
-
-            function step(now) {
-              var dt = (now - lastTime) / 1000;
-              lastTime = now;
-
-              if (!isPaused && !isDragging && halfWidth > 0) {
-                var distance = pixelsPerSecond * dt;
-                if (isRTL) {
-                  currentX += distance;
-                  if (currentX >= 0) currentX -= halfWidth;
-                } else {
-                  currentX -= distance;
-                  if (Math.abs(currentX) >= halfWidth) currentX += halfWidth;
-                }
-                wrapper.style.transform = 'translate3d(' + currentX + 'px, 0, 0)';
-              }
-              requestAnimationFrame(step);
-            }
-            requestAnimationFrame(step);
-
-            sliderContainer.addEventListener('mouseenter', function() { isPaused = true; });
-            sliderContainer.addEventListener('mouseleave', function() { if (!isDragging) isPaused = false; });
-
-            sliderContainer.addEventListener('mousedown', function(e) {
-              isDragging = true;
-              isPaused = true;
-              startX = e.pageX;
-              dragStartX = currentX;
-              wrapper.style.cursor = 'grabbing';
-            });
-
-            window.addEventListener('mousemove', function(e) {
-              if (!isDragging) return;
-              var walk = e.pageX - startX;
-              currentX = dragStartX + walk;
-              if (currentX > 0) currentX -= halfWidth;
-              if (Math.abs(currentX) >= halfWidth * 2) currentX += halfWidth;
-              wrapper.style.transform = 'translate3d(' + currentX + 'px, 0, 0)';
-            });
-
-            window.addEventListener('mouseup', function() {
-              if (!isDragging) return;
-              isDragging = false;
-              wrapper.style.cursor = 'grab';
-              setTimeout(function() { isPaused = false; }, 300);
-            });
-
-            sliderContainer.addEventListener('touchstart', function(e) {
-              isDragging = true;
-              isPaused = true;
-              startX = e.touches[0].pageX;
-              dragStartX = currentX;
-            }, { passive: true });
-
-            window.addEventListener('touchmove', function(e) {
-              if (!isDragging) return;
-              var walk = e.touches[0].pageX - startX;
-              currentX = dragStartX + walk;
-              if (currentX > 0) currentX -= halfWidth;
-              if (Math.abs(currentX) >= halfWidth * 2) currentX += halfWidth;
-              wrapper.style.transform = 'translate3d(' + currentX + 'px, 0, 0)';
-            }, { passive: true });
-
-            window.addEventListener('touchend', function() {
-              if (!isDragging) return;
-              isDragging = false;
-              setTimeout(function() { isPaused = false; }, 300);
-            });
-          });
-        }
-        initMarquees();
-
-        /* === DESKTOP DROPDOWN HOVER WITH SMOOTH DELAY === */
-        document.querySelectorAll('[data-fx-dropdown-menu] > li').forEach(function(li){
-          var sub = li.querySelector(':scope > .submenu');
-          if(!sub) return;
-          var closeTimer = null;
-
-          function showMenu() {
-            if(closeTimer) { clearTimeout(closeTimer); closeTimer = null; }
-            document.querySelectorAll('[data-fx-dropdown-menu] > li').forEach(function(other){
-              if(other !== li) {
-                other.classList.remove('is-active', 'is-open');
-              }
-            });
-            li.classList.add('is-active', 'is-open');
           }
 
-          function hideMenu() {
-            if(closeTimer) clearTimeout(closeTimer);
-            closeTimer = setTimeout(function(){
-              li.classList.remove('is-active', 'is-open');
-            }, 300);
+          if (overlay) {
+            overlay.onclick = function () {
+              closeMenu();
+            };
           }
 
-          li.addEventListener('mouseenter', showMenu);
-          li.addEventListener('mouseleave', hideMenu);
-          sub.addEventListener('mouseenter', showMenu);
-          sub.addEventListener('mouseleave', hideMenu);
-        });
+          /* === MOBILE ACCORDION SUBMENUS === */
+          var mobileMenu = document.getElementById("menu-29035c419b");
+          if (mobileMenu) {
+            mobileMenu
+              .querySelectorAll(".mobile-submenu-toggle")
+              .forEach(function (btn) {
+                btn.onclick = function (e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  var parentLi = btn.closest("li");
+                  if (!parentLi) return;
+                  var sub = parentLi.querySelector(":scope > ul.submenu");
+                  var chevron = btn.querySelector(".submenu-chevron");
+                  if (!sub) return;
 
-        /* === PROJECT CATEGORY FILTERING === */
-        var projectFilters = document.querySelectorAll('.home-projects-filters .filter-ul a');
-        var projectItems = document.querySelectorAll('.home-projects-filters .filter-grid .item');
-        if (projectFilters.length > 0 && projectItems.length > 0) {
-          projectFilters.forEach(function(btn) {
-            btn.addEventListener('click', function(e) {
-              e.preventDefault();
-              projectFilters.forEach(function(b) { b.classList.remove('active'); });
-              btn.classList.add('active');
-              var filterVal = btn.getAttribute('data-filter');
-              projectItems.forEach(function(item) {
-                var cat = item.getAttribute('data-category');
-                if (filterVal === '-1' || filterVal === cat) {
-                  item.style.display = 'flex';
-                  item.style.opacity = '1';
-                } else {
-                  item.style.display = 'none';
+                  var isCurrentlyHidden =
+                    sub.classList.contains("hidden") ||
+                    sub.style.display === "none";
+
+                  // Close all other accordions
+                  mobileMenu
+                    .querySelectorAll("li.has-submenu")
+                    .forEach(function (otherLi) {
+                      if (otherLi !== parentLi) {
+                        var otherSub = otherLi.querySelector(
+                          ":scope > ul.submenu",
+                        );
+                        var otherChev =
+                          otherLi.querySelector(".submenu-chevron");
+                        if (otherSub) {
+                          otherSub.classList.add("hidden");
+                          otherSub.style.display = "none";
+                        }
+                        if (otherChev) {
+                          otherChev.classList.remove("rotate-180");
+                        }
+                      }
+                    });
+
+                  if (isCurrentlyHidden) {
+                    sub.classList.remove("hidden");
+                    sub.style.display = "flex";
+                    if (chevron) chevron.classList.add("rotate-180");
+                  } else {
+                    sub.classList.add("hidden");
+                    sub.style.display = "none";
+                    if (chevron) chevron.classList.remove("rotate-180");
+                  }
+                };
+              });
+
+            /* Leaf links close drawer */
+            mobileMenu
+              .querySelectorAll(".mobile-nav-link")
+              .forEach(function (a) {
+                a.onclick = function () {
+                  closeMenu();
+                };
+              });
+          }
+
+          /* === SMOOTH INFINITE MARQUEE SLIDERS === */
+          function initMarquees() {
+            document
+              .querySelectorAll("[data-fx-slider]")
+              .forEach(function (sliderContainer) {
+                var wrapper = sliderContainer.querySelector(".swiper-wrapper");
+                if (!wrapper || wrapper.getAttribute("data-fx-init") === "true")
+                  return;
+                wrapper.setAttribute("data-fx-init", "true");
+
+                var options = {};
+                try {
+                  if (wrapper.getAttribute("data-swiper-options")) {
+                    options = JSON.parse(
+                      wrapper.getAttribute("data-swiper-options"),
+                    );
+                  }
+                } catch (e) {}
+
+                var isRTL = !!options.rtl;
+                var pixelsPerSecond = 45;
+
+                sliderContainer.style.overflow = "hidden";
+                sliderContainer.style.position = "relative";
+                sliderContainer.style.width = "100%";
+                sliderContainer.style.userSelect = "none";
+
+                wrapper.style.display = "flex";
+                wrapper.style.flexWrap = "nowrap";
+                wrapper.style.width = "max-content";
+                wrapper.style.willChange = "transform";
+                wrapper.style.cursor = "grab";
+
+                var originalSlides = Array.prototype.slice.call(
+                  wrapper.children,
+                );
+                if (originalSlides.length === 0) return;
+
+                originalSlides.forEach(function (slide) {
+                  slide.style.flexShrink = "0";
+                  var clone = slide.cloneNode(true);
+                  clone.setAttribute("aria-hidden", "true");
+                  wrapper.appendChild(clone);
+                });
+
+                var halfWidth = wrapper.scrollWidth / 2;
+                var currentX = isRTL ? -halfWidth : 0;
+                var isPaused = false;
+                var isDragging = false;
+                var startX = 0;
+                var dragStartX = 0;
+                var lastTime = performance.now();
+
+                function updateHalfWidth() {
+                  var newHalf = wrapper.scrollWidth / 2;
+                  if (newHalf > 0) halfWidth = newHalf;
                 }
+
+                window.addEventListener("resize", updateHalfWidth);
+                wrapper.querySelectorAll("img").forEach(function (img) {
+                  if (!img.complete) {
+                    img.addEventListener("load", updateHalfWidth, {
+                      once: true,
+                    });
+                  }
+                });
+                setTimeout(updateHalfWidth, 500);
+                setTimeout(updateHalfWidth, 1500);
+
+                function step(now) {
+                  var dt = (now - lastTime) / 1000;
+                  lastTime = now;
+
+                  if (!isPaused && !isDragging && halfWidth > 0) {
+                    var distance = pixelsPerSecond * dt;
+                    if (isRTL) {
+                      currentX += distance;
+                      if (currentX >= 0) currentX -= halfWidth;
+                    } else {
+                      currentX -= distance;
+                      if (Math.abs(currentX) >= halfWidth)
+                        currentX += halfWidth;
+                    }
+                    wrapper.style.transform =
+                      "translate3d(" + currentX + "px, 0, 0)";
+                  }
+                  requestAnimationFrame(step);
+                }
+                requestAnimationFrame(step);
+
+                sliderContainer.addEventListener("mouseenter", function () {
+                  isPaused = true;
+                });
+                sliderContainer.addEventListener("mouseleave", function () {
+                  if (!isDragging) isPaused = false;
+                });
+
+                sliderContainer.addEventListener("mousedown", function (e) {
+                  isDragging = true;
+                  isPaused = true;
+                  startX = e.pageX;
+                  dragStartX = currentX;
+                  wrapper.style.cursor = "grabbing";
+                });
+
+                window.addEventListener("mousemove", function (e) {
+                  if (!isDragging) return;
+                  var walk = e.pageX - startX;
+                  currentX = dragStartX + walk;
+                  if (currentX > 0) currentX -= halfWidth;
+                  if (Math.abs(currentX) >= halfWidth * 2)
+                    currentX += halfWidth;
+                  wrapper.style.transform =
+                    "translate3d(" + currentX + "px, 0, 0)";
+                });
+
+                window.addEventListener("mouseup", function () {
+                  if (!isDragging) return;
+                  isDragging = false;
+                  wrapper.style.cursor = "grab";
+                  setTimeout(function () {
+                    isPaused = false;
+                  }, 300);
+                });
+
+                sliderContainer.addEventListener(
+                  "touchstart",
+                  function (e) {
+                    isDragging = true;
+                    isPaused = true;
+                    startX = e.touches[0].pageX;
+                    dragStartX = currentX;
+                  },
+                  { passive: true },
+                );
+
+                window.addEventListener(
+                  "touchmove",
+                  function (e) {
+                    if (!isDragging) return;
+                    var walk = e.touches[0].pageX - startX;
+                    currentX = dragStartX + walk;
+                    if (currentX > 0) currentX -= halfWidth;
+                    if (Math.abs(currentX) >= halfWidth * 2)
+                      currentX += halfWidth;
+                    wrapper.style.transform =
+                      "translate3d(" + currentX + "px, 0, 0)";
+                  },
+                  { passive: true },
+                );
+
+                window.addEventListener("touchend", function () {
+                  if (!isDragging) return;
+                  isDragging = false;
+                  setTimeout(function () {
+                    isPaused = false;
+                  }, 300);
+                });
+              });
+          }
+          initMarquees();
+
+          /* === DESKTOP DROPDOWN HOVER WITH SMOOTH DELAY === */
+          document
+            .querySelectorAll("[data-fx-dropdown-menu] > li")
+            .forEach(function (li) {
+              var sub = li.querySelector(":scope > .submenu");
+              if (!sub) return;
+              var closeTimer = null;
+
+              function showMenu() {
+                if (closeTimer) {
+                  clearTimeout(closeTimer);
+                  closeTimer = null;
+                }
+                document
+                  .querySelectorAll("[data-fx-dropdown-menu] > li")
+                  .forEach(function (other) {
+                    if (other !== li) {
+                      other.classList.remove("is-active", "is-open");
+                    }
+                  });
+                li.classList.add("is-active", "is-open");
+              }
+
+              function hideMenu() {
+                if (closeTimer) clearTimeout(closeTimer);
+                closeTimer = setTimeout(function () {
+                  li.classList.remove("is-active", "is-open");
+                }, 300);
+              }
+
+              li.addEventListener("mouseenter", showMenu);
+              li.addEventListener("mouseleave", hideMenu);
+              sub.addEventListener("mouseenter", showMenu);
+              sub.addEventListener("mouseleave", hideMenu);
+            });
+
+          /* === PROJECT CATEGORY FILTERING === */
+          var projectFilters = document.querySelectorAll(
+            ".home-projects-filters .filter-ul a",
+          );
+          var projectItems = document.querySelectorAll(
+            ".home-projects-filters .filter-grid .item",
+          );
+          if (projectFilters.length > 0 && projectItems.length > 0) {
+            projectFilters.forEach(function (btn) {
+              btn.addEventListener("click", function (e) {
+                e.preventDefault();
+                projectFilters.forEach(function (b) {
+                  b.classList.remove("active");
+                });
+                btn.classList.add("active");
+                var filterVal = btn.getAttribute("data-filter");
+                projectItems.forEach(function (item) {
+                  var cat = item.getAttribute("data-category");
+                  if (filterVal === "-1" || filterVal === cat) {
+                    item.style.display = "flex";
+                    item.style.opacity = "1";
+                  } else {
+                    item.style.display = "none";
+                  }
+                });
               });
             });
-          });
+          }
+
+          /* === CORE SERVICES TABS SWITCH (PREVENT JUMP) === */
+          document
+            .querySelectorAll("[data-fx-tabs]")
+            .forEach(function (tabsNav) {
+              var contentId = tabsNav.getAttribute("id");
+              var tabsContent = contentId
+                ? document.querySelector(
+                    '[data-fx-tabs-content="' + contentId + '"]',
+                  )
+                : document.querySelector(".tabs-content");
+
+              var links = tabsNav.querySelectorAll('a[href^="#"]');
+              links.forEach(function (link) {
+                link.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  var targetId = link.getAttribute("href");
+                  if (!targetId || targetId === "#" || targetId.length <= 1)
+                    return;
+                  var targetPanel =
+                    (tabsContent
+                      ? tabsContent.querySelector(targetId)
+                      : null) || document.querySelector(targetId);
+                  if (targetPanel) {
+                    links.forEach(function (l) {
+                      l.classList.remove("active", "is-active");
+                      l.setAttribute("aria-selected", "false");
+                      var p = l.closest(".tabs-title");
+                      if (p) p.classList.remove("is-active", "active");
+                    });
+                    link.classList.add("active", "is-active");
+                    link.setAttribute("aria-selected", "true");
+                    var parentTitle = link.closest(".tabs-title");
+                    if (parentTitle)
+                      parentTitle.classList.add("is-active", "active");
+
+                    if (tabsContent) {
+                      tabsContent
+                        .querySelectorAll(".tabs-panel")
+                        .forEach(function (panel) {
+                          panel.classList.remove("is-active", "active");
+                        });
+                    }
+                    targetPanel.classList.add("is-active", "active");
+                  }
+                });
+              });
+            });
         }
 
-        /* === CORE SERVICES TABS SWITCH (PREVENT JUMP) === */
-        document.querySelectorAll('[data-fx-tabs]').forEach(function(tabsNav) {
-          var contentId = tabsNav.getAttribute('id');
-          var tabsContent = contentId
-            ? document.querySelector('[data-fx-tabs-content="' + contentId + '"]')
-            : document.querySelector('.tabs-content');
-
-          var links = tabsNav.querySelectorAll('a[href^="#"]');
-          links.forEach(function(link) {
-            link.addEventListener('click', function(e) {
-              e.preventDefault();
-              e.stopPropagation();
-              var targetId = link.getAttribute('href');
-              if (!targetId || targetId === '#' || targetId.length <= 1) return;
-              var targetPanel = (tabsContent ? tabsContent.querySelector(targetId) : null) || document.querySelector(targetId);
-              if (targetPanel) {
-                links.forEach(function(l) {
-                  l.classList.remove('active', 'is-active');
-                  l.setAttribute('aria-selected', 'false');
-                  var p = l.closest('.tabs-title');
-                  if (p) p.classList.remove('is-active', 'active');
-                });
-                link.classList.add('active', 'is-active');
-                link.setAttribute('aria-selected', 'true');
-                var parentTitle = link.closest('.tabs-title');
-                if (parentTitle) parentTitle.classList.add('is-active', 'active');
-
-                if (tabsContent) {
-                  tabsContent.querySelectorAll('.tabs-panel').forEach(function(panel) {
-                    panel.classList.remove('is-active', 'active');
-                  });
-                }
-                targetPanel.classList.add('is-active', 'active');
-              }
-            });
-          });
-        });
-      }
-
-      if(document.readyState === 'loading'){
-        document.addEventListener('DOMContentLoaded', init);
-      }else{
-        init();
-      }
-    })();
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", init);
+        } else {
+          init();
+        }
+      })();
     </script>
   </body>
 </html>
