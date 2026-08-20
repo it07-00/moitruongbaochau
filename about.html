@@ -185,7 +185,7 @@
             name="s"
             value=""
             placeholder="Tìm dịch vụ: ĐTM, Giấy phép MT..."
-            class="w-full bg-gray-50 border border-gray-200 text-[13px] rounded-full pl-4 pr-10 py-2 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-primary focus:bg-white transition-all shadow-xs"
+            class="w-full bg-gray-50 border border-gray-200 text-[13.5px] rounded-full pl-4 pr-10 py-2.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-primary focus:bg-white transition-all shadow-xs"
           />
           <button
             type="submit"
@@ -193,7 +193,9 @@
             aria-label="Tìm kiếm"
           >
             <svg
-              class="size-4 w-4"
+              class="size-4.5 w-4.5 h-4.5"
+              width="18"
+              height="18"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -223,115 +225,262 @@
               >Về chúng tôi</a
             >
           </li>
-          <li class="has-submenu border-b border-gray-100/80 pb-1">
-            <div class="flex items-center justify-between">
-              <a
-                href="index.html#section-4bdc829f17"
-                class="mobile-nav-link flex-1 py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors"
-                >Hồ sơ &amp; Giấy phép MT</a
+
+          <!-- Accordion 1: Hồ sơ & Giấy phép MT -->
+          <li class="has-submenu">
+            <button
+              type="button"
+              class="mobile-submenu-toggle w-full flex items-center justify-between py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors cursor-pointer text-left"
+            >
+              <span>Hồ sơ & Giấy phép MT</span>
+              <svg
+                class="submenu-chevron size-4 w-4 h-4 text-gray-400 transition-transform duration-200"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
               >
-              <button
-                type="button"
-                class="mobile-submenu-toggle p-2 text-gray-400 hover:text-primary transition-colors"
-                aria-label="Toggle Submenu"
-              >
-                <svg
-                  class="size-4 submenu-chevron transition-transform duration-200"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                  />
-                </svg>
-              </button>
-            </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
             <ul
-              class="submenu pl-4 pr-1 py-1 space-y-1 bg-gray-50/70 rounded-xl hidden"
+              class="submenu hidden pl-3.5 my-1 flex flex-col gap-0.5 border-l-2 border-primary/40 ml-3"
             >
               <li>
                 <a
                   href="index.html#section-4bdc829f17"
-                  class="block py-1.5 px-3 text-[13px] text-gray-600 hover:text-primary font-medium"
-                  >Báo Cáo ĐTM (Luật BVMT 2020)</a
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Báo Cáo ĐTM (Luật 2020)</a
                 >
               </li>
               <li>
                 <a
                   href="index.html#section-4bdc829f17"
-                  class="block py-1.5 px-3 text-[13px] text-gray-600 hover:text-primary font-medium"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
                   >Giấy Phép Môi Trường Cơ Sở</a
                 >
               </li>
               <li>
                 <a
                   href="index.html#section-4bdc829f17"
-                  class="block py-1.5 px-3 text-[13px] text-gray-600 hover:text-primary font-medium"
-                  >Đăng Ký Môi Trường Cấp Huyện/Xã</a
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Đăng Ký Môi Trường Cấp Xã/Huyện</a
                 >
               </li>
               <li>
                 <a
                   href="index.html#section-4bdc829f17"
-                  class="block py-1.5 px-3 text-[13px] text-gray-600 hover:text-primary font-medium"
-                  >Báo Cáo Công Tác BVMT Định Kỳ</a
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Báo Cáo BVMT Định Kỳ Hàng Năm</a
                 >
               </li>
               <li>
                 <a
                   href="index.html#section-4bdc829f17"
-                  class="block py-1.5 px-3 text-[13px] text-gray-600 hover:text-primary font-medium"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Ứng Phó Sự Cố MT & Hóa Chất</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
                   >Quan Trắc Môi Trường Lao Động</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Lập Bản Đồ Tiếng Ồn (Noise Map)</a
                 >
               </li>
             </ul>
           </li>
-          <li>
-            <a
-              href="index.html#section-4bdc829f17"
-              class="mobile-nav-link flex items-center py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors"
-              >Khí nhà kính &amp; ESG</a
+
+          <!-- Accordion 2: Dịch vụ môi trường -->
+          <li class="has-submenu">
+            <button
+              type="button"
+              class="mobile-submenu-toggle w-full flex items-center justify-between py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors cursor-pointer text-left"
             >
-          </li>
-          <li>
-            <a
-              href="index.html#section-4bdc829f17"
-              class="mobile-nav-link flex items-center py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors"
-              >Xử lý Nước thải &amp; Khí thải</a
+              <span>Dịch vụ môi trường</span>
+              <svg
+                class="submenu-chevron size-4 w-4 h-4 text-gray-400 transition-transform duration-200"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <ul
+              class="submenu hidden pl-3.5 my-1 flex flex-col gap-0.5 border-l-2 border-primary/40 ml-3"
             >
+              <li>
+                <a
+                  href="index.html#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Kiểm Kê Khí Nhà Kính (ISO 14064)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Tư Vấn Cơ Chế CBAM Châu Âu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Đánh Giá Vòng Đời Sản Phẩm (LCA)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Tư Vấn Báo Cáo Bền Vững ESG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Thiết Kế Trạm Xử Lý Nước Thải</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Hệ Thống Xử Lý Khí Thải & Bụi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Thu Gom & Quản Lý Chất Thải</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-4bdc829f17"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Cung Cấp Hóa Chất & Vi Sinh MT</a
+                >
+              </li>
+            </ul>
           </li>
+
           <li>
             <a
               href="index.html#section-2e070d0c2f"
               class="mobile-nav-link flex items-center py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors"
-              >Dự án tiêu biểu</a
+              >Dự án</a
             >
           </li>
+
+          <!-- Accordion 3: Tin tức & Pháp luật -->
+          <li class="has-submenu">
+            <button
+              type="button"
+              class="mobile-submenu-toggle w-full flex items-center justify-between py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors cursor-pointer text-left"
+            >
+              <span>Tin tức & Pháp luật</span>
+              <svg
+                class="submenu-chevron size-4 w-4 h-4 text-gray-400 transition-transform duration-200"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <ul
+              class="submenu hidden pl-3.5 my-1 flex flex-col gap-0.5 border-l-2 border-primary/40 ml-3"
+            >
+              <li>
+                <a
+                  href="index.html#section-b2b918f0c9"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Luật Bảo Vệ Môi Trường 2020</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-b2b918f0c9"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Nghị định 08/2022/NĐ-CP Hướng Dẫn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-b2b918f0c9"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Cẩm Nang Kiểm Kê Khí Nhà Kính</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-b2b918f0c9"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Khai Báo CBAM Xuất Khẩu EU</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#section-b2b918f0c9"
+                  class="mobile-nav-link block py-2 px-2.5 text-[13.5px] rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5 transition-colors font-medium"
+                  >Công Nghệ Xử Lý Nước Thải</a
+                >
+              </li>
+            </ul>
+          </li>
+
           <li>
             <a
-              href="index.html#section-de0db3881d"
+              href="index.html#section-cb80cc5ab6"
               class="mobile-nav-link flex items-center py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors"
-              >Tin tức &amp; Sự kiện</a
+              >Đánh giá</a
             >
           </li>
+
           <li>
             <a
               href="contact.html"
               class="mobile-nav-link flex items-center py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors"
-              >Liên hệ tư vấn</a
+              >Liên hệ</a
             >
           </li>
         </ul>
       </div>
 
-      <!-- Mobile Drawer Footer CTA -->
-      <div
-        class="p-4 border-t border-gray-100 bg-gray-50/80 flex flex-col gap-2"
-      >
+      <!-- Quick Action Footer: Hotline & Zalo Button -->
+      <div class="p-4 border-t border-gray-100 bg-gray-50/80 flex flex-col gap-2">
         <a
           href="tel:0915549148"
           class="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-primary hover:bg-[#e03e2f] text-white font-bold text-[14px] shadow-sm shadow-primary/25 transition-all text-center"
@@ -351,13 +500,9 @@
           </svg>
           Hotline: 0915 549 148
         </a>
-        <p class="text-[11px] text-gray-500 text-center">
-          Hỗ trợ tư vấn 24/7 (Thứ 2 - Thứ 7)
-        </p>
+        <p class="text-[11px] text-gray-500 text-center">Hỗ trợ tư vấn 24/7 (Thứ 2 - Thứ 7)</p>
       </div>
     </div>
-
-    <!-- MAIN HEADER -->
     <div class="relative">
       <header
         data-fx-sticky=""
@@ -366,32 +511,20 @@
         itemtype="https://schema.org/WPHeader"
         itemscope=""
       >
-        <div
-          id="masthead"
-          class="masthead py-2.5 sm:py-3.5 glass-effect transition-all duration-300"
-        >
-          <div
-            class="container px-3 sm:px-4 mx-auto flex items-center justify-between gap-2 sm:gap-4"
-          >
+        <div id="masthead" class="masthead py-2.5 sm:py-3.5 glass-effect transition-all duration-300">
+          <div class="container px-3 sm:px-4 mx-auto flex items-center justify-between gap-2 sm:gap-4">
             <div class="masthead-logo flex-shrink-0">
               <div class="site-logo">
-                <a
-                  class="logo flex items-center"
-                  title="MÔI TRƯỜNG BẢO CHÂU"
-                  href="index.html"
-                  rel="home"
-                >
-                  <span class="custom-logo-link">
-                    <img
+                <a class="logo flex items-center" title="MÔI TRƯỜNG BẢO CHÂU" href="index.html" rel="home"
+                  ><span class="custom-logo-link"
+                    ><img
                       src="images/logo-leave-png-min.png"
                       class="custom-logo"
                       alt="Môi Trường Bảo Châu"
                       loading="eager"
                       fetchpriority="high"
-                      decoding="async"
-                    />
-                  </span>
-                </a>
+                      decoding="async" /></span
+                ></a>
                 <p class="sr-only">MÔI TRƯỜNG BẢO CHÂU</p>
               </div>
             </div>
@@ -443,9 +576,7 @@
                         >
                         <ul class="submenu vertical menu">
                           <li>
-                            <a
-                              href="index.html#section-4bdc829f17"
-                              title="Báo Cáo ĐTM"
+                            <a href="index.html#section-4bdc829f17" title="Báo Cáo ĐTM"
                               >Báo Cáo ĐTM (Luật BVMT 2020)</a
                             >
                           </li>
@@ -496,22 +627,29 @@
                           <li>
                             <a
                               href="index.html#section-4bdc829f17"
-                              title="Hồ Sơ Vệ Sinh Lao Động"
-                              >Lập Hồ Sơ Vệ Sinh Lao Động</a
+                              title="Lập Bản Đồ Tiếng Ồn"
+                              >Lập Bản Đồ Tiếng Ồn (Noise Map)</a
                             >
                           </li>
                           <li>
                             <a
                               href="index.html#section-4bdc829f17"
-                              title="Giám Sát Môi Trường Định Kỳ"
-                              >Báo Cáo Giám Sát MT Định Kỳ</a
+                              title="Phương Án Phục Hồi MT"
+                              >Phương Án Cải Tạo Phục Hồi MT</a
                             >
                           </li>
                           <li>
                             <a
                               href="index.html#section-4bdc829f17"
-                              title="Tư Vấn Thu Gom & Xử Lý Rác"
-                              >Tư Vấn Quản Lý Chất Thải</a
+                              title="Khai Thác Nước Ngầm"
+                              >Giấy Phép Khai Thác Nước Ngầm</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="index.html#section-4bdc829f17"
+                              title="Nghiệm Thu Công Trình MT"
+                              >Nghiệm Thu Công Trình BVMT</a
                             >
                           </li>
                         </ul>
@@ -522,7 +660,7 @@
                     <a
                       href="index.html#section-4bdc829f17"
                       class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5 gap-1"
-                      >Khí Nhà Kính &amp; ESG
+                      >Dịch vụ môi trường
                       <svg
                         class="size-3.5 w-3.5 h-3.5 opacity-60"
                         width="14"
@@ -544,35 +682,38 @@
                         <a
                           href="index.html#section-4bdc829f17"
                           class="text-[14.5px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
-                          >Khí nhà kính & Net Zero</a
+                          >Khí hậu & Chuyển đổi xanh</a
                         >
                         <ul class="submenu vertical menu">
                           <li>
                             <a
                               href="index.html#section-4bdc829f17"
-                              title="Kiểm Kê Khí Nhà Kính ISO 14064"
+                              title="Kiểm Kê Khí Nhà Kính"
                               >Kiểm Kê Khí Nhà Kính (ISO 14064)</a
                             >
                           </li>
                           <li>
                             <a
                               href="index.html#section-4bdc829f17"
-                              title="Tư Vấn Báo Cáo Cơ Chế CBAM"
-                              >Báo Cáo Cơ Chế Carbon CBAM (EU)</a
+                              title="Tư Vấn Cơ Chế CBAM EU"
+                              >Tư Vấn Cơ Chế CBAM Xuất Khẩu EU</a
                             >
                           </li>
                           <li>
                             <a
                               href="index.html#section-4bdc829f17"
-                              title="Đánh Giá Vòng Đời Sản Phẩm LCA"
+                              title="Đánh Giá Vòng Đời LCA"
                               >Đánh Giá Vòng Đời Sản Phẩm (LCA)</a
                             >
                           </li>
                           <li>
-                            <a
-                              href="index.html#section-4bdc829f17"
-                              title="Tuyên Bố Môi Trường EPD"
-                              >Tuyên Bố Môi Trường Sản Phẩm (EPD)</a
+                            <a href="index.html#section-4bdc829f17" title="Chiến Lược ESG"
+                              >Tư Vấn & Báo Cáo Phát Triển ESG</a
+                            >
+                          </li>
+                          <li>
+                            <a href="index.html#section-4bdc829f17" title="Tín Chỉ Carbon"
+                              >Tư Vấn Dự Án Tín Chỉ Carbon</a
                             >
                           </li>
                         </ul>
@@ -581,28 +722,42 @@
                         <a
                           href="index.html#section-4bdc829f17"
                           class="text-[14.5px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
-                          >Chiến lược ESG & Bền vững</a
+                          >Công nghệ & Xử lý MT</a
                         >
                         <ul class="submenu vertical menu">
                           <li>
                             <a
                               href="index.html#section-4bdc829f17"
-                              title="Lập Báo Cáo Phát Triển Bền Vững ESG"
-                              >Lập Báo Cáo Phát Triển ESG</a
+                              title="Xử Lý Nước Thải"
+                              >Hệ Thống Xử Lý Nước Thải</a
                             >
                           </li>
                           <li>
                             <a
                               href="index.html#section-4bdc829f17"
-                              title="Đo Lường & Giảm Dấu Chân Carbon"
-                              >Đo Dấu Chân Carbon Doanh Nghiệp</a
+                              title="Xử Lý Khí Thải & Bụi"
+                              >Hệ Thống Xử Lý Khí Thải & Bụi</a
                             >
                           </li>
                           <li>
                             <a
                               href="index.html#section-4bdc829f17"
-                              title="Tín Chỉ Carbon & Chuyển Đổi Xanh"
-                              >Tư Vấn Tín Chỉ Carbon Rừng/Năng Lượng</a
+                              title="Quản Lý Chất Thải"
+                              >Thu Gom & Xử Lý Chất Thải Nguy Hại</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="index.html#section-4bdc829f17"
+                              title="Men Vi Sinh & Hóa Chất MT"
+                              >Cung Cấp Men Vi Sinh & Hóa Chất</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="index.html#section-4bdc829f17"
+                              title="Bảo Trì Vận Hành"
+                              >Bảo Trì & Vận Hành Trạm XLNT</a
                             >
                           </li>
                         </ul>
@@ -611,23 +766,127 @@
                   </li>
                   <li>
                     <a
-                      href="index.html#section-4bdc829f17"
-                      class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5"
-                      >Xử lý Nước thải</a
-                    >
-                  </li>
-                  <li>
-                    <a
                       href="index.html#section-2e070d0c2f"
                       class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5"
                       >Dự án</a
                     >
                   </li>
+                  <li class="col-3 menu-mega">
+                    <a
+                      href="index.html#section-b2b918f0c9"
+                      class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5 gap-1"
+                      >Tin tức & Pháp luật
+                      <svg
+                        class="size-3.5 w-3.5 h-3.5 opacity-60"
+                        width="14"
+                        height="14"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="submenu vertical menu">
+                      <li>
+                        <a
+                          href="index.html#section-b2b918f0c9"
+                          class="text-[14px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
+                          >Pháp luật Môi trường</a
+                        >
+                        <ul class="submenu vertical menu">
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Luật Bảo Vệ Môi Trường 2020</a
+                            >
+                          </li>
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Nghị định 08/2022/NĐ-CP Chi Tiết</a
+                            >
+                          </li>
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Thông tư 02/2022/TT-BTNMT</a
+                            >
+                          </li>
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Xử Phạt Vi Phạm Hành Chính MT</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="index.html#section-b2b918f0c9"
+                          class="text-[14px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
+                          >ESG & Net Zero</a
+                        >
+                        <ul class="submenu vertical menu">
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Cẩm Nang Kiểm Kê Khí Nhà Kính</a
+                            >
+                          </li>
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Hướng Dẫn Khai Báo CBAM EU</a
+                            >
+                          </li>
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Lộ Trình Net Zero 2050 Việt Nam</a
+                            >
+                          </li>
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Thị Trường Tín Chỉ Carbon</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="index.html#section-b2b918f0c9"
+                          class="text-[14px] font-bold! text-primary uppercase pb-1 border-b border-white/10"
+                          >Kỹ thuật & Công nghệ</a
+                        >
+                        <ul class="submenu vertical menu">
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Công Nghệ MBR / MBBR Nước Thải</a
+                            >
+                          </li>
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Xử Lý Khí Thải Tháp Hấp Thụ</a
+                            >
+                          </li>
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Khắc Phục Sự Cố Vi Sinh Bùn Nổi</a
+                            >
+                          </li>
+                          <li>
+                            <a href="index.html#section-b2b918f0c9"
+                              >Quy Trình Đo Kiểm Môi Trường LĐ</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
                   <li>
                     <a
-                      href="index.html#section-de0db3881d"
+                      href="index.html#section-cb80cc5ab6"
                       class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5"
-                      >Tin tức</a
+                      >Đánh giá</a
                     >
                   </li>
                   <li>
@@ -640,110 +899,193 @@
                 </ul>
               </nav>
             </div>
-
-            <!-- RIGHT ACTIONS -->
-            <div
-              class="header-actions flex items-center gap-2 sm:gap-2.5 flex-shrink-0"
-            >
-              <div class="dropdown-search relative">
-                <button
-                  class="dropdown-trigger flex items-center justify-center size-10 sm:size-10.5 rounded-full bg-white border border-gray-200/90 shadow-xs hover:shadow-md hover:border-primary/50 text-gray-700 hover:text-primary hover:bg-primary/5 transition-all duration-200 active:scale-95 cursor-pointer"
-                  title="Tìm kiếm dịch vụ"
-                  type="button"
-                  data-fx-dropdown-toggle="#dropdown-search-aced3469f6"
-                  aria-label="Mở tìm kiếm"
-                >
-                  <svg
-                    class="size-5 w-5 svg-search"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
+            <div class="header-actions flex items-center gap-2 sm:gap-3 flex-shrink-0">
+              <div class="all_search_dark_mode flex flex-[0_0_auto] items-center">
+                <div class="dropdown-search relative">
+                  <a
+                    class="dropdown-trigger flex items-center justify-center size-10 sm:size-10.5 rounded-full bg-white/90 dark:bg-gray-800/90 border border-gray-200/90 dark:border-gray-700 shadow-xs hover:shadow-md hover:border-primary/50 text-gray-700 hover:text-primary hover:bg-primary/5 dark:text-gray-200 dark:hover:text-primary transition-all duration-200 active:scale-95"
+                    title="Tìm kiếm dịch vụ"
+                    href="javascript:;"
+                    data-fx-dropdown-toggle="#dropdown-search-aced3469f6"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                    ></path>
-                  </svg>
-                  <svg
-                    class="size-5 w-5 svg-close hidden"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2.5"
-                    stroke="currentColor"
+                    <svg
+                      class="size-4.5 sm:size-5 svg-search"
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="size-4.5 sm:size-5 svg-close hidden"
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div
+                    role="search"
+                    class="dropdown-pane alignment-right"
+                    id="dropdown-search-aced3469f6"
+                    data-fx-dropdown=""
+                    data-auto-focus="true"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    ></path>
-                  </svg>
-                </button>
-                <div
-                  role="search"
-                  class="dropdown-pane"
-                  id="dropdown-search-aced3469f6"
-                  data-fx-dropdown=""
-                >
-                  <form
-                    action="#"
-                    class="frm-search"
-                    method="get"
-                    accept-charset="UTF-8"
-                  >
-                    <div class="frm-container relative flex items-center">
-                      <label for="search-aced3469f6" class="sr-only"
-                        >Tìm kiếm dịch vụ</label
-                      >
-                      <input
-                        class="rounded-full w-full py-2.5 pl-4 pr-11 bg-gray-50 border border-gray-200 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:border-primary focus:bg-white transition-all shadow-xs"
-                        id="search-aced3469f6"
-                        required=""
-                        pattern="^(.*\S+.*)$"
-                        type="search"
-                        name="s"
-                        value=""
-                        placeholder="Tìm dịch vụ: ĐTM, Giấy phép MT, Khí nhà kính..."
-                      />
-                      <button
-                        class="btn-s absolute right-2.5 p-1.5 text-gray-400 hover:text-primary transition-colors"
-                        type="submit"
-                        aria-label="Search"
-                      >
-                        <svg
-                          class="size-5"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="2"
-                          stroke="currentColor"
+                    <form
+                      action="#"
+                      class="frm-search"
+                      method="get"
+                      accept-charset="UTF-8"
+                    >
+                      <div class="frm-container">
+                        <label for="search-aced3469f6" class="sr-only"
+                          >Tìm kiếm dịch vụ môi trường</label
                         >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                          ></path>
-                        </svg>
-                      </button>
-                    </div>
-                  </form>
+                        <input
+                          class="rounded-full"
+                          id="search-aced3469f6"
+                          required=""
+                          pattern="^(.*\S+.*)$"
+                          type="search"
+                          name="s"
+                          value=""
+                          placeholder="Tìm dịch vụ: ĐTM, Khí nhà kính, Nước thải..."
+                        />
+                        <button class="btn-s" type="submit" aria-label="Search">
+                          <svg
+                            class="size-5 w-5 h-5"
+                            width="20"
+                            height="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                            ></path>
+                          </svg>
+                          <span>Tìm kiếm</span>
+                        </button>
+                      </div>
+                      <div class="frm-hint">
+                        <p class="hint-title font-medium mt-6 mb-4">
+                          Dịch vụ môi trường nổi bật
+                        </p>
+                        <ul class="hint-list flex flex-col gap-4 ml-3">
+                          <li>
+                            <a
+                              class="flex items-center gap-3 text-[14px] group"
+                              href="index.html#section-4bdc829f17"
+                              title="Kiểm Kê Khí Nhà Kính (ESG - CBAM)"
+                            >
+                              <svg
+                                class="w-4 h-4 text-primary"
+                                aria-hidden="true"
+                              >
+                                <use href="#icon-check-circle-solid"></use>
+                              </svg>
+                              Kiểm Kê Khí Nhà Kính (ESG - CBAM)
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="flex items-center gap-3 text-[14px] group"
+                              href="index.html#section-4bdc829f17"
+                              title="Lập Báo Cáo Đánh Giá Tác Động Môi Trường (ĐTM)"
+                            >
+                              <svg
+                                class="w-4 h-4 text-primary"
+                                aria-hidden="true"
+                              >
+                                <use href="#icon-check-circle-solid"></use>
+                              </svg>
+                              Lập Báo Cáo Đánh Giá Tác Động Môi Trường (ĐTM)
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="flex items-center gap-3 text-[14px] group"
+                              href="index.html#section-4bdc829f17"
+                              title="Cấp Giấy Phép Môi Trường Theo Luật 2020"
+                            >
+                              <svg
+                                class="w-4 h-4 text-primary"
+                                aria-hidden="true"
+                              >
+                                <use href="#icon-check-circle-solid"></use>
+                              </svg>
+                              Cấp Giấy Phép Môi Trường Theo Luật 2020
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="flex items-center gap-3 text-[14px] group"
+                              href="index.html#section-4bdc829f17"
+                              title="Quan Trắc Môi Trường Lao Động Định Kỳ"
+                            >
+                              <svg
+                                class="w-4 h-4 text-primary"
+                                aria-hidden="true"
+                              >
+                                <use href="#icon-check-circle-solid"></use>
+                              </svg>
+                              Quan Trắc Môi Trường Lao Động Định Kỳ
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="flex items-center gap-3 text-[14px] group"
+                              href="index.html#section-4bdc829f17"
+                              title="Thiết Kế & Thi Công Hệ Thống Xử Lý Nước Thải"
+                            >
+                              <svg
+                                class="w-4 h-4 text-primary"
+                                aria-hidden="true"
+                              >
+                                <use href="#icon-check-circle-solid"></use>
+                              </svg>
+                              Thiết Kế & Thi Công Hệ Thống Xử Lý Nước Thải
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
-
-              <!-- CTA BUTTON -->
               <a
-                class="hidden sm:inline-flex items-center justify-center font-bold text-[14px] text-white bg-primary hover:bg-[#e03e2f] px-5 py-2.5 rounded-full shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/40 transition-all duration-200 active:scale-95"
-                href="tel:0915549148"
+                class="hidden sm:inline-flex btn btn-primary-1 items-center justify-center font-semibold text-[13.5px] sm:text-[14.5px] py-2 sm:py-2.5 px-4 sm:px-5 rounded-full shadow-lg shadow-primary/25 hover:shadow-primary/80 transition-all text-white whitespace-nowrap"
+                href="https://zalo.me/0915549148"
                 title="Tư vấn ngay"
+                target="_blank"
                 rel="noopener noreferrer nofollow"
                 >Tư vấn ngay</a
               >
-
-              <!-- MOBILE HAMBURGER BUTTON -->
-              <div class="off-canvas-content xl:hidden flex items-center">
+              <div
+                class="off-canvas-content xl:hidden flex items-center"
+                data-fx-off-canvas-content=""
+              >
                 <button
                   class="menu-lines flex items-center justify-center size-10 sm:size-10.5 rounded-full bg-white border border-gray-200/90 shadow-xs hover:shadow-md hover:border-primary/50 text-gray-700 hover:text-primary hover:bg-primary/5 transition-all duration-200 active:scale-95 cursor-pointer"
                   type="button"
@@ -752,7 +1094,7 @@
                   id="btn-open-mobile-menu"
                 >
                   <svg
-                    class="size-5 w-5 transition-transform duration-200"
+                    class="size-5 w-5 h-5 transition-transform duration-200"
                     width="20"
                     height="20"
                     viewBox="0 0 24 24"
@@ -2311,7 +2653,7 @@
       <!-- FOOTER -->
       <footer
         id="footer"
-        class="site-footer has-contact-link relative overflow-hidden bg-gradient-to-b from-[#e8f8f0] via-[#d6f4e6] to-[#c3eed9] border-t border-[#a7f3d0]"
+        class="site-footer has-contact-link relative overflow-hidden bg-gradient-to-b from-[#e8f8f0] via-[#d6f4e6] to-[#c3eed9]"
         itemtype="https://schema.org/WPFooter"
         itemscope=""
       >
@@ -2334,7 +2676,7 @@
               <!-- CỘT 1: THÔNG TIN DOANH NGHIỆP -->
               <div class="footer-col-1">
                 <p
-                  class="footer-title text-[#064e3b] text-xl lg:text-2xl font-bold mb-6 pb-3 border-b border-[#a7f3d0]"
+                  class="footer-title text-[#064e3b] text-xl lg:text-2xl font-bold mb-6"
                 >
                   Thông Tin Doanh Nghiệp
                 </p>
@@ -2418,7 +2760,7 @@
                       </div>
                     </li>
                   </ul>
-                  <div class="social-links mt-8 pt-4 border-t border-[#a7f3d0]">
+                  <div class="social-links mt-6 pt-1">
                     <p class="text-[15px] font-bold text-[#064e3b] mb-3">
                       Kết nối với chúng tôi:
                     </p>
@@ -2494,7 +2836,7 @@
               <!-- CỘT 2: TỔNG ĐÀI HỖ TRỢ -->
               <div class="footer-col-2">
                 <p
-                  class="footer-title text-[#064e3b] text-xl lg:text-2xl font-bold mb-6 pb-3 border-b border-[#a7f3d0]"
+                  class="footer-title text-[#064e3b] text-xl lg:text-2xl font-bold mb-6"
                 >
                   Tổng Đài Hỗ Trợ
                 </p>
@@ -2545,7 +2887,7 @@
                     </p>
                   </div>
 
-                  <div class="pt-5 border-t border-[#a7f3d0]">
+                  <div class="pt-5">
                     <p
                       class="text-[#047857] font-bold text-[14px] uppercase tracking-wider mb-3.5"
                     >
@@ -2571,7 +2913,7 @@
               <!-- CỘT 3: DỊCH VỤ TRỌNG TÂM -->
               <div class="footer-col-3">
                 <p
-                  class="footer-title text-[#064e3b] text-xl lg:text-2xl font-bold mb-6 pb-3 border-b border-[#a7f3d0]"
+                  class="footer-title text-[#064e3b] text-xl lg:text-2xl font-bold mb-6"
                 >
                   Dịch Vụ Môi Trường
                 </p>
@@ -2653,7 +2995,7 @@
             </div>
           </div>
         </div>
-        <div id="footer-credit" class="border-t border-[#a7f3d0]">
+        <div id="footer-credit" class="pt-2">
           <div
             class="container px-3 mx-auto text-[14px] text-[#4b5563]"
           >
@@ -2693,7 +3035,6 @@
               </div>
             </div>
           </div>
-        </div>
       </footer>
     </div>
 
@@ -3008,12 +3349,37 @@
                 var chevron = btn.querySelector(".submenu-chevron");
                 if (!sub) return;
 
-                var isHidden = sub.classList.contains("hidden");
-                if (isHidden) {
+                var isCurrentlyHidden =
+                  sub.classList.contains("hidden") ||
+                  sub.style.display === "none";
+
+                // Close all other accordions
+                mobileMenu
+                  .querySelectorAll("li.has-submenu")
+                  .forEach(function (otherLi) {
+                    if (otherLi !== parentLi) {
+                      var otherSub = otherLi.querySelector(
+                        ":scope > ul.submenu",
+                      );
+                      var otherChev =
+                        otherLi.querySelector(".submenu-chevron");
+                      if (otherSub) {
+                        otherSub.classList.add("hidden");
+                        otherSub.style.display = "";
+                      }
+                      if (otherChev) {
+                        otherChev.classList.remove("rotate-180");
+                      }
+                    }
+                  });
+
+                if (isCurrentlyHidden) {
                   sub.classList.remove("hidden");
+                  sub.style.display = "flex";
                   if (chevron) chevron.classList.add("rotate-180");
                 } else {
                   sub.classList.add("hidden");
+                  sub.style.display = "none";
                   if (chevron) chevron.classList.remove("rotate-180");
                 }
               };
