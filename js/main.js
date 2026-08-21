@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackToTop();
   initTabs();
   initProjectFilter();
+  initNewsFilter();
   initContactForm();
   initSmoothScroll();
 });
@@ -538,6 +539,29 @@ function initProjectFilter() {
       });
     });
   }
+}
+
+/* ==========================================================================
+   9b. NEWS CATEGORY FILTER
+   ========================================================================== */
+function initNewsFilter() {
+  const newsFilterLists = document.querySelectorAll('.filter-ul-news');
+  if (newsFilterLists.length === 0) return;
+
+  newsFilterLists.forEach((list) => {
+    const filterBtns = list.querySelectorAll('a');
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        filterBtns.forEach((b) => {
+          b.classList.remove('active', 'bg-primary', 'text-white', 'shadow-xs', 'font-bold');
+          b.classList.add('bg-black/8', 'text-black/80', 'font-semibold');
+        });
+        btn.classList.add('active', 'bg-primary', 'text-white', 'shadow-xs', 'font-bold');
+        btn.classList.remove('bg-black/8', 'text-black/80');
+      });
+    });
+  });
 }
 
 /* ==========================================================================
