@@ -375,7 +375,7 @@
 }
 
 /* Responsive Navigation Breakpoints */
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   .nav-container {
     display: none !important;
   }
@@ -384,7 +384,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .nav-container {
     display: flex !important;
   }
@@ -393,31 +393,60 @@
   }
 }
 
-/* Desktop Navigation - Laptop Compact Mode (1200px - 1399px) */
-@media (min-width: 1200px) and (max-width: 1399px) {
+/* Compact Laptop Mode (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .nav-item-extended {
+    display: none !important;
+  }
+  .nav-item-more {
+    display: block !important;
+  }
   #main-nav .dropdown.menu.horizontal-menu {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
     padding-top: 4px !important;
     padding-bottom: 4px !important;
-    gap: 1px !important;
+    gap: 2px !important;
     min-height: 44px !important;
   }
   #main-nav .dropdown.menu.horizontal-menu > li > a {
-    font-size: 13px !important;
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    font-size: 13.5px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
     padding-top: 6px !important;
     padding-bottom: 6px !important;
   }
   #main-nav .dropdown.menu.horizontal-menu > li > a svg {
-    width: 12px !important;
-    height: 12px !important;
+    width: 13px !important;
+    height: 13px !important;
   }
 }
 
-/* Desktop Navigation - Large Screen (>= 1400px) */
-@media (min-width: 1400px) {
+/* Desktop Mode (>= 1280px) */
+@media (min-width: 1280px) {
+  .nav-item-extended {
+    display: block !important;
+  }
+  .nav-item-more {
+    display: none !important;
+  }
+  #main-nav .dropdown.menu.horizontal-menu {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    gap: 3px !important;
+    min-height: 46px !important;
+  }
+  #main-nav .dropdown.menu.horizontal-menu > li > a {
+    font-size: 14.5px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+
+/* Desktop Navigation - Extra Large (>= 1440px) */
+@media (min-width: 1440px) {
   #main-nav .dropdown.menu.horizontal-menu {
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -427,10 +456,62 @@
     min-height: 48px !important;
   }
   #main-nav .dropdown.menu.horizontal-menu > li > a {
-    font-size: 14.5px !important;
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+    font-size: 15px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
   }
+}
+
+/* More Menu (...) Dropdown Styling */
+.nav-item-more {
+  position: relative !important;
+}
+
+.nav-item-more > a {
+  letter-spacing: 0.15em !important;
+  font-weight: 700 !important;
+}
+
+.nav-item-more .submenu {
+  position: absolute !important;
+  top: calc(100% + 8px) !important;
+  right: 0 !important;
+  left: auto !important;
+  background: #ffffff !important;
+  border-radius: 18px !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.06) !important;
+  padding: 8px !important;
+  min-width: 200px !important;
+  z-index: 10000 !important;
+  display: none !important;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-item-more:hover > .submenu,
+.nav-item-more.is-active > .submenu,
+.nav-item-more.is-open > .submenu {
+  display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.nav-item-more .submenu li a {
+  display: flex !important;
+  align-items: center !important;
+  padding: 8px 14px !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+  border-radius: 10px !important;
+  transition: all 0.2s ease !important;
+}
+
+.nav-item-more .submenu li a:hover {
+  background: rgba(254, 82, 66, 0.08) !important;
+  color: #fe5242 !important;
+  transform: translateX(3px) !important;
 }
 
 /* Search Dropdown Pane */

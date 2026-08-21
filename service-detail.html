@@ -508,7 +508,7 @@
               </div>
             </div>
             <div
-              class="nav-container pl-2 pr-2 xl:pl-6 xl:pr-4 hidden xl:flex items-center justify-center flex-1"
+              class="nav-container pl-2 pr-2 xl:pl-6 xl:pr-4 hidden lg:flex items-center justify-center flex-1"
             >
               <nav class="nav" id="main-nav">
                 <ul
@@ -757,7 +757,46 @@
                       >Dự án</a
                     >
                   </li>
-                  <li class="col-3 menu-mega">
+
+                  <!-- MORE MENU ITEM FOR COMPACT SCREENS (1024px - 1279px) -->
+                  <li class="nav-item-more relative">
+                    <a
+                      href="javascript:;"
+                      class="flex items-center justify-center h-full font-bold text-base text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5 leading-none cursor-pointer"
+                      title="Xem thêm"
+                      aria-label="Xem thêm menu"
+                    >
+                      ...
+                    </a>
+                    <ul class="submenu vertical menu bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-black/8 py-2 px-1.5 min-w-[210px] text-[14px]">
+                      <li>
+                        <a
+                          href="index.html#section-b2b918f0c9"
+                          class="flex items-center justify-between py-2 px-3 rounded-xl font-medium text-gray-800 hover:text-primary hover:bg-primary/5 transition-colors"
+                        >
+                          <span>Tin tức &amp; Pháp luật</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="index.html#section-cb80cc5ab6"
+                          class="flex items-center py-2 px-3 rounded-xl font-medium text-gray-800 hover:text-primary hover:bg-primary/5 transition-colors"
+                        >
+                          Đánh giá
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="contact.html"
+                          class="flex items-center py-2 px-3 rounded-xl font-medium text-gray-800 hover:text-primary hover:bg-primary/5 transition-colors"
+                        >
+                          Liên hệ
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="col-3 menu-mega nav-item-extended">
                     <a
                       href="index.html#section-b2b918f0c9"
                       class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5 gap-1"
@@ -868,14 +907,14 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="nav-item-extended">
                     <a
                       href="index.html#section-cb80cc5ab6"
                       class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5"
                       >Đánh giá</a
                     >
                   </li>
-                  <li>
+                  <li class="nav-item-extended">
                     <a
                       href="contact.html"
                       class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5"
@@ -1073,28 +1112,31 @@
                 >Tư vấn ngay</a
               >
               <div
-                class="off-canvas-content xl:hidden flex items-center"
+                class="off-canvas-content lg:hidden flex items-center"
                 data-fx-off-canvas-content=""
               >
                 <button
-                  class="menu-lines flex justify-center items-center gap-2 hover:text-primary transition-colors bg-white/90 dark:bg-gray-800/90 border border-gray-200/90 dark:border-gray-700 size-10 sm:size-10.5 rounded-full shadow-xs active:scale-95 cursor-pointer"
+                  class="menu-lines flex items-center justify-center size-10 sm:size-10.5 rounded-full bg-white border border-gray-200/90 shadow-xs hover:shadow-md hover:border-primary/50 text-gray-700 hover:text-primary hover:bg-primary/5 transition-all duration-200 active:scale-95 cursor-pointer"
                   type="button"
                   data-open="offCanvasMenu"
-                  aria-label="Mở menu điều hướng"
+                  aria-label="Mở menu"
+                  id="btn-open-mobile-menu"
                 >
-                  <span
-                    class="line w-4 h-3 flex flex-col flex-nowrap justify-between pointer-events-none"
+                  <svg
+                    class="size-5 w-5 h-5 transition-transform duration-200"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   >
-                    <span
-                      class="line-1 relative w-full h-[2px] bg-gray-700 dark:bg-gray-200 rounded-full transition-all"
-                    ></span>
-                    <span
-                      class="line-2 relative w-full h-[2px] bg-gray-700 dark:bg-gray-200 rounded-full transition-all"
-                    ></span>
-                    <span
-                      class="line-3 relative w-full h-[2px] bg-gray-700 dark:bg-gray-200 rounded-full transition-all"
-                    ></span>
-                  </span>
+                    <line x1="3.5" y1="6" x2="20.5" y2="6"></line>
+                    <line x1="3.5" y1="12" x2="20.5" y2="12"></line>
+                    <line x1="3.5" y1="18" x2="20.5" y2="18"></line>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -1216,25 +1258,6 @@
                           />
                         </svg>
                         <span class="views">2,480 lượt xem</span>
-                      </div>
-
-                      <div class="flex items-center gap-1.5 views-svg">
-                        <svg
-                          class="size-4 text-primary"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          stroke-width="2"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        <span class="font-bold text-black"
-                          >Chuyên gia Môi Trường Bảo Châu</span
-                        >
                       </div>
                     </div>
                   </div>
@@ -1404,9 +1427,7 @@
                       <!-- Section 1 -->
                       <h2 class="text-xl sm:text-2xl font-bold text-black">
                         <span id="thiet-ke-website-ban-hang-la-gi">
-                          <span style="color: #064e3b"
-                            >Giấy phép môi trường là gì?</span
-                          >
+                          Giấy phép môi trường là gì?
                         </span>
                       </h2>
                       <p class="text-black">
@@ -1456,10 +1477,8 @@
                         <span
                           id="vi-sao-doanh-nghiep-can-thiet-ke-website-ban-hang"
                         >
-                          <span style="color: #064e3b"
-                            >Vì sao doanh nghiệp cần hoàn thiện Giấy phép môi
-                            trường?</span
-                          >
+                          Vì sao doanh nghiệp cần hoàn thiện Giấy phép môi
+                          trường?
                         </span>
                       </h2>
                       <p class="text-black">
@@ -1493,10 +1512,7 @@
                         <span
                           id="thiet-ke-website-ban-hang-chuan-seo-can-dap-ung-dieu-gi"
                         >
-                          <span style="color: #064e3b"
-                            >Đối tượng bắt buộc phải có Giấy phép môi
-                            trường</span
-                          >
+                          Đối tượng bắt buộc phải có Giấy phép môi trường
                         </span>
                       </h2>
                       <p class="text-black">
@@ -1528,10 +1544,8 @@
                         <span
                           id="nhung-tinh-nang-can-co-khi-thiet-ke-website-ban-hang"
                         >
-                          <span style="color: #064e3b"
-                            >Thẩm quyền thẩm định &amp; cấp Giấy phép môi
-                            trường</span
-                          >
+                          Thẩm quyền thẩm định &amp; cấp Giấy phép môi
+                          trường
                         </span>
                       </h2>
                       <div
@@ -1608,10 +1622,7 @@
                       <!-- Section 5: Process -->
                       <h2 class="text-xl sm:text-2xl font-bold text-black">
                         <span id="quy-trinh-thiet-ke-website-ban-hang">
-                          <span style="color: #064e3b"
-                            >Quy trình tư vấn trọn gói tại Môi Trường Bảo
-                            Châu</span
-                          >
+                          Quy trình tư vấn trọn gói tại Môi Trường Bảo Châu
                         </span>
                       </h2>
                       <div class="space-y-4 my-4 text-black">
