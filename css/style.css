@@ -513,3 +513,28 @@
   stroke: #fe5242 !important;
 }
 
+/* OffCanvas Mobile Drawer Standard Sizing */
+#offCanvasMenu .off-canvas-header img,
+.off-canvas a[rel="home"] img,
+#offCanvasMenu a[rel="home"] img,
+#offCanvasMenu img[alt="Môi Trường Bảo Châu"] {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+  display: block !important;
+}
+
+#offCanvasMenu button[data-close] {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  flex-shrink: 0 !important;
+}
+
+

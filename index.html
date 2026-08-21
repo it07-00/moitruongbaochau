@@ -143,27 +143,31 @@
     >
       <!-- Header Drawer: Logo & Close Button -->
       <div
-        class="flex items-center justify-between px-4 py-3.5 border-b border-gray-100 bg-white"
+        class="flex items-center justify-between px-4 py-3.5 border-b border-gray-100 bg-white gap-2"
       >
-        <a href="index.html" class="flex items-center gap-2.5" rel="home">
+        <a href="index.html" class="flex items-center gap-2.5 min-w-0 flex-1" rel="home">
           <img
             src="images/logo-leave-png-min.png"
-            class="h-9 w-auto object-contain"
+            width="36"
+            height="36"
+            class="h-9 w-9 shrink-0 object-contain"
+            style="width: 36px; height: 36px; min-width: 36px; min-height: 36px; max-width: 36px; max-height: 36px;"
             alt="Môi Trường Bảo Châu"
             loading="eager"
           />
-          <div class="flex flex-col">
+          <div class="flex flex-col min-w-0">
             <span
-              class="font-bold text-[13px] text-[#064e3b] uppercase leading-tight tracking-tight"
+              class="font-bold text-[13px] text-[#064e3b] uppercase leading-tight tracking-tight truncate"
               >Môi Trường Bảo Châu</span
             >
-            <span class="text-[10px] text-gray-500 font-medium"
+            <span class="text-[10px] text-gray-500 font-medium truncate"
               >Tư vấn &amp; Kỹ thuật MT</span
             >
           </div>
         </a>
         <button
-          class="flex items-center justify-center size-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-gray-900 transition-colors"
+          class="flex items-center justify-center size-8 shrink-0 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-gray-900 transition-colors cursor-pointer"
+          style="width: 32px; height: 32px; min-width: 32px; min-height: 32px;"
           aria-label="Đóng menu"
           type="button"
           data-close=""

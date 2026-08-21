@@ -85,27 +85,31 @@
     >
       <!-- Header Drawer: Logo & Close Button -->
       <div
-        class="flex items-center justify-between px-4 py-3.5 border-b border-gray-100 bg-white"
+        class="flex items-center justify-between px-4 py-3.5 border-b border-gray-100 bg-white gap-2"
       >
-        <a href="index.html" class="flex items-center gap-2.5" rel="home">
+        <a href="index.html" class="flex items-center gap-2.5 min-w-0 flex-1" rel="home">
           <img
             src="images/logo-leave-png-min.png"
-            class="h-9 w-auto object-contain"
+            width="36"
+            height="36"
+            class="h-9 w-9 shrink-0 object-contain"
+            style="width: 36px; height: 36px; min-width: 36px; min-height: 36px; max-width: 36px; max-height: 36px;"
             alt="Môi Trường Bảo Châu"
             loading="eager"
           />
-          <div class="flex flex-col">
+          <div class="flex flex-col min-w-0">
             <span
-              class="font-bold text-[13px] text-[#064e3b] uppercase leading-tight tracking-tight"
+              class="font-bold text-[13px] text-[#064e3b] uppercase leading-tight tracking-tight truncate"
               >Môi Trường Bảo Châu</span
             >
-            <span class="text-[10px] text-gray-500 font-medium"
+            <span class="text-[10px] text-gray-500 font-medium truncate"
               >Tư vấn &amp; Kỹ thuật MT</span
             >
           </div>
         </a>
         <button
-          class="flex items-center justify-center size-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-gray-900 transition-colors cursor-pointer"
+          class="flex items-center justify-center size-8 shrink-0 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-gray-900 transition-colors cursor-pointer"
+          style="width: 32px; height: 32px; min-width: 32px; min-height: 32px;"
           aria-label="Đóng menu"
           type="button"
           data-close=""
@@ -1141,8 +1145,7 @@
         <!-- MAIN POST CONTENT SECTION (CHÍNH XÁC THEO CẤU TRÚC ẢNH MẪU USER) -->
         <section class="section singular section-post py-8 lg:py-16">
           <div class="container px-3 mx-auto">
-            <div class="flex flex-x gap-3 sm:gap-6">
-              <div class="content-all flex-1 min-w-0">
+            <div class="content-all w-full min-w-0">
                 <!-- Post Title & Meta Header Block -->
                 <div class="w-full m-auto mb-8 lg:mb-14">
                   <!-- Category Badge -->
@@ -1816,135 +1819,7 @@
                   </div>
                 </div>
               </div>
-
-              <!-- RIGHT: STICKY FORM & SUPPORT BANNER (w-87.5 / ~350px) -->
-              <aside
-                class="sidebar flex-none w-80 xl:w-87.5 hidden xl:block space-y-6"
-                itemtype="https://schema.org/WPSideBar"
-                itemscope
-                style="position: sticky; top: 90px; align-self: flex-start"
-              >
-                <div class="sidebar-inner space-y-6">
-                  <!-- Consultation Form Card -->
-                  <div
-                    class="card-item relative glass-effect border border-red-200/80 bg-white/95 rounded-3xl p-6 sm:p-7 shadow-xl"
-                  >
-                    <h3
-                      class="text-xl sm:text-2xl font-bold text-black mb-1"
-                    >
-                      Nhận tư vấn dịch vụ
-                    </h3>
-                    <p class="text-xs sm:text-sm text-black mb-6">
-                      Để lại thông tin, kỹ sư Bảo Châu sẽ liên hệ báo giá chi
-                      tiết.
-                    </p>
-
-                    <form class="space-y-4">
-                      <div>
-                        <input
-                          required
-                          name="fullname"
-                          class="font-normal w-full border border-gray-300 rounded-xl h-12 px-4 text-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                          placeholder="Họ và tên *"
-                          type="text"
-                        />
-                      </div>
-                      <div>
-                        <input
-                          required
-                          name="contact_phone"
-                          class="font-normal w-full border border-gray-300 rounded-xl h-12 px-4 text-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                          placeholder="Số điện thoại *"
-                          type="tel"
-                        />
-                      </div>
-                      <div>
-                        <input
-                          name="contact_email"
-                          class="font-normal w-full border border-gray-300 rounded-xl h-12 px-4 text-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                          placeholder="Email công ty"
-                          type="email"
-                        />
-                      </div>
-                      <div>
-                        <textarea
-                          rows="3"
-                          name="message"
-                          class="font-normal w-full border border-gray-300 rounded-xl p-3.5 text-sm focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
-                          placeholder="Tên nhà máy, vị trí dự án..."
-                        ></textarea>
-                      </div>
-                      <button
-                        type="submit"
-                        class="btn btn-primary-1 w-full py-3.5 font-bold text-sm rounded-xl shadow-lg shadow-primary/30 hover:shadow-primary/80 inline-flex items-center justify-center gap-2 text-white transition-all cursor-pointer"
-                      >
-                        <span>Gửi yêu cầu ngay</span>
-                        <svg
-                          class="size-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="2.2"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                          />
-                        </svg>
-                      </button>
-                    </form>
-                  </div>
-
-                  <!-- Hotline Support Card -->
-                  <div
-                    class="card-item relative glass-effect border border-black/8 bg-white/95 rounded-3xl p-5 shadow-sm flex items-center gap-4"
-                  >
-                    <div
-                      class="flex items-center justify-center bg-primary/10 text-primary rounded-2xl shrink-0"
-                      style="
-                        width: 52px;
-                        height: 52px;
-                        min-width: 52px;
-                        min-height: 52px;
-                      "
-                    >
-                      <svg
-                        style="
-                          width: 26px;
-                          height: 26px;
-                          min-width: 26px;
-                          min-height: 26px;
-                        "
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.8"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <p class="text-xs text-black font-medium">
-                        Hotline Tư Vấn Nhanh
-                      </p>
-                      <a
-                        href="tel:0915549148"
-                        class="text-base sm:text-lg font-extrabold text-black hover:text-primary transition-colors"
-                        >0915 549 148</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </aside>
             </div>
-          </div>
         </section>
 
         <!-- SECTION: DỊCH VỤ MÔI TRƯỜNG LIÊN QUAN (Xử lý giống chuẩn phần Dự án liên quan) -->
