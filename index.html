@@ -110,6 +110,7 @@
         ]
       }
     </script>
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/cropped-chuan-192x192.png" />
     <link rel="icon" href="images/cropped-chuan-192x192.png" />
@@ -495,9 +496,9 @@
 
           <li>
             <a
-              href="#section-cb80cc5ab6"
+              href="recruitment.html"
               class="mobile-nav-link flex items-center py-2.5 px-3 rounded-xl font-medium text-gray-800 hover:bg-gray-50 hover:text-primary transition-colors"
-              >Đánh giá</a
+              >Tuyển dụng</a
             >
           </li>
 
@@ -549,7 +550,7 @@
       >
         <div
           id="masthead"
-          class="masthead py-2.5 sm:py-3.5 glass-effect transition-all duration-300"
+          class="masthead py-4 sm:py-5 glass-effect transition-all duration-300"
         >
           <div
             class="container px-3 sm:px-4 mx-auto flex items-center justify-between gap-2 sm:gap-4"
@@ -564,7 +565,7 @@
                   ><span class="custom-logo-link"
                     ><img
                       src="images/logo-leave-png-min.png"
-                      class="custom-logo h-12 sm:h-14 lg:h-15 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                      class="custom-logo h-14 sm:h-16 lg:h-18 w-auto object-contain transition-transform duration-300 hover:scale-105"
                       alt="Môi Trường Bảo Châu"
                       loading="eager"
                       fetchpriority="high"
@@ -579,7 +580,7 @@
               <nav class="nav" id="main-nav">
                 <ul
                   id="menu-8c6d27c2ee"
-                  class="dropdown menu horizontal-menu main-nav u-flex-x items-center gap-1 xl:gap-2 min-h-11 xl:min-h-12 bg-black/6 backdrop-blur-md pt-1 px-3.5 xl:px-6 pb-1 rounded-full border border-black/5"
+                  class="dropdown menu horizontal-menu main-nav u-flex-x items-center gap-1 xl:gap-2 min-h-11 xl:min-h-12 bg-black/6 backdrop-blur-md pt-1 px-3.5 xl:px-6 pb-1 rounded-full"
                   data-fx-dropdown-menu=""
                   data-hover="true"
                   data-autohide="true"
@@ -840,10 +841,10 @@
                       </li>
                       <li>
                         <a
-                          href="#section-cb80cc5ab6"
+                          href="recruitment.html"
                           class="flex items-center py-2 px-3 rounded-xl font-medium text-gray-800 hover:text-primary hover:bg-primary/5 transition-colors"
                         >
-                          Đánh giá
+                          Tuyển dụng
                         </a>
                       </li>
                       <li>
@@ -970,9 +971,9 @@
                   </li>
                   <li class="nav-item-extended">
                     <a
-                      href="#section-cb80cc5ab6"
+                      href="recruitment.html"
                       class="flex items-center h-full font-medium text-[14.5px] xl:text-[15px] text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors py-2 px-3 rounded-full hover:bg-black/5"
-                      >Đánh giá</a
+                      >Tuyển dụng</a
                     >
                   </li>
                   <li class="nav-item-extended">
@@ -1224,93 +1225,71 @@
         </div>
         <section
           id="section-613b4656be"
-          class="section section-hero py-10 lg:py-20 relative overflow-hidden"
+          class="section section-hero relative overflow-hidden"
+          style="height: clamp(380px, 55vw, 700px);"
         >
-          <div
-            class="container px-3 mx-auto relative z-2 flex flex-col-reverse pt-6 lg:grid lg:grid-cols-12 lg:gap-12 xl:gap-0"
-          >
-            <div class="lg:mr-auto lg:pr-[4vw] place-self-center lg:col-span-6">
-              <h1 class="mb-6 lg:mb-10 leading-[1.2] max-w-xl text-primary">
-                <span class="font-bold uppercase">MÔI TRƯỜNG BẢO CHÂU</span> -
-                <span class="font-bold h2"
-                  >Tư vấn hồ sơ & Giải pháp môi trường toàn diện.</span
-                >
-              </h1>
-              <div class="mb-10 lg:mb-15 p-fs-clamp-[15,17] max-w-2xl">
-                <p class="mb-4">
-                  Đơn vị hàng đầu chuyên cung cấp giải pháp
-                  <i>tư vấn hồ sơ môi trường</i>,
-                  <i>kiểm kê khí nhà kính (ESG)</i>,
-                  <i>quan trắc môi trường lao động</i> và
-                  <i>xử lý nước thải - khí thải</i> cho doanh nghiệp trên toàn
-                  quốc.
-                </p>
-                <p>
-                  <span class="block h6 text-primary mb-3 font-medium"
-                    >Đồng hành cùng phát triển xanh và bền vững</span
-                  >
-                  Chúng tôi cam kết mang đến giải pháp
-                  <span class="font-medium">tối ưu chi phí</span>, đảm bảo
-                  <span class="font-medium">tính pháp lý chuẩn xác</span> và
-                  đồng hành cùng doanh nghiệp kiến tạo giá trị bền vững trong kỷ
-                  nguyên kinh tế xanh.
-                </p>
+          <!-- Swiper Hero Slider -->
+          <div class="swiper swiper-hero-banner w-full h-full" id="hero-swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <img
+                  src="images/slide-1.png"
+                  class="w-full h-full object-cover object-center"
+                  width="1024"
+                  height="379"
+                  alt="Công ty TNHH Dịch vụ và Kỹ thuật Môi Trường Bảo Châu"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
               </div>
-              <div class="flex flex-row flex-wrap gap-4 sm:gap-6 items-center">
-                <a
-                  class="btn btn-secondary-2 icon-right shadow-xl shadow-secondary/25 hover:shadow-lg hover:shadow-secondary/70"
-                  href="#section-db7ea4e65d"
-                  title="Khám phá ngay"
-                  data-fx-scroll=""
-                  data-fx-offset="32"
-                  >Khám phá ngay<svg
-                    class="size-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                    ></path></svg></a
-                ><a
-                  class="btn btn-primary-1 shadow-xl shadow-primary/30 hover:shadow-lg hover:shadow-primary/80"
-                  href="#"
-                  title="Liên hệ"
-                  >Liên hệ<svg
-                    class="size-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                    ></path></svg
-                ></a>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <img
+                  src="images/slide-2.jpg"
+                  class="w-full h-full object-cover object-center"
+                  width="1024"
+                  height="379"
+                  alt="Môi Trường Bảo Châu - Tư vấn hồ sơ môi trường"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <img
+                  src="images/slide-3.png"
+                  class="w-full h-full object-cover object-center"
+                  width="1536"
+                  height="568"
+                  alt="Thông báo nghỉ Tết - Môi Trường Bảo Châu"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <img
+                  src="images/slide-4.png"
+                  class="w-full h-full object-cover object-center"
+                  width="1024"
+                  height="379"
+                  alt="Dịch vụ Kiểm kê Khí nhà kính - Môi Trường Bảo Châu"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             </div>
-            <div
-              class="mb-6 -mx-3 sm:mx-0 lg:mt-0 lg:col-span-6 flex relative lg:right-0 lg:-left-[4vw] lg:w-[52vw]"
-            >
-              <img
-                src="images/moi-truong-bao-chau.jpg"
-                class="w-full h-auto mx-auto object-contain"
-                width="1009"
-                height="676"
-                alt="Đội ngũ MÔI TRƯỜNG BẢO CHÂU"
-                loading="eager"
-                fetchpriority="high"
-                decoding="async"
-              />
-            </div>
+
+            <!-- Prev / Next arrows (Swiper standard classes) -->
+            <div class="swiper-button-prev !w-11 !h-11 !rounded-full !bg-white/70 hover:!bg-white !backdrop-blur-sm !shadow-lg !text-gray-800 after:!text-sm after:!font-black"></div>
+            <div class="swiper-button-next !w-11 !h-11 !rounded-full !bg-white/70 hover:!bg-white !backdrop-blur-sm !shadow-lg !text-gray-800 after:!text-sm after:!font-black"></div>
+
+            <!-- Pagination dots (Swiper standard class) -->
+            <div class="swiper-pagination" id="hero-pagination"></div>
           </div>
+
         </section>
         <section
           id="section-58ddcdf3c6"
@@ -6251,6 +6230,7 @@
       </defs>
     </svg>
 
+    <script src="js/swiper.min.js"></script>
     <script src="js/main.js" defer></script>
   </body>
 </html>

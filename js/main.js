@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNewsFilter();
   initContactForm();
   initSmoothScroll();
+  initHeroSlider();
 });
 
 /* ==========================================================================
@@ -631,3 +632,23 @@ function initSmoothScroll() {
     });
   });
 }
+
+/* ==========================================================================
+   12. HERO BANNER SLIDER (Swiper.js)
+   ========================================================================== */
+function initHeroSlider() {
+  if (!document.getElementById('hero-swiper')) return;
+  new Swiper('#hero-swiper', {
+    loop: true,
+    speed: 800,
+    autoplay: { delay: 4000, disableOnInteraction: false },
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+    navigation: true,
+    pagination: {
+      el: '.swiper-hero-banner .swiper-pagination',
+      clickable: true,
+    },
+  });
+}
+
